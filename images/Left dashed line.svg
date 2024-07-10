@@ -1,0 +1,20 @@
+<svg width="163" height="182" viewBox="0 0 163 182" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="163" height="182" fill="#1E1E1E"/>
+<g id="Homepage" clip-path="url(#clip0_33_638)">
+<rect width="1512" height="1808" transform="translate(0 -221)" fill="white"/>
+<g id="Left dashed line">
+<path id="dashed line" d="M-1.5 15.5H162V181.5" stroke="#ADA8AE" stroke-linejoin="round" stroke-dasharray="8 12"/>
+<g id="circle">
+<g id="Circle">
+<circle id="Ellipse 5" cx="15" cy="15" r="15" transform="matrix(-1 0 0 1 95 0)" fill="#F0DAC5"/>
+<circle id="Ellipse 4" cx="8" cy="8" r="8" transform="matrix(-1 0 0 1 88 7)" fill="#FFAA5A"/>
+</g>
+</g>
+</g>
+</g>
+<defs>
+<clipPath id="clip0_33_638">
+<rect width="1512" height="1808" fill="white" transform="translate(0 -221)"/>
+</clipPath>
+</defs>
+</svg>

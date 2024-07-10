@@ -2,29 +2,121 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+@layer base {
+  @font-face {
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 500;
+    src: url(fonts/Jost-500-Medium.woff2) format('woff2');
+  }
+  @font-face {
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 700;
+    src: url(fonts/Jost-700-Bold.woff2) format('woff2');
+  }
+  @font-face {
+    font-family: 'FiraSans';
+    font-style: normal;
+    font-weight: 300;
+    src: url(fonts/FiraSans-Regular.woff2) format('woff2');
+  }
+  @font-face {
+    font-family: 'FiraSans';
+    font-style: normal;
+    font-weight: 500;
+    src: url(fonts/FiraSans-Medium.woff2) format('woff2');
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.font-jost {
+  font-family: 'Jost';
 }
+
+body {
+  @apply text-n900;
+  background: white;
+  font-family: 'FiraSans';
+  font-weight: 300;
+}
+h1, h2, h3, .h1, .h1, .h3 {font-family: 'Jost';}
+h1, .h1 {
+  font-size: 64px;
+  font-weight: 500;
+}
+h2, .h2 {
+  font-size: 32px;
+  font-weight: 700;
+}
+h3, .h3 {
+  font-size: 22px;
+  font-weight: 500;
+}
+
+.btn-try{
+  font-size: 22px;
+  font-weight: 500; 
+  @apply px-6; 
+  @apply py-2;
+  @apply rounded-full;
+  @apply bg-n900; 
+  @apply text-n100; 
+  @apply transition;
+  @apply ease-in-out;
+  @apply inline-block;
+}
+.btn-try:hover {
+  @apply scale-105;
+}
+.btn-try:active {
+  @apply scale-100
+}
+
+.btn-dash {
+  @apply btn;
+  @apply bg-n100;
+  @apply border;
+  @apply border-n300;
+  @apply pt-1;
+  font-family: 'Jost';
+  font-weight: 500;
+  font-size: 16px;
+  height: 2.5rem!important;
+  min-height: 2.5rem!important;
+}
+.btn-dash:hover {
+  @apply bg-neutral-200;
+}
+
+
+.btn-primary {
+  @apply bg-purple500;
+  @apply border-n800;
+  @apply text-n100;
+  font-size: 22px;
+  font-weight: 500;
+  font-family: 'Jost';
+}
+.btn-primary:hover{
+  @apply bg-purple900;
+  @apply border-n800;
+}
+
+.input, .textarea {
+  @apply bg-n100;
+  @apply border-n300;
+  @apply caret-violet-600;
+  @apply text-slate-950;
+  @apply block
+}
+.input:focus, .textarea:focus {
+  @apply outline-purple300
+}
+:invalid {
+  @apply border-red500;
+  @apply border-2
+}
+
 
 @layer utilities {
   .text-balance {

@@ -18,9 +18,13 @@
       }
     ],
     "paths": {
-      "components/*": ["./*"]
+      "@components/*": ["./components/*"],
+      "@utils/*": ["./utils/*"],
+      "@emails/*": ["./emails/*"],
+      "@images/*": ["./images/*"],
+      "@models/*": ["./models/*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "components/lineChart.jsx"],
   "exclude": ["node_modules"]
 }

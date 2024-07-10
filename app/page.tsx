@@ -1,113 +1,101 @@
 import Image from "next/image";
+import Link from "next/link";
+import type { Metadata } from "next";
+import mockup from "@images/browserMockup.png";
+import p1 from "@images/p1.png";
+import p2 from "@images/p2.png";
+import p3 from "@images/p3.png";
+import arrow from "@images/arrowRound.svg"
+import trustLogo from "@images/trustLogo.svg";
+import graph from "@images/graph.svg";
+import LeftDash from "@components/svg/leftDash";
+import RightDash from "@components/svg/rightDash";
+import BarChart from "@components/chart/barChart";
 
-export default function Home() {
+
+export const metadata: Metadata = {
+  title: "Weelytical",
+  description: "Real-time analytics, and user-friendly dashboards that empower you to make data-driven decisions with confidence.",
+};
+
+
+const Home = () => {
+
+  const data = {
+    labels: ['26Jun', '27Jun', '28Jun', "29Jun", "30Jun", "01Jul", "02Jul"],
+    // datasets is an array of objects where each object represents a set of data to display corresponding to the labels above. for brevity, we'll keep it at one object
+    datasets: [
+        {
+          label: 'Visitors',
+          data: [29, 25, 37, 55, 57, 45, 67],
+          // you can set indiviual colors for each bar
+          backgroundColor: "#806190",
+          borderRadius: 12,
+          barThickness: 30
+        }
+    ]
+};
+  
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">app/page.tsx</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:size-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+    <main className="w-full mt-8 px-20">
+      <section className="relative h-[790px]">
+        
+        <LeftDash cName="w-[200px] absolute left-[-150px] top-[75px] p-2"/>
+        <RightDash cName="w-[200px] absolute left-[60px] top-[0px] p-2 rotate-[90deg]"/>
+        <RightDash cName="w-[150px] absolute right-[350px] top-[500px] p-2 z-10"/>
+
+        <div className="px-14 py-8 w-[740px] bg-n100 border border-n200 rounded-3xl z-10 absolute left-0 top-[300px]">
+          <h1 className="text-n800 leading-[76px]">Powerful Analytics <br/> Easy Integration</h1>
+          <p className="mt-8 text-md text-n600">Unlock the full potential of your data. <br/>
+Experience seamless integration, real-time analytics, and user-friendly dashboards that empower you to make data-driven decisions with confidence. 
+Whether you're looking to optimize your business processes, understand customer behavior, or forecast trends, our solution provides the precision and depth you need. </p>
+          <Link href="/register" className="mt-4 btn-try">
+           Try Free!
+           <Image src={arrow} width={35} height={35} loading="lazy" alt="arrow right" className="inline-block pb-1 ml-4"></Image>
+          </Link>
         </div>
-      </div>
 
-      <div className="relative z-[-1] flex place-items-center before:absolute before:h-[300px] before:w-full before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-full after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 sm:before:w-[480px] sm:after:w-[240px] before:lg:h-[360px]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
+        <Image src={mockup} width={1038} height={660} loading="lazy" alt="weelytical" className="!select-none absolute right-0 z-0"></Image>
+        
+        <div className="absolute top-[210px] right-[60px]">
+          <BarChart chartData={data} classN="p-6 w-[500px] bg-orange900 rounded-3xl shadow-md border border-n300"/>
+        </div>
 
-      <div className="mb-32 grid text-center lg:mb-0 lg:w-full lg:max-w-5xl lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Docs{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
+        <div className="max-w-[200px] text-center absolute right-[160px] top-[525px] z-10">
+          <div className="">
+            <Image src={graph} width={50} loading="lazy" alt="graph" className="h-auto inline mt-[-30px] mr-2"></Image>
+            <h1 className="text-n700 inline p-0 leading-[55px]">32%</h1>
+          </div>
+          <p className="text-n800 text-xl">Monthly Growth</p>
+        </div>
 
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Learn{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
+      </section>
 
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Templates{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Explore starter templates for Next.js.
-          </p>
-        </a>
+      <section>
+        <h3 className="font-bold text-n800">Trusted by:</h3>
+        <Image src={trustLogo} width={550} loading="lazy" alt="weelytical" className="h-auto"></Image>
+      </section>
 
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Deploy{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-balance text-sm opacity-50">
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
+      <section className="flex flex-row gap-12 mt-28">
+    	  <div className="px-4 pb-8 shadow-md rounded-3xl flex-1 text-center bg-orange500 border border-n300">
+          <Image src={p1} width={200} loading="lazy" alt="thumb" className="mt-[-80px] rounded-[100%] bg-n300 border-[20px] border-white mx-auto"></Image>
+          <h2 className="text-n800">Michael Thompson</h2>
+          <p className="text-lg text-n900">"This analytics platform has revolutionized the way we approach our data strategy. The insights are clear, actionable, and have significantly boosted our campaign performance."</p>
+        </div>
+    	  <div className="px-4 pb-8 shadow-md rounded-3xl flex-1 text-center bg-orange500 border border-n300">
+          <Image src={p2} width={200} loading="lazy" alt="thumb" className="mt-[-80px] rounded-[100%] bg-n300 border-[20px] border-white mx-auto"></Image>
+          <h2 className="text-n800">Sarah Patel</h2>
+          <p className="text-lg text-n900">"The depth of analysis and real-time data capabilities have streamlined our workflow. It's an indispensable tool for our data-driven initiatives."</p>
+        </div>
+    	  <div className="px-4 pb-8 shadow-md rounded-3xl flex-1 text-center bg-orange500 border border-n300">
+          <Image src={p3} width={200} loading="lazy" alt="thumb" className="mt-[-80px] rounded-[100%] bg-n300 border-[20px] border-white mx-auto"></Image>
+          <h2 className="text-n800">Tom Richards</h2>
+          <p className="text-lg text-n900">"The user-friendly interface and powerful analytics tools have made decision-making faster and more accurate. It's a game-changer for our operations."</p>
+        </div>
+      </section>
+      
     </main>
   );
 }
+
+export default Home;
