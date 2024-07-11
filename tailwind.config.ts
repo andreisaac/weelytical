@@ -39,6 +39,10 @@ const config: Config = {
       },
       boxShadow: {
       },
+      backgroundImage: {
+        purple9grad: "linear-gradient(0deg, rgba(84,55,99,1) 0%, rgba(110,78,125,1) 3%, rgba(84,55,99,1) 50%, rgba(84,55,99,1) 75%, rgba(110,78,125,1) 95%, rgba(84,55,99,1) 100%)",
+
+      },
     },
   },
   plugins: [require('daisyui')],

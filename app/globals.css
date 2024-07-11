@@ -32,6 +32,9 @@
 .font-jost {
   font-family: 'Jost';
 }
+.font-fira {
+  font-family: 'FiraSans';
+}
 
 body {
   @apply text-n900;
@@ -85,7 +88,7 @@ h3, .h3 {
   min-height: 2.5rem!important;
 }
 .btn-dash:hover {
-  @apply bg-neutral-200;
+  @apply bg-orange500;
 }
 
 

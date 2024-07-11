@@ -31,7 +31,7 @@ const DashBar = () => {
   };
 
   return (
-    <section className="px-4 flex flex-row bg-n200 border border-n300 rounded-t-lg">
+    <section className="px-4 flex flex-row bg-n700 border border-n300 rounded-t-lg">
     <div className="flex flex-1 flex-row">
       <a className="my-3 mx-2 !px-8 btn-dash !rounded-full bg-white">
         <Image src={layout} width={24} alt="layout" loading="lazy" className="h-auto pb-1"/>
