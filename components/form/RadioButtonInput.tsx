@@ -1,10 +1,6 @@
 "use client"
 import * as React from "react";
 import {useState} from "react";
-import Image from "next/image";
-import errorSVG from "@images/error.svg";
-import checkSVG from "@images/check.svg";
-
 
 type emailType = {
   value: string;

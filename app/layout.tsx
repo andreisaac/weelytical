@@ -15,9 +15,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" data-theme="light">
-      <body className="min-h-[100vh]">
+      <body className="min-h-[100vh] bg-white">
         <Navbar/>
-        <div className="max-w-[1512px] mx-auto">
+        <div className="2xl:max-w-[1512px] mx-auto min-h-[100vh]">
             {children}
         </div>
         <Footer/>

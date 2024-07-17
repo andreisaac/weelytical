@@ -13,7 +13,7 @@ export const metadata: Metadata = {
 
 const Dashboard = () => {
   return (
-    <main className="min-h-[88vh] pt-8">
+    <main className="min-h-[88vh] pt-8 children">
       <DashBar></DashBar>
       <MainCharts></MainCharts>
     </main>

@@ -55,7 +55,7 @@ const Chart:React.FC<d> = ({dat}) => {
   return (
     <div className="m-4 flex flex-col rounded-xl flex-1 bg-white bg-opacity-50 shadow-md">
 
-      <div className="h-20 px-8 flex flex-row bg-n700 text-n100 font-bold text-lg rounded-t-lg">
+      <div className="h-20 px-8 flex flex-row bg-n700 text-n100 text-lg rounded-t-lg">
         <span className="flex flex-col self-center flex-none">
           <a className="mt-1 px-4 py-1 hover:text-orange900 rounded-lg transition ease-in-out active:scale-95 cursor-pointer" onClick={ordenateClick}><Image src={upDown} width={14} alt="reorder" className="border-n900 inline h-auto"/>  {label}</a>
           {label.toLowerCase() === filter ? 
@@ -77,7 +77,7 @@ const Chart:React.FC<d> = ({dat}) => {
             )
         )}
 
-        <a onClick={openDialog} className="btn min-h-8 h-8 w-22 mx-auto bg-n100 hover:bg-orange300 border border-n300 mt-6 mb-2">View all<Image src={expand} width={18} alt="expand" className="border-n900 inline h-auto"/>  </a>
+        <a onClick={openDialog} className="btn min-h-8 h-8 w-22 mx-auto bg-n100 hover:bg-orange300 border border-n300 mt-6 mb-2 place-self-end">View all<Image src={expand} width={18} alt="expand" className="border-n900 inline h-auto"/>  </a>
       </div>
 
       <dialog ref={dialogRef} className="modal">

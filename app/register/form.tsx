@@ -129,7 +129,7 @@ const Form: React.FC<firstForm> = ({cType, cProjectName, cEmail, cPassword, cVer
     <AnimatePresence mode="wait">
     {!cType && !cProjectName ? (
    
-    <motion.main key={"step1"} initial={{ opacity: 0}} animate={{ opacity: 1}} exit={{ opacity: 0}} transition={{duration: .3, ease:"easeInOut"}} className="w-[600px] mx-auto">
+    <motion.main key={"step1"} initial={{ opacity: 0}} animate={{ opacity: 1}} exit={{ opacity: 0}} transition={{duration: .3, ease:"easeInOut"}} className="max-md:px-4 md:w-[600px] mx-auto">
       <h2 className="text-n700 text-center mt-14">Create your Weelytical Account</h2>
       <div className="flex flex-col mt-8 w-full">
         <RadioButtonInput name="hobby" value={"hobby"} label="Hobby" text="I'm working on personal projects" inputUpdate={setType} checked={type === "hobby"}/>
@@ -151,8 +151,8 @@ const Form: React.FC<firstForm> = ({cType, cProjectName, cEmail, cPassword, cVer
   ) : !cEmail ?
   (
 
-    <motion.main key={"step2"} initial={{ opacity: 0}} animate={{ opacity: 1}} exit={{ opacity: 0}} transition={{duration: .1, ease:"easeInOut"}} className="w-[600px] mx-auto">
-      <a className="btn font-normal border-n300 text-n800 absolute top-1 left-60" onClick={()=>back("1st")}>
+    <motion.main key={"step2"} initial={{ opacity: 0}} animate={{ opacity: 1}} exit={{ opacity: 0}} transition={{duration: .1, ease:"easeInOut"}} className="max-md:px-4 md:w-[600px] mx-auto">
+      <a className="max-md:mb-5 btn font-normal border-n300 text-n800 md:absolute top-1 left-60" onClick={()=>back("1st")}>
         <Image src={arrowleft} width={22} loading="lazy" alt="arrow right" className="inline-block h-auto"></Image>
         Back
       </a>
@@ -161,9 +161,9 @@ const Form: React.FC<firstForm> = ({cType, cProjectName, cEmail, cPassword, cVer
       <div className="flex flex-col mt-8 w-full">
 
         <a className="p-3 mt-2 block text-center h3 text-n700 rounded-lg bg-n100 border border-n200 cursor-pointer hover:scale-105 transition ease-out hover:ease-in active:scale-100"><Image src={googleLogo} width={30} alt="google logo" className="inline mr-4 h-auto"></Image> Sign In with Google</a>
-        <a className="p-3 my-8 block text-center h3 text-n100 rounded-lg bg-n800 border border-n200 cursor-pointer hover:scale-105 transition ease-out hover:ease-in active:scale-100"><Image src={githubLogo} width={40} alt="google logo" className="inline mr-4val"></Image> Sign In with GitHub</a>
+        <a className="p-3 my-8 block text-center h3 text-n100 rounded-lg bg-n800 border border-n200 cursor-pointer hover:scale-105 transition ease-out hover:ease-in active:scale-100"><Image src={githubLogo} width={40} alt="github logo" className="inline mr-4val"></Image> Sign In with GitHub</a>
         
-       <h3 className="text-center border-t-2 border-purple300 relative my-8"><span className="bg-white absolute top-[-16px] left-[50%] ml-[-60px] px-10">or</span></h3>
+        <div className="divider text-xl text-n700">OR</div>
 
         <EmailInput name="email" value={email} error={error.email} label="Email:" inputUpdate={setEmail} errorUpdate={errorUpdate} required={true}/>
         <SetPasswordInput name="password" password={password} error={error.password} label="Password:" inputUpdate={setPassword} errorUpdate={errorUpdate} required={true}/>
@@ -176,12 +176,27 @@ const Form: React.FC<firstForm> = ({cType, cProjectName, cEmail, cPassword, cVer
           <span>Error! Email and password required.</span>
         </div>) : ""}
 
+        <div role="alert" className="alert alert-error mt-2">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            className="h-6 w-6 shrink-0 stroke-current"
+            fill="none"
+            viewBox="0 0 24 24">
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth="2"
+              d="M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z" />
+          </svg>
+          <span>Error! Email already in use.</span>
+        </div>
+
       </div>
     </motion.main>
 
   ) : (
 
-    <motion.main key={"step3"} initial={{ opacity: 0}} animate={{ opacity: 1}} exit={{ opacity: 0}} transition={{duration: .1, ease:"easeInOut"}} className="w-[600px] mx-auto mt-36">
+    <motion.main key={"step3"} initial={{ opacity: 0}} animate={{ opacity: 1}} exit={{ opacity: 0}} transition={{duration: .1, ease:"easeInOut"}} className="max-md:px-4 md:w-[600px] mx-auto mt-36">
 
       <h3 className="text-center">Keep this window open and in a new tab open the link we just sent to {cEmail} with security code:</h3>
 

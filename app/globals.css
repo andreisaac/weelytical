@@ -28,6 +28,28 @@
     src: url(fonts/FiraSans-Medium.woff2) format('woff2');
   }
 }
+.children {
+  animation: fadeInAnimation ease 500ms;
+  animation-fill-mode: forwards;
+}
+@keyframes fadeInAnimation {
+  0% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
+  }
+}
+
+.alert-error {
+  @apply rounded-lg;
+  @apply bg-red900;
+  @apply text-n100;
+}
+
+.alert-error > span, .alert-error > svg {
+  @apply drop-shadow-text
+}
 
 .font-jost {
   font-family: 'Jost';
@@ -35,19 +57,28 @@
 .font-fira {
   font-family: 'FiraSans';
 }
-
+.next-error-h1 {
+  @apply text-n800;
+}
+h2 {
+  @apply text-n800;
+}
 body {
   @apply text-n900;
   background: white;
   font-family: 'FiraSans';
   font-weight: 300;
+  width: 100%!important
 }
 h1, h2, h3, .h1, .h1, .h3 {font-family: 'Jost';}
 h1, .h1 {
   font-size: 64px;
   font-weight: 500;
+  line-height: 72px;
 }
 h2, .h2 {
+  
+  line-height: 40px;
   font-size: 32px;
   font-weight: 700;
 }
@@ -55,6 +86,10 @@ h3, .h3 {
   font-size: 22px;
   font-weight: 500;
 }
+
+.btn{
+  @apply text-n800
+} 
 
 .btn-try{
   font-size: 22px;
@@ -84,14 +119,18 @@ h3, .h3 {
   font-family: 'Jost';
   font-weight: 500;
   font-size: 16px;
-  height: 2.5rem!important;
-  min-height: 2.5rem!important;
+  height: 2.5rem;
+  min-height: 2.5rem;
 }
 .btn-dash:hover {
   @apply bg-orange500;
 }
 
 
+.btn-error {
+  @apply text-n100;
+  text-shadow: 1px 1px 3px black!important
+}
 .btn-primary {
   @apply bg-purple500;
   @apply border-n800;
@@ -106,7 +145,6 @@ h3, .h3 {
 }
 
 .input, .textarea {
-  @apply bg-n100;
   @apply border-n300;
   @apply caret-violet-600;
   @apply text-slate-950;

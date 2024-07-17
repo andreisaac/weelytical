@@ -3,7 +3,6 @@ import * as React from "react";
 import {useState} from "react";
 import Image from "next/image";
 import errorSVG from "@images/error.svg";
-import checkSVG from "@images/check.svg";
 
 type nameType = {
   value: string;
@@ -44,7 +43,7 @@ const EmailInput: React.FC<nameType> = ({ value, error, name, placeholder, label
 
         <input type="text" name={name} placeholder={placeholder || "Name"} value={value} onChange={handleInput}  className="input" autoComplete={autoComplete || ""}/>
         
-        <div className={`text-red900 mt-2 transition duration-500 ease-in-out ${((value !=="") && (errorState) ? 'opacity-100' : 'opacity-0')} ${((value !=="") && (animation) ? 'opacity-100' : 'opacity-0')}`}>
+        <div className={`text-red900 mt-2 transition duration-500 ease-in-out ${((value !=="") && (errorState) ? 'visible' : 'hidden')} ${((value !=="") && (animation) ? 'opacity-100' : 'opacity-0')}`}>
             <Image src={errorSVG} width={24} height={24} alt="error" className="inline"></Image> {error}
         </div>
   </div>

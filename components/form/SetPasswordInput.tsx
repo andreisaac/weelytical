@@ -3,8 +3,9 @@ import * as React from "react";
 import {useState} from "react";
 import Image from "next/image";
 import errorSVG from "@images/error.svg";
-import checkSVG from "@images/check.svg";
-
+import checkSVG from "@images/checkCircle.svg";
+import eyeFill from "@images/eyeFill.svg";
+import eye from "@images/eye.svg";
 
 
 type passwordType =  {
@@ -22,6 +23,7 @@ const SetPasswordInput: React.FC<passwordType> = ({ password, error, name, place
   const [errorState, setErrorState] = useState(false);
   const [animation, setAnimation] = useState(false);
   const [confirmPassword, setConfirmPassword] = useState("");
+  const [visible, setVisible] = useState(false);
 
   const [validations, setValidations] = useState({
     length: false,
@@ -95,10 +97,16 @@ const SetPasswordInput: React.FC<passwordType> = ({ password, error, name, place
 
 
   return (
-    <div className="form-control">
+    <div className="form-control relative">
       {label ? <label className="label">{label}</label> : ""}
-      <input type="password" name={name} value={password} placeholder="Password" onChange={handleInput} className="input" autoComplete="password"/>
-        
+
+      <input type={visible ? "text" : "password"} name={name} value={password} placeholder="Password" onChange={handleInput} className="input" autoComplete="password"/>
+      <label className="swap swap-rotate absolute right-4 top-[52px]">
+        <input type="checkbox" onClick={()=>setVisible(!visible)}/>
+        <Image src={eyeFill} width={24} alt="password visible" loading="lazy" className="h-auto opacity-70 hover:opacity-90 swap-on"/>
+        <Image src={eye} width={24} alt="password visible" loading="lazy" className="h-auto opacity-70 hover:opacity-90 swap-off"/>
+      </label>  
+
       <div className={` mt-2 transition duration-500 ease-in-out ${( errorState ? '' : ' hidden')} ${( animation ? 'opacity-100' : 'opacity-0')}`}>
           <p className={` transition-colors duration-500 ease-in-out  ${(validations.lowercase ? 'text-green900' : 'text-red900')}`}><Image src={validations.lowercase ? checkSVG : errorSVG} width={24} alt="error" className="h-auto inline pb-1"></Image> At least one lowercase letter</p>
           <p className={` transition-colors duration-500 ease-in-out  ${(validations.uppercase ? 'text-green900' : 'text-red900')}`}><Image src={validations.uppercase ? checkSVG : errorSVG} width={24} alt="error" className="h-auto inline pb-1"></Image> At least one uppercase letter</p>
@@ -107,7 +115,7 @@ const SetPasswordInput: React.FC<passwordType> = ({ password, error, name, place
       </div> 
 
       <label className="label">Confirm password:</label>
-      <input type="password" name={"confirmPassword"} value={confirmPassword} placeholder="Confirm password" onChange={handleConfirm} className="input" autoComplete="password"/>
+      <input type={visible ? "text" : "password"} name={"confirmPassword"} value={confirmPassword} placeholder="Confirm password" onChange={handleConfirm} className="input" autoComplete="password"/>
       <div className={` mt-2 transition duration-500 ease-in-out ${( confirmPassword.length > 0 ? '' : ' hidden')} `}>
         <p className={` transition-colors duration-500 ease-in-out  ${(password === confirmPassword ? 'text-green900' : 'text-red900')}`}><Image src={validations.match ? checkSVG : errorSVG} width={24} alt="error" className="h-auto inline pb-1"></Image> {validations.match ? "Passwords match" : "Passwords do not match"}</p>
       </div>

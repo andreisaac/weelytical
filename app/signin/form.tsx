@@ -36,8 +36,39 @@ const Form = () => {
           </div>
 
           <button
-          className="py-2 px-14 h3 disabled:cursor-not-allowed disabled:bg-purple300 bg-purple500 rounded-lg text-n100 cursor-pointer transition ease-in-out hover:scale-110">Sign In</button>
+          className="py-2 px-14 h3 disabled:cursor-not-allowed disabled:bg-purple300 bg-purple500 rounded-lg text-n100 cursor-pointer transition ease-in-out hover:scale-105 active:scale-95">Sign In</button>
         </div>
+
+        <div role="alert" className="alert alert-error mt-2">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            className="h-6 w-6 shrink-0 stroke-current"
+            fill="none"
+            viewBox="0 0 24 24">
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth="2"
+              d="M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z" />
+          </svg>
+          <span>Error! Couldn't find your email.</span>
+        </div>
+
+        <div role="alert" className="alert alert-error mt-2">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            className="h-6 w-6 shrink-0 stroke-current"
+            fill="none"
+            viewBox="0 0 24 24">
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth="2"
+              d="M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z" />
+          </svg>
+          <span>Error! Incorrect password.</span>
+        </div>
+
       </div>
   );
 }

@@ -37,7 +37,7 @@ const Home = () => {
 };
   
   return (
-    <main className="w-full mt-8 px-20">
+    <main className="w-full mt-8 px-20 children">
       <section className="relative h-[790px]">
         
         <LeftDash cName="w-[200px] absolute left-[-150px] top-[75px] p-2"/>

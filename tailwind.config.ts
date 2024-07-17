@@ -37,10 +37,19 @@ const config: Config = {
         blue500: "#90C0F9",
         blue300: "#C8E1FF",
       },
+      dropShadow: {
+        'text': '1px 1px 2px rgba(0, 0, 0, 0.75)',
+        '4xl': [
+            '0 35px 35px rgba(0, 0, 0, 0.25)',
+            '0 45px 65px rgba(0, 0, 0, 0.15)'
+        ]
+      },
       boxShadow: {
+        square: "0px 0px 10px 0px #928C93",
+        squareXl: "0px 0px 20px 0px #928C93"
       },
       backgroundImage: {
-        purple9grad: "linear-gradient(0deg, rgba(84,55,99,1) 0%, rgba(110,78,125,1) 3%, rgba(84,55,99,1) 50%, rgba(84,55,99,1) 75%, rgba(110,78,125,1) 95%, rgba(84,55,99,1) 100%)",
+        purple9grad: "linear-gradient(90deg, rgba(167,136,183,1) 0%, rgba(84,55,99,1) 50%, rgba(63,59,64,1)  100%)",
 
       },
     },

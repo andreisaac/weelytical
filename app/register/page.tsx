@@ -17,7 +17,7 @@ const SignIn = () => {
   const verification:string|undefined = cookieStore.get("verification")?.value;  
   
   return (
-    <main className="min-h-[88vh] relative mt-10">
+    <main className="min-h-[88vh] relative mt-10 children">
       
 
        <Form cType={type} cProjectName={projectName} cEmail={email} cVerification={verification}/>
