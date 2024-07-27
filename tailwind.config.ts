@@ -49,8 +49,10 @@ const config: Config = {
         squareXl: "0px 0px 20px 0px #928C93"
       },
       backgroundImage: {
-        purple9grad: "linear-gradient(90deg, rgba(167,136,183,1) 0%, rgba(84,55,99,1) 50%, rgba(63,59,64,1)  100%)",
-
+        purpleBlack: "linear-gradient(90deg, rgba(167,136,183,1) 0%, rgba(84,55,99,1) 50%, rgba(63,59,64,1)  100%)",
+        blueGreen: "linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12)",
+        pinkPurple: "linear-gradient(to right top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1)",
+        greenYellow: "linear-gradient(159deg, rgba(44,101,57,1) 0%, rgba(130,185,36,1) 50%, rgba(239,255,144,1) 100%)",
       },
     },
   },

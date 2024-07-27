@@ -44,20 +44,21 @@ const PasswordInput: React.FC<passwordType> = ({ value, error, name, placeholder
       lowercase,
       specialChar
     });
-    if(!length || !uppercase || !lowercase || !specialChar) {
-      return true
-    } else {
-      return false
+    
+    return {
+      length,
+      uppercase,
+      lowercase,
+      specialChar
     }
   };
 
   const handleInput = (event:React.FormEvent<HTMLInputElement>) => {
     const value = event.currentTarget.value;
     const n = event.currentTarget.name;
-    errorUpdate(n, validations);
+    errorUpdate(n, validatePassword(value));
     inputUpdate(value);
   }
-
 
 
   return (
@@ -70,15 +71,6 @@ const PasswordInput: React.FC<passwordType> = ({ value, error, name, placeholder
         <Image src={eyeFill} width={24} alt="password visible" loading="lazy" className="h-auto opacity-70 hover:opacity-90 swap-on"/>
         <Image src={eye} width={24} alt="password visible" loading="lazy" className="h-auto opacity-70 hover:opacity-90 swap-off"/>
       </label>  
-      
-        <div className={` mt-2 transition duration-500 ease-in-out ${( errorState ? '' : ' hidden')} ${( animation ? 'opacity-100' : 'opacity-0')}`}>
-            <p className={`  ${(validations.lowercase ? 'text-green900' : 'text-red900')}`}><Image src={validations.lowercase ? checkSVG : errorSVG} width={24} height={24} alt="error" className="inline" loading="lazy"></Image> At least one lowercase letter</p>
-            <p className={`  ${(validations.uppercase ? 'text-green900' : 'text-red900')}`}><Image src={validations.uppercase ? checkSVG : errorSVG} width={24} height={24} alt="error" className="inline" loading="lazy"></Image> At least one uppercase letter</p>
-            <p className={`  ${(validations.specialChar ? 'text-green900' : 'text-red900')}`}><Image src={validations.specialChar ? checkSVG : errorSVG} width={24} height={24} alt="error" className="inline" loading="lazy"></Image> At least one special character</p>
-            <p className={`  ${(validations.length ? 'text-green900' : 'text-red900')}`}><Image src={validations.length ? checkSVG : errorSVG} width={24} height={24} alt="error" className="inline" loading="lazy"></Image> At least 8 characters</p>
-        </div> 
-
-
   </div>
   )
 }

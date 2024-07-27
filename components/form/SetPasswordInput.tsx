@@ -99,13 +99,15 @@ const SetPasswordInput: React.FC<passwordType> = ({ password, error, name, place
   return (
     <div className="form-control relative">
       {label ? <label className="label">{label}</label> : ""}
-
-      <input type={visible ? "text" : "password"} name={name} value={password} placeholder="Password" onChange={handleInput} className="input" autoComplete="password"/>
+      
       <label className="swap swap-rotate absolute right-4 top-[52px]">
         <input type="checkbox" onClick={()=>setVisible(!visible)}/>
-        <Image src={eyeFill} width={24} alt="password visible" loading="lazy" className="h-auto opacity-70 hover:opacity-90 swap-on"/>
-        <Image src={eye} width={24} alt="password visible" loading="lazy" className="h-auto opacity-70 hover:opacity-90 swap-off"/>
+        <Image src={eyeFill} width={24} alt="password visible" loading="lazy" className="select-none h-auto opacity-70 hover:opacity-90 swap-on"/>
+        <Image src={eye} width={24} alt="password visible" loading="lazy" className="select-none h-auto opacity-70 hover:opacity-90 swap-off"/>
       </label>  
+
+      <input type={visible ? "text" : "password"} name={name} value={password} placeholder="Password" onChange={handleInput} className="input" autoComplete="password"/>
+      
 
       <div className={` mt-2 transition duration-500 ease-in-out ${( errorState ? '' : ' hidden')} ${( animation ? 'opacity-100' : 'opacity-0')}`}>
           <p className={` transition-colors duration-500 ease-in-out  ${(validations.lowercase ? 'text-green900' : 'text-red900')}`}><Image src={validations.lowercase ? checkSVG : errorSVG} width={24} alt="error" className="h-auto inline pb-1"></Image> At least one lowercase letter</p>

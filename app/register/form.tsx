@@ -16,20 +16,22 @@ import githubLogo from "@images/githubLogo.svg";
 type firstForm = {
   cType?: string | undefined;
   cProjectName?: string | undefined;
+  cDisplayName?: string | undefined;
   cEmail?: string | undefined;
   cPassword?: string | undefined;
   cVerification?: string | undefined;
 }
 
-const Form: React.FC<firstForm> = ({cType, cProjectName, cEmail, cPassword, cVerification}) => {
+const Form: React.FC<firstForm> = ({cType, cDisplayName, cProjectName, cEmail, cPassword, cVerification}) => {
   const router = useRouter();
   const [verification, setVerification] = useState("");
   const [email, setEmail] = useState(cEmail || "");
   const [password, setPassword] = useState(cPassword || "");
+  const [displayName, setDisplayName] = useState(cDisplayName || "");
   const [projectName, setProjectName] = useState(cProjectName || "");
   const [type, setType] = useState(cType || "hobby");
   const [submitErr, setSubmitErr] = useState({step1: false, step2: false, step3: false});
-  const [error, setError] = useState({projectName: "", email: "", verification: "", password: {
+  const [err, setErr] = useState({projectName: "", email: "", verification: "", supabase: "", password: {
     length: false,
     uppercase: false,
     lowercase: false,
@@ -56,8 +58,8 @@ const Form: React.FC<firstForm> = ({cType, cProjectName, cEmail, cPassword, cVer
     }
   }
 
-  const errorUpdate = (n:string, v:any) => {
-    setError({...error, [n] : v})
+  const errUpdate = (n:string, v:any) => {
+    setErr({...err, [n] : v})
   }
   const submitStep1 = async () => {
 
@@ -65,7 +67,7 @@ const Form: React.FC<firstForm> = ({cType, cProjectName, cEmail, cPassword, cVer
       const req = await fetch("/register/api", {
         method: "POST", 
         headers: {'Content-Type': 'application/json'}, 
-        body: JSON.stringify({type, projectName})
+        body: JSON.stringify({type, projectName, displayName})
       });
 
       router.refresh();
@@ -82,12 +84,18 @@ const Form: React.FC<firstForm> = ({cType, cProjectName, cEmail, cPassword, cVer
   };
 
   const submitStep2 = async () => {
-    if((email && !error.email) && (password && Object.values(error.password).every(Boolean))) { 
+    if((email && !err.email) && (password && Object.values(err.password).every(Boolean))) { 
 
       const req = await fetch("/register/api", {
         method: "POST", 
         headers: {'Content-Type': 'application/json'}, 
         body: JSON.stringify({email, password})
+      });
+
+      const reqU = await fetch("/api/user/signup", {
+        method: "POST", 
+        headers: {'Content-Type': 'application/json'}, 
+        body: JSON.stringify({email, password, type, projectName, displayName})
       });
 
       router.refresh();
@@ -104,7 +112,6 @@ const Form: React.FC<firstForm> = ({cType, cProjectName, cEmail, cPassword, cVer
   };
 
   const submitStep3 = async () => {
-    console.log(cVerification);
     
     if(verification === cVerification) { 
       const req = await fetch("/register/api", {
@@ -114,6 +121,7 @@ const Form: React.FC<firstForm> = ({cType, cProjectName, cEmail, cPassword, cVer
       });
 
       router.push("/dashboard");
+   
 
     } else {
       setSubmitErr({...submitErr,step3:true});
@@ -122,6 +130,8 @@ const Form: React.FC<firstForm> = ({cType, cProjectName, cEmail, cPassword, cVer
       }, 3000)
 
     }
+
+
   };
 
 
@@ -134,15 +144,16 @@ const Form: React.FC<firstForm> = ({cType, cProjectName, cEmail, cPassword, cVer
       <div className="flex flex-col mt-8 w-full">
         <RadioButtonInput name="hobby" value={"hobby"} label="Hobby" text="I'm working on personal projects" inputUpdate={setType} checked={type === "hobby"}/>
         <RadioButtonInput name="pro" value={"pro"} label="Pro" text="Commercial projects" inputUpdate={setType} checked={type === "pro"}/>
-        <NameInput name="projectName" value={projectName} error={error.projectName} label="Project Name:" inputUpdate={setProjectName} errorUpdate={errorUpdate} required={true}/>
+        <NameInput name="displayName" placeholder="Your name" value={displayName} error={err.projectName} label="Display Name:" inputUpdate={setDisplayName} errorUpdate={errUpdate} required={true} autoComplete="displayName"/>
+        <NameInput name="projectName" placeholder="Project name" value={projectName} error={err.projectName} label="Project Name:" inputUpdate={setProjectName} errorUpdate={errUpdate} required={true} autoComplete="projectName"/>
         
         <a className="btn btn-primary btn-block mt-10" onClick={submitStep1}>Continue</a>   
 
-        {submitErr.step1 ? (<div role="alert" className="alert alert-error mt-4 rounded-lg">
+        {submitErr.step1 ? (<div role="alert" className="alert alert-err mt-4 rounded-lg">
           <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 shrink-0 stroke-current" fill="none" viewBox="0 0 24 24">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z" />
           </svg>
-          <span>Error! Project name required.</span>
+          <span>err! Project name required.</span>
         </div>) : ""}
 
       </div>
@@ -165,18 +176,18 @@ const Form: React.FC<firstForm> = ({cType, cProjectName, cEmail, cPassword, cVer
         
         <div className="divider text-xl text-n700">OR</div>
 
-        <EmailInput name="email" value={email} error={error.email} label="Email:" inputUpdate={setEmail} errorUpdate={errorUpdate} required={true}/>
-        <SetPasswordInput name="password" password={password} error={error.password} label="Password:" inputUpdate={setPassword} errorUpdate={errorUpdate} required={true}/>
+        <EmailInput name="email" value={email} error={err.email} label="Email:" inputUpdate={setEmail} errorUpdate={errUpdate} required={true}/>
+        <SetPasswordInput name="password" password={password} error={err.password} label="Password:" inputUpdate={setPassword} errorUpdate={errUpdate} required={true}/>
 
         <a className="btn btn-primary btn-block mt-10" onClick={submitStep2}>Continue</a>
-        {submitErr.step2 ? (<div role="alert" className="alert alert-error mt-4 rounded-lg bg-red500">
+        {submitErr.step2 ? (<div role="alert" className="alert alert-err mt-4 rounded-lg bg-red500">
           <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 shrink-0 stroke-current" fill="none" viewBox="0 0 24 24">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z" />
           </svg>
-          <span>Error! Email and password required.</span>
+          <span>err! Email and password required.</span>
         </div>) : ""}
 
-        <div role="alert" className="alert alert-error mt-2">
+        <div role="alert" className="alert alert-err mt-2">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             className="h-6 w-6 shrink-0 stroke-current"
@@ -188,7 +199,7 @@ const Form: React.FC<firstForm> = ({cType, cProjectName, cEmail, cPassword, cVer
               strokeWidth="2"
               d="M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z" />
           </svg>
-          <span>Error! Email already in use.</span>
+          <span>err! Email already in use.</span>
         </div>
 
       </div>
@@ -202,7 +213,7 @@ const Form: React.FC<firstForm> = ({cType, cProjectName, cEmail, cPassword, cVer
 
       <div className="flex flex-col mt-8 w-full">
         
-        <NameInput name="verification" value={verification} error={error.verification} label="Verfication code:" placeholder={"Verfication code"} inputUpdate={setVerification} errorUpdate={errorUpdate} required={true}/>
+        <NameInput name="verification" value={verification} error={err.verification} label="Verfication code:" placeholder={"Verfication code"} inputUpdate={setVerification} errorUpdate={errUpdate} required={true}/>
 
         <a className="btn btn-primary btn-block mt-10" onClick={submitStep3}>Continue</a>
 
@@ -210,7 +221,7 @@ const Form: React.FC<firstForm> = ({cType, cProjectName, cEmail, cPassword, cVer
           <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 shrink-0 stroke-current" fill="none" viewBox="0 0 24 24">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z" />
           </svg>
-          <span>Error! Email and password required.</span>
+          <span>err! Email and password required.</span>
         </div>) : ""}
 
       </div>

@@ -50,7 +50,7 @@ const Authentication = () => {
 
       <section className="px-8 py-4 mx-10 mt-8 bg-n800 border border-n300 flex flex-row gap-4 items-center rounded-lg">
         <div>
-          <Image src={githubLogo} width={35} height={35} alt="google logo" className="inline mr-4"></Image>
+          <Image src={githubLogo} width={50} height={50} alt="google logo" className="inline mr-4"></Image>
         </div>
         <div className="">
           <p className="py-0 font-medium text-n100">Github</p>
@@ -63,7 +63,7 @@ const Authentication = () => {
           <div tabIndex={0} role="button" className="btn bg-opacity-0 border-0 !text-3xl !font-black hover:bg-n500">
             <span className="mt-[-15px] text-n100">...</span>
           </div>
-          <ul tabIndex={0} className="text-n100 dropdown-content menu bg-n700 rounded-lg z-[1] w-52 p-2 shadow border border-n500">
+          <ul tabIndex={0} className="text-n100 dropdown-content menu bg-n800 rounded-lg z-[1] w-52 p-2 shadow border border-n500">
   
             <li><a className="text-red900 font-medium" onClick={()=>(null)}>Disconnect GitHub</a></li>
           </ul>
@@ -72,7 +72,7 @@ const Authentication = () => {
 
       <section className="px-8 py-4 mx-10 bg-white border border-n300 flex flex-row gap-4 items-center rounded-lg">
         <div>
-          <Image src={googleLogo} width={35} height={35} alt="google logo" className="inline mr-4"></Image>
+          <Image src={googleLogo} width={40} height={40} alt="google logo" className="inline mr-4"></Image>
         </div>
         <div className="">
           <p className="py-0 font-medium text-n800">Google</p>
@@ -82,10 +82,10 @@ const Authentication = () => {
           <p className="text-n600">Connected 31d ago</p>
         </div>
         <div className="dropdown dropdown-bottom dropdown-end">
-          <div tabIndex={0} role="button" className="btn bg-opacity-0 border-0 !text-3xl !font-black hover:bg-n500">
+          <div tabIndex={0} role="button" className="btn bg-opacity-0 border-0 !text-3xl !font-black hover:bg-n100">
             <span className="mt-[-15px] text-n800">...</span>
           </div>
-          <ul tabIndex={0} className="text-n100 dropdown-content menu bg-n700 rounded-lg z-[1] w-52 p-2 shadow border border-n500">
+          <ul tabIndex={0} className="text-n100 dropdown-content menu bg-white rounded-lg z-[1] w-52 p-2 shadow border border-n500">
   
             <li><a className="text-red900 font-medium" onClick={()=>(null)}>Disconnect Google</a></li>
           </ul>

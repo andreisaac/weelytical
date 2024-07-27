@@ -40,7 +40,7 @@ const EmailInput: React.FC<emailType> = ({ value, error, name, placeholder, labe
     <div className="form-control">
       {label ? <label className="label">{label}</label> : ""}
 
-        <input type="email" id="email" name={name} placeholder={placeholder || "email@email.com"} value={value} onChange={handleInput}  className="input" autoComplete="username"/>
+        <input type="email" id="email" name={name} placeholder={placeholder || "email@email.com"} value={value} onChange={handleInput} className="input" autoComplete="username"/>
         
         <div className={`text-red900 mt-2 transition duration-500 ease-in-out ${((value !=="") && (errorState) ? 'opacity-100' : 'opacity-0')} ${((value !=="") && (animation) ? 'opacity-100' : 'opacity-0')}`}>
             <Image src={errorSVG} width={24} height={24} alt="error" className="inline"></Image> Example: somename@provider.com

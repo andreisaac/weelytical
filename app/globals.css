@@ -126,7 +126,15 @@ h3, .h3 {
   @apply bg-orange500;
 }
 
+.btn-neutral {
+  @apply bg-n100;
+  @apply border-n300;
 
+}
+.btn-neutral:hover { 
+  @apply bg-n200;
+  @apply border-n300;
+}
 .btn-error {
   @apply text-n100;
   text-shadow: 1px 1px 3px black!important
@@ -163,4 +171,8 @@ h3, .h3 {
   .text-balance {
     text-wrap: balance;
   }
+}
+
+.dropdown > .btn {
+  @apply shadow-none
 }

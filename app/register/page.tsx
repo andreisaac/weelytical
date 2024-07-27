@@ -13,6 +13,7 @@ const SignIn = () => {
   const cookieStore = cookies();
   const type:string|undefined = cookieStore.get("type")?.value;
   const projectName:string|undefined = cookieStore.get("projectName")?.value;  
+  const displayName:string|undefined = cookieStore.get("displayName")?.value;  
   const email:string|undefined = cookieStore.get("email")?.value;  
   const verification:string|undefined = cookieStore.get("verification")?.value;  
   
@@ -20,7 +21,7 @@ const SignIn = () => {
     <main className="min-h-[88vh] relative mt-10 children">
       
 
-       <Form cType={type} cProjectName={projectName} cEmail={email} cVerification={verification}/>
+       <Form cType={type} cDisplayName={displayName} cProjectName={projectName} cEmail={email} cVerification={verification}/>
   
     </main>
   );

@@ -5,8 +5,9 @@ import {hashSync, genSaltSync} from "bcrypt-ts";
 export async function POST(req: Request) {
     const data = await req.json();
     
-    if(data.type && data.projectName) {
+    if(data.type && data.projectName && data.displayName) {
       cookies().set('type', data.type, {httpOnly: true, path: '/register'});
+      cookies().set('displayName', data.displayName, {httpOnly: true, path: '/register'});
       cookies().set('projectName', data.projectName, {httpOnly: true, path: '/register'});
     }
 
@@ -25,6 +26,7 @@ export async function POST(req: Request) {
     if(data.clean) { 
       cookies().set('type', "", {expires: new Date(Date.now()), httpOnly: true, path: '/register'});
       cookies().set('projectName',"", {expires: new Date(Date.now()), httpOnly: true, path: '/register'});
+      cookies().set('displayName',"", {expires: new Date(Date.now()), httpOnly: true, path: '/register'});
       cookies().set('email', "", {expires: new Date(Date.now()), httpOnly: true, path: '/register'});
       cookies().set('verification', "", {expires: new Date(Date.now()), httpOnly: true, path: '/register'});
     }
@@ -32,6 +34,7 @@ export async function POST(req: Request) {
     if(data.type && data.projectName) {
       cookies().set('type', "", {expires: new Date(Date.now()), httpOnly: true, path: '/register'});
       cookies().set('projectName', "", {expires: new Date(Date.now()), httpOnly: true, path: '/register'});
+      cookies().set('displayName', "", {expires: new Date(Date.now()), httpOnly: true, path: '/register'});
     }
 
     if(data.email) {
