@@ -31,10 +31,29 @@ export async function updateSession(request: NextRequest) {
   // supabase.auth.getUser(). A simple mistake could make it very hard to debug
   // issues with users being randomly logged out.
 
-  const {
-    data: { user },
-  } = await supabase.auth.getUser()
-
+  const { data: { user } } = await supabase.auth.getUser();
+  const { data, error } = await supabase.auth.getSession()
+  console.log(data);
+  
+  //signup user state redirect
+  if(request.nextUrl.pathname.startsWith('/register/signup') && user) {
+    const url = request.nextUrl.clone()
+    url.pathname = '/register/project'
+    return NextResponse.redirect(url)
+  } else if(request.nextUrl.pathname.startsWith('/register/signup') && user){
+    const url = request.nextUrl.clone()
+    url.pathname = '/register/confirm'
+    return NextResponse.redirect(url)
+  }else if(request.nextUrl.pathname.startsWith('/register/confirm') && user && user?.user_metadata.email_verified) {
+    const url = request.nextUrl.clone()
+    url.pathname = '/register/project'
+    return NextResponse.redirect(url)
+  } else if(request.nextUrl.pathname.startsWith('/register/project') && !user) {
+    const url = request.nextUrl.clone()
+    url.pathname = '/register/signup'
+    return NextResponse.redirect(url)
+  }
+  
   if (
     !user &&
     (

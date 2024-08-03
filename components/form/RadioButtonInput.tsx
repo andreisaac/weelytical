@@ -25,7 +25,7 @@ const RadioButtonInput: React.FC<emailType> = ({ value, text , name, label, inpu
     <div className={`form-control pb-3 pt-4 px-8 rounded-lg my-2 border border-n200 transition duration-500 ease-in-out ${checked? "bg-n200" : "bg-n100"}`}>
       <label className="label cursor-pointer">
         <span className="label-text"><span className="text-n700 h3">{label}</span><br/><span className="text-n600">{text}</span></span> 
-        <input type="radio" name={name} value={value} className="radio shadow-slate-100 checked:bg-orange900 transition duration-500 ease-in-out" checked={checked} onClick={handleInput}/>
+        <input type="radio" name={name} value={value} className="radio shadow-slate-100 checked:bg-orange900 transition duration-500 ease-in-out" checked={checked} readOnly onClick={handleInput}/>
       </label>
     </div>
   )

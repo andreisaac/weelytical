@@ -1,27 +1,30 @@
-import { cookies } from 'next/headers'
+import { cookies } from 'next/headers';
 import type { Metadata } from "next";
 import Form from "./form";
-import {AnimatePresence} from "framer-motion";
+import {createClient} from "@utils/supabase/server";
 
 
 export const metadata: Metadata = {
-  title: "Sign Up"
+  title: "Register Project"
 };
 
 
-const SignIn = () => {
+const SignIn = async() => {
   const cookieStore = cookies();
+  
   const type:string|undefined = cookieStore.get("type")?.value;
   const projectName:string|undefined = cookieStore.get("projectName")?.value;  
   const displayName:string|undefined = cookieStore.get("displayName")?.value;  
-  const email:string|undefined = cookieStore.get("email")?.value;  
-  const verification:string|undefined = cookieStore.get("verification")?.value;  
+  const domain:string|undefined = cookieStore.get("domain")?.value;  
+
+  const supabase = createClient();
+
+  const { data: { user } } = await supabase.auth.getUser()
   
   return (
     <main className="min-h-[88vh] relative mt-10 children">
       
-
-       <Form cType={type} cDisplayName={displayName} cProjectName={projectName} cEmail={email} cVerification={verification}/>
+       <Form cType={type} cProjectName={projectName} cDisplayName={displayName} cDomain={domain} cUser={user}/>
   
     </main>
   );

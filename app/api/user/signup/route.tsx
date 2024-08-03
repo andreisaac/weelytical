@@ -1,27 +1,38 @@
 'use server'
-import {cookies} from "next/headers";
-import {supabase} from "@utils/supabase/server";
+import {createClient} from "@utils/supabase/server";
+const { PrismaClient } = require('@prisma/client');
+
+const prisma = new PrismaClient();
 
 export async function POST(req: Request) {
-    const d = await req.json();
-    const {email, password, type, projectName, displayName} = d;
-    
-    if(email && password && type && projectName && displayName) {
-      const { data, error } = await supabase.auth.signUp(
-        {
-        email,
-        password,
-        options: {
-          data: {displayName, type, projectName}
+  const supabase = createClient();
+  const d = await req.json();
+  const {email, password, displayName} = d;
+
+  
+  if(email && password && displayName) {
+
+    const { data, error } = await supabase.auth.signUp(
+      {
+      email,
+      password, 
+      options:{
+        data:{
+          display_name: displayName
         }
       }
-    );
-      if (error) console.log(error)      
-      else {
-        console.log(data?.user);
       }
+    );
+  
+    if (error) console.log(error) 
+    else {
+      console.log(data);
+      try{
+      } catch (e) {
+        return Response.json({e})
+      }
+      
     }
-
-    return Response.json({msg: "test this"})
+    return Response.json({success: "User signup successfull."})
   }
-
+};
