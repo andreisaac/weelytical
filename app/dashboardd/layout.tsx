@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   };
 
 const layout = async({
-    children,
+    children, 
   }: {
     children: React.ReactNode
   }) => {
@@ -28,6 +28,7 @@ const layout = async({
 
     return (
         <main className="min-h-[88vh] mt-8 children rounded-b-xl shadow-2xl children">
+          {projects[0].project_id}
           {projects[0].project_id}
           <Dashbar/>
           {children}
