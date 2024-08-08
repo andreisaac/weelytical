@@ -7,6 +7,13 @@ const config: Config = {
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+    container: {
+      center: true,
+      padding: "2rem",
+      screens: {
+        "2xl": "1400px",
+      },
+    },
     daisyui: {
       themes: ["light", "dark", "bumblebee"],
     },
@@ -54,8 +61,22 @@ const config: Config = {
         pinkPurple: "linear-gradient(to right top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1)",
         greenYellow: "linear-gradient(159deg, rgba(44,101,57,1) 0%, rgba(130,185,36,1) 50%, rgba(239,255,144,1) 100%)",
       },
+      keyframes: {
+        "accordion-down": {
+          from: { height: "0" },
+          to: { height: "var(--radix-accordion-content-height)" },
+        },
+        "accordion-up": {
+          from: { height: "var(--radix-accordion-content-height)" },
+          to: { height: "0" },
+        },
+      },
+      animation: {
+        "accordion-down": "accordion-down 0.2s ease-out",
+        "accordion-up": "accordion-up 0.2s ease-out",
+      }
     },
   },
-  plugins: [require('daisyui')],
+  plugins: [require('daisyui'),require("tailwindcss-animate")],
 };
 export default config;
