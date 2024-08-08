@@ -13,6 +13,7 @@ export const metadata: Metadata = {
 
 
 const Princing = () => {
+  
   return (
     <main className="max-lg:mt-8 min-h-[88vh] children">
       <h1 className="text-center max-lg:text-5xl">Our Pricing Plans</h1>
@@ -32,7 +33,7 @@ const Princing = () => {
             <li className="ml-10">Aditional Events</li>
           </ul>
           <div className="p-2">
-            <Link href="register" className="mx-auto btn border border-n300 h3 bg-white">Try Free!</Link>
+            <Link href="/register/signup" className="mx-auto btn border border-n300 h3 bg-white">Try Free!</Link>
           </div>
         </section>
 
@@ -51,7 +52,7 @@ const Princing = () => {
             <li><Image src={check} width={24} alt="check" className="h-auto inline mr-4"/>Flags</li>
           </ul>
           <div className="p-2">
-            <Link href="register" className="mx-auto btn border border-n300 h3 bg-white">Upgrade Now!</Link>
+            <Link href="/register/signup" className="mx-auto btn border border-n300 h3 bg-white">Upgrade Now!</Link>
           </div>
         </section>
 

@@ -25,7 +25,6 @@ export async function POST(req: Request) {
         return Response.json({error: true, msg: "Project creation error."})
       }
     } catch (error) {
-      console.log(error);
       return Response.json({error: true, msg: "Project creation error."})
     }
 

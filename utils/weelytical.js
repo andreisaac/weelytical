@@ -29,7 +29,6 @@ const TrackingScript = () => {
           browserName,
         };
 
-        console.log(trackingData);
 
         await fetch('http://localhost:3080/track', {
           method: 'POST',
@@ -38,10 +37,8 @@ const TrackingScript = () => {
           },
           body: JSON.stringify(trackingData),
         });
-
-        console.log('Page view tracked successfully');
       } catch (error) {
-        console.error('Error tracking page view:', error);
+        throw error
       }
     };
 

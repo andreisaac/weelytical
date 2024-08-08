@@ -5,8 +5,6 @@ const TrackingScript = ({ projectId }) => {
   useEffect(() => {
     const trackingUrl = 'https://your-api-domain.com/api/track';
     
-     console.log(window.navigator.geolocation);
-     console.log("window.location");
     const trackPageView = () => {
       fetch(trackingUrl, {
         method: 'POST',

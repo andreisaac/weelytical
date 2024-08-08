@@ -32,9 +32,7 @@ export async function updateSession(request: NextRequest) {
   // issues with users being randomly logged out.
 
   const { data: { user } } = await supabase.auth.getUser();
-  const { data, error } = await supabase.auth.getSession()
-  console.log(data);
-  
+  const { data, error } = await supabase.auth.getSession();
   //signup user state redirect
   if(request.nextUrl.pathname.startsWith('/register/signup') && user) {
     const url = request.nextUrl.clone()

@@ -58,7 +58,7 @@ Whether you're looking to optimize your business processes, understand customer 
         <Image src={mockup} width={1038} height={660} loading="lazy" alt="weelytical" className="!select-none absolute right-0 z-0"></Image>
         
         <div className="absolute top-[210px] right-[60px]">
-          <BarChart chartData={data} classN="p-6 w-[500px] bg-orange900 rounded-3xl shadow-md border border-n300"/>
+          <BarChart chartData={data} classN="p-6 w-[500px] bg-orange500 rounded-3xl shadow-md border border-n300"/>
         </div>
 
         <div className="max-w-[200px] text-center absolute right-[160px] top-[525px] z-10">
@@ -77,19 +77,19 @@ Whether you're looking to optimize your business processes, understand customer 
       </section>
 
       <section className="flex flex-row gap-12 mt-28">
-    	  <div className="px-4 pb-8 shadow-md rounded-3xl flex-1 text-center bg-orange900 border border-n300">
+    	  <div className="px-4 pb-8 shadow-md rounded-3xl flex-1 text-center bg-orange500 border border-n300">
           <Image src={p1} width={200} loading="lazy" alt="thumb" className="mt-[-80px] rounded-[100%] bg-n300 border-[20px] border-white mx-auto"></Image>
-          <h2 className="text-n800">Michael Thompson</h2>
+          <h2 className="text-n800 mt-4">Michael Thompson</h2>
           <p className="text-lg text-n700">"This analytics platform has revolutionized the way we approach our data strategy. The insights are clear, actionable, and have significantly boosted our campaign performance."</p>
         </div>
-    	  <div className="px-4 pb-8 shadow-md rounded-3xl flex-1 text-center bg-orange900 border border-n300">
+    	  <div className="px-4 pb-8 shadow-md rounded-3xl flex-1 text-center bg-orange500 border border-n300">
           <Image src={p2} width={200} loading="lazy" alt="thumb" className="mt-[-80px] rounded-[100%] bg-n300 border-[20px] border-white mx-auto"></Image>
-          <h2 className="text-n800">Sarah Patel</h2>
+          <h2 className="text-n800 mt-4">Sarah Patel</h2>
           <p className="text-lg text-n700">"The depth of analysis and real-time data capabilities have streamlined our workflow. It's an indispensable tool for our data-driven initiatives."</p>
         </div>
-    	  <div className="px-4 pb-8 shadow-md rounded-3xl flex-1 text-center bg-orange900 border border-n300">
+    	  <div className="px-4 pb-8 shadow-md rounded-3xl flex-1 text-center bg-orange500 border border-n300">
           <Image src={p3} width={200} loading="lazy" alt="thumb" className="mt-[-80px] rounded-[100%] bg-n300 border-[20px] border-white mx-auto"></Image>
-          <h2 className="text-n800">Tom Richards</h2>
+          <h2 className="text-n800 mt-4">Tom Richards</h2>
           <p className="text-lg text-n700">"The user-friendly interface and powerful analytics tools have made decision-making faster and more accurate. It's a game-changer for our operations."</p>
         </div>
       </section>

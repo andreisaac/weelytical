@@ -5,17 +5,12 @@ import {createClient} from "@utils/supabase/server";
 
 
 export const metadata: Metadata = {
-    title: "Settings",
+    title: "Dashboard",
     description: "Real-time analytics, and user-friendly dashboards that empower you to make data-driven decisions with confidence.",
   };
 
-const layout = async({
-    children, 
-  }: {
-    children: React.ReactNode
-  }) => {
+const layout = async({children}:{children: React.ReactNode}) => {
     const supabase = createClient();
-
     const { data: { user } } = await supabase.auth.getUser();
 
     const projectsReq = await fetch(process.env.NEXT_PUBLIC_LOCAL_API_URL+'api/getProjects',{
@@ -28,12 +23,9 @@ const layout = async({
 
     return (
         <main className="min-h-[88vh] mt-8 children rounded-b-xl shadow-2xl children">
-          {projects[0].project_id}
-          {projects[0].project_id}
-          <Dashbar/>
+          <Dashbar projects={projects}/>
           {children}
         </main>
-        
     )
   }
 
