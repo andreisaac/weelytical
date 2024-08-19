@@ -1,10 +1,8 @@
 "use client"
 import {useState, useEffect} from "react";
-import uid from "@utils/uid"
+import uid from "@utils/uid";
 import Image from "next/image";
-import Link from "next/link";
-import project from "@images/project.svg"
-import githubLogo from "@images/githubLogo.svg"
+import project from "@images/project.svg";
 
 interface members {
   id: string,
@@ -44,6 +42,13 @@ const Authentication = () => {
   const [selection, setSelection] = useState<string[]>([]);
   const [selectedTeam, setSelectedTeam] = useState("");
   const [teams, setTeams] = useState(t);
+
+  useEffect(()=>{
+    const asyncFunc = async()=>{
+      
+    };
+    asyncFunc();
+  },[]);
 
   const select = (id:string, tid:string) => {
     if(selectedTeam === tid) {

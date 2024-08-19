@@ -1,5 +1,5 @@
 import React from "react";
-import Dashbar from "./DashBar"
+import Dashbar from "./Dashbar";
 import type { Metadata } from "next";
 import {createClient} from "@utils/supabase/server";
 
@@ -16,13 +16,13 @@ const layout = async({children}:{children: React.ReactNode}) => {
     const projectsReq = await fetch(process.env.NEXT_PUBLIC_LOCAL_API_URL+'api/getProjects',{
       method: "POST",
       headers: {'Content-Type': 'application/json'}, 
-      body: JSON.stringify({userId: user?.id})
+      body: JSON.stringify({userId: user?.id, projectId: false})
     });
 
     const {projects} = await projectsReq.json();
 
     return (
-        <main className="min-h-[88vh] mt-8 children rounded-b-xl shadow-2xl children">
+        <main className="max-xl:mx-2 min-h-[88vh] mt-8 children rounded-b-xl shadow-2xl children">
           <Dashbar projects={projects}/>
           {children}
         </main>

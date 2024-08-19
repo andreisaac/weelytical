@@ -1,9 +1,13 @@
 "use client"
 import {useState} from "react";
 import { useRouter } from 'next/navigation'
+import Image from 'next/image'
 import EmailInput from "@components/form/EmailInput";
 import PasswordInput from "@components/form/PasswordInput";
 import {createClient} from "@utils/supabase/client";
+import googleLogo from "@images/googleLogo.svg";
+import githubLogo from "@images/githubLogo.svg";
+
 const Form = () => {
   const router = useRouter();
   const [email, setEmail] = useState("");
@@ -37,6 +41,7 @@ const errUpdate = (n:string, v:string|boolean) => {
         });
         
         if(data.user) {
+          location.reload();
           router.push("/dashboard");
         } else {
           setErr({...err, login: error?.message!})
@@ -49,8 +54,23 @@ const errUpdate = (n:string, v:string|boolean) => {
   const isPasswordValid = () => {
     return !Object.values(err.password).every(Boolean);
   };
+
+  const supabase = createClient();
+  const providerAuth = async(provider:any) => {
+    const signUp = await supabase.auth.signInWithOAuth({
+      provider: provider,
+      options: {
+        redirectTo: process.env.NEXT_PUBLIC_LOCAL_API_URL+"dashboard"
+      }
+    });
+  };
+
   return (
       <div className="flex flex-col mt-8 w-full">
+        <div className="flex flex-col mt-8 gap-4">
+          <a onClick={()=>{providerAuth("google")}} className="p-3 block text-center h3 text-n700 rounded-lg bg-n100 border border-n200 cursor-pointer hover:scale-105 active:scale-100 transition ease-out hover:ease-in"><Image src={googleLogo} width={30} height={30} alt="google logo" className="inline mr-4"></Image> Sign In with Google</a>
+          <a onClick={()=>{providerAuth("github")}} className="p-3 block text-center h3 text-n100 rounded-lg bg-n800 border border-n200 cursor-pointer hover:scale-105 active:scale-100 transition ease-out hover:ease-in"><Image src={githubLogo} width={40} height={40} alt="github logo" className="inline mr-4"></Image> Sign In with GitHub</a>
+        </div>
         <EmailInput name="email" value={email} error={err} label="Email:" inputUpdate={setEmail} errorUpdate={errUpdate} required={true}/>
         <PasswordInput name="password" value={password} error={err} label="Password:" inputUpdate={setPassword} errorUpdate={errUpdate}/>
         <div className="flex flex-row mt-10">

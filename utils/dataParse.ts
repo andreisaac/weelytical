@@ -1,23 +1,27 @@
     
 import {pageView, chart} from "@utils/types";
 
-export const parseToChartViews = (data:pageView[], period:number, label:string) => {
-  const formatMonth = (month:number) => {
-if((month+1)< 10) {
-  return "0"+(month+1);
-} else {
-  return (month+1);
-}
+const formatDate = (n:number) => {
+  if(n< 10) {
+    return "0"+n;
+  } else {
+    return n;
+  }
 }
 
+export const parseToChartViews = (data:pageView[], period:number, label:string) => {
+  
+if(period > 1){
+//This functions returns the array with the days or date to filter
 const getDateLabels = function(date?: boolean) {
-  const d = new Date();
   const labelArr = [];
   let workDate = new Date();
+  //insert the first elements to the array
+  //then the for loopt will insert the remaining values
   if(date){
     labelArr.unshift(workDate.toString());
   } else {
-    labelArr.unshift((workDate.getDate())+"/"+formatMonth(workDate.getMonth()));
+    labelArr.unshift((workDate.getDate())+"/"+formatDate(workDate.getMonth()+1));
   }
   for(let i = 0; i < (period-1); i++){
     if((workDate.getDate()-1) < 1){
@@ -52,8 +56,8 @@ const getDateLabels = function(date?: boolean) {
           if(date){
             labelArr.unshift(workDate.toString());
           } else {
-            labelArr.unshift("31/"+formatMonth(workDate.getMonth()));
-            console.log("31/"+formatMonth(workDate.getMonth()))
+            labelArr.unshift("31/"+formatDate(workDate.getMonth()+1));
+            console.log("31/"+formatDate(workDate.getMonth()+1))
           }
       } else {
         workDate.setMonth((workDate.getMonth()-1));
@@ -61,7 +65,7 @@ const getDateLabels = function(date?: boolean) {
           if(date){
             labelArr.unshift(workDate.toString());
           } else {
-            labelArr.unshift("30/"+ formatMonth(workDate.getMonth()));
+            labelArr.unshift("30/"+ formatDate(workDate.getMonth()+1));
           }
       }
     } else {
@@ -69,7 +73,7 @@ const getDateLabels = function(date?: boolean) {
       if(date){
             labelArr.unshift(workDate.toString());
           } else {
-             labelArr.unshift((workDate.getDate())+"/"+formatMonth(workDate.getMonth()));
+             labelArr.unshift(formatDate(workDate.getDate())+"/"+formatDate(workDate.getMonth()+1));
           }
     }
   }
@@ -79,56 +83,48 @@ const getDateLabels = function(date?: boolean) {
 //get the array of dd/mm strings
 const labels = getDateLabels();
 
+//function to retrieve the array with views per date to use in the charte obj
+const filterData = (visitors:boolean) => {
 
-//initiate array by period
-const viewsLabel:number[] = [];
-for(let i = 0; i < period; i++){
-viewsLabel.push(0);
-}
-//initiate array by period
-let visitorsLabel: number[][] = [];
-for(let i = 0; i < period; i++){
-visitorsLabel.push([]);
-}
+  const arr:pageView[][] = [];
+  const finalArr:number[] = [];
+  const uniqueVisitor = new Set();
 
-
-//get the viewsLabel dates to use in the filter
-const dateLabels = getDateLabels(true);
-//Insert pageView by day in the viewsLabel
-data.filter((item, index)=>{
-const itemDate = new Date(item.view_time);
-const itemDay = itemDate.getDate();
-
-  dateLabels.map((it, id)=>{
-    const idDate = new Date(it);
-    const itDay = idDate.getDate();
-    if(itDay == itemDay) {
-    
-      console.log(itemDay);
-    if(label === "Page Views"){
-      viewsLabel[id]++;
-    } else {
-      if(visitorsLabel[id].filter(visitor_id=>visitor_id===item.visitor_id).length>0) {
-        
+  data.filter((item)=>{
+    const itemDate = new Date(item.view_time);
+    const itemDay = itemDate.getDate();
+    //get the viewsLabel dates to use in the filter
+    getDateLabels(true).map((it, index)=>{
+      const idDate = new Date(it);
+      const itDay = idDate.getDate();
+      //If the array index doesnt exist, add and empty array
+      !arr[index] ?  arr[index] = [] : null;
+      //If needed to filter by visitor use the unique visitor Set 
+      if(visitors) {
+        if(!uniqueVisitor.has(item.visitor_id)){
+          if(itemDay === itDay) {
+            arr[index].push(item);
+            uniqueVisitor.add(item.visitor_id)
+          }
+        }
       } else {
-        visitorsLabel[id].unshift(item.visitor_id);
-      }
-    }  
-  }
-    
+        if(itemDay === itDay) {
+          arr[index].push(item);
+        }
+      } 
+    });
   });
 
+  arr.map((item, index)=>{
+    finalArr[index] = item.length;
+  });
 
-
-});
-
-const visitorsLabelArr = () =>{
-let labelss: number[] = [];
-visitorsLabel.map((item, index) =>{
-  labelss.push(item.length)
-})
-return labelss
+  console.log(visitors);
+  
+  return finalArr;
 }
+
+//Insert pageView by day in the viewsLabel
 
 
 const charte:chart = {
@@ -136,7 +132,7 @@ const charte:chart = {
   labels,
   datasets: [
       {
-      data: label === "Page Views" ? viewsLabel : visitorsLabelArr(),
+      data: label === "Page Views" ? filterData(false) : filterData(true),
       // you can set indiviual colors for each bar
       backgroundColor: "#F0DAC5",
       borderColor: "#FFAA5A",
@@ -148,7 +144,98 @@ const charte:chart = {
       }
   ]
 }
+
 return charte;
+
+}else{
+
+  const getLastDayLabels = () => {
+    let workDate = new Date();
+    const labelArr = []
+    labelArr.unshift(formatDate(workDate.getHours())+":00");
+    for(let i = 0; i < 24; i++){
+      workDate.setHours(workDate.getHours()-1)
+      labelArr.unshift(formatDate(workDate.getHours())+":00");
+    }
+    return labelArr;
+  };
+  
+  const getLastDayDates = () => {
+    let workDate = new Date();
+    const labelArr = []
+    labelArr.unshift(workDate.toString());
+    for(let i = 0; i < 24; i++){
+      workDate.setHours(workDate.getHours()-1)
+      labelArr.unshift(workDate.toString());
+    }
+    return labelArr;
+  }
+  
+  
+  const filterData = (visitors:boolean) => {
+    const arr:pageView[][] = [];
+    const finalArr:number[] = [];
+    const uniqueVisitor = new Set();
+    const day = 1000*60*60*23;
+    data.map((item)=>{
+      const itemDate = new Date(item.view_time);
+      const itemHour = itemDate.getHours();
+      const itemTime = itemDate.getTime();
+      getLastDayDates().map((it, index)=>{
+        const itDate = new Date(it);
+        const itHour = itDate.getHours();
+        const itTime= itDate.getTime();
+        const diffTime = Math.abs(itemTime-itTime);
+        //If the array index doesnt exist, add and empty array
+        !arr[index] ?  arr[index] = [] : null;
+        //If needed to filter by visitor use the unique visitor Set 
+        if(visitors){
+          if(!uniqueVisitor.has(item.visitor_id)) {
+            if((itemHour == itHour) && (diffTime < day)){
+              arr[index].push(item);
+              uniqueVisitor.add(item.visitor_id)
+            }
+          }
+        } else {
+          //if visitors false add the pageView 
+          if((itemHour == itHour) && (diffTime < day)){
+              arr[index].push(item);
+          }
+        }
+      })
+    })
+    arr.map((item, index)=>{
+      finalArr[index] = item.length;
+    });
+  
+    console.log(visitors);
+    
+    return finalArr;
+  };
+  
+  
+  
+  
+  const charte:chart = {
+    label,
+    labels: getLastDayLabels(),
+    datasets: [
+        {
+        data: label === "Page Views" ? filterData(false) : filterData(true),
+        // you can set indiviual colors for each bar
+        backgroundColor: "#F0DAC5",
+        borderColor: "#FFAA5A",
+        borderWidth: 2,
+        fill: true,
+        pointBackgroundColor: "rgba(84, 55, 99, .7)",
+        pointBorderWidth: 0,
+        pointRadius: 0,
+        }
+    ]
+  }
+  return charte;
+}
+
 
 };
 
@@ -184,4 +271,155 @@ export const onlineUsers = (arr:pageView[])=>{
     }
   })
   return uniqueVisitors.size;
+}
+
+
+export const pageCount = (data:pageView[]) => {
+  const visitCounts:{[key:string]: number} = {};
+
+  data.forEach(item => {
+      if (visitCounts[item.page]) {
+          visitCounts[item.page]++;
+      } else {
+          visitCounts[item.page] = 1;
+      }
+  });
+
+  const result = Object.keys(visitCounts).map(page => ({
+      label: page,
+      total: visitCounts[page]
+  }));
+
+  // Sort by total count in descending order
+  result.sort((a, b) => b.total - a.total);
+
+  return result;
+};
+
+export const referrerCount = (data:pageView[]) => {
+  const referrerCounts:{[key:string]: number} = {};
+
+  data.forEach(item => {
+      if (referrerCounts[item.referrer]) {
+          referrerCounts[item.referrer]++;
+      } else {
+          referrerCounts[item.referrer] = 1;
+      }
+  });
+
+  const result = Object.keys(referrerCounts).map(referrer => ({
+      label: referrer,
+      total: referrerCounts[referrer],
+      referrer: true
+  }));
+
+  // Sort by total count in descending order
+  result.sort((a, b) => b.total - a.total);
+
+  return result;
+};
+
+import cData from "@utils/countries/countryData.json";
+
+export const countryCount = (data:pageView[]) => {
+  const countriesCounts:{[key:string ]: number} = {};
+  const visitors = new Set();
+
+  data.forEach(item => {
+    if(!visitors.has(item.visitor_id)) {
+      visitors.add(item.visitor_id)
+      if (countriesCounts[item.countries?.name||"country"]) {
+        countriesCounts[item.countries?.name||"country"]++;
+      } else {
+          countriesCounts[item.countries?.name||"country"] = 1;
+      }
+    }
+      
+  });
+
+  const result = Object.keys(countriesCounts).map(countries => ({
+      label: countries,
+      total: countriesCounts[countries]
+  }));
+
+  // Sort by total count in descending order
+  result.sort((a, b) => b.total - a.total);
+
+  let finalArr:{label: string, flag: string, total: number}[] = [];
+  result.map((item,index)=>{
+    cData.map((cItem, cIndex)=>{
+      if(item.label === cItem.ISO2) {
+        finalArr.unshift({label: cItem.name, total:item.total, flag: cItem.SVG})    
+      }
+    })
+  })
+
+  return finalArr;
+};
+
+export const systemCount = (data:pageView[]) => {
+  const systemCounts:{[key:string ]: number} = {};
+  const visitors = new Set();
+
+  data.forEach(item => {
+    if(!visitors.has(item.visitor_id)) {
+      visitors.add(item.visitor_id)
+      if (systemCounts[item.operating_systems?.name||"Windows"]) {
+        systemCounts[item.operating_systems?.name||"Windows"]++;
+      } else {
+          systemCounts[item.operating_systems?.name||"Windows"] = 1;
+      }
+    }
+      
+  });
+
+  const result = Object.keys(systemCounts).map(system => ({
+      label: system,
+      total: systemCounts[system]
+  }));
+
+  // Sort by total count in descending order
+  result.sort((a, b) => b.total - a.total);
+
+  return result;
+};
+
+export const browserCount = (data:pageView[]) => {
+  const browserCounts:{[key:string ]: number} = {};
+  const visitors = new Set();
+
+  data.forEach(item => {
+    if(!visitors.has(item.visitor_id)) {
+      visitors.add(item.visitor_id)
+      if (browserCounts[item.browsers?.name||"Windows"]) {
+        browserCounts[item.browsers?.name||"Windows"]++;
+      } else {
+          browserCounts[item.browsers?.name||"Windows"] = 1;
+      }
+    }
+      
+  });
+
+  const result = Object.keys(browserCounts).map(browser => ({
+      label: browser,
+      total: browserCounts[browser]
+  }));
+
+  // Sort by total count in descending order
+  result.sort((a, b) => b.total - a.total);
+
+  return result;
+};
+
+export const getFavicon = (referrer:string) => {
+    try{
+
+      let baseDomain = new URL(referrer).origin;
+      let faviconUrl = `${baseDomain}/favicon.ico`;
+  
+      return faviconUrl;
+    } catch (error) {
+      return ""
+    } 
+
 }

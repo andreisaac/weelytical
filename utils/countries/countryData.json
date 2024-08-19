@@ -1,0 +1,4832 @@
+[
+  {
+    "id": "1",
+    "name": "Afghanistan",
+    "ISO2": "AF",
+    "ISO3": "AFG",
+    "SVG": "/imgs/countries/AF-svg.svg",
+    "PNG32": "/imgs/countries/AF-32.png",
+    "PNG128": "/imgs/countries/AF-128.png",
+    "names": [
+      "Arabic: أفغانستان",
+      "English: Afghanistan",
+      "Spanish: Afganistán",
+      "French: Afghanistan",
+      "Italian: Afghanistan",
+      "Chinese: 阿富汗",
+      "Russian: Афганистан"
+    ],
+    "regions": [
+      "Asia and the Pacific"
+    ]
+  },
+  {
+    "id": "2",
+    "name": "Åland Islands",
+    "ISO2": "AX",
+    "ISO3": "ALA",
+    "SVG": "/imgs/countries/AX-svg.svg",
+    "PNG32": "/imgs/countries/AX-32.png",
+    "PNG128": "/imgs/countries/AX-128.png",
+    "names": [],
+    "regions": [
+      "Europe"
+    ]
+  },
+  {
+    "id": "3",
+    "name": "Albania",
+    "ISO2": "AL",
+    "ISO3": "ALB",
+    "SVG": "/imgs/countries/AL-svg.svg",
+    "PNG32": "/imgs/countries/AL-32.png",
+    "PNG128": "/imgs/countries/AL-128.png",
+    "names": [
+      "Arabic: ألبانيا",
+      "English: Albania",
+      "Spanish: Albania",
+      "French: Albanie",
+      "Italian: Albania",
+      "Chinese: 阿尔巴尼亚",
+      "Russian: Албания"
+    ],
+    "regions": [
+      "Europe"
+    ]
+  },
+  {
+    "id": "4",
+    "name": "Algeria",
+    "ISO2": "DZ",
+    "ISO3": "DZA",
+    "SVG": "/imgs/countries/DZ-svg.svg",
+    "PNG32": "/imgs/countries/DZ-32.png",
+    "PNG128": "/imgs/countries/DZ-128.png",
+    "names": [
+      "Arabic: الجزائر",
+      "English: Algeria",
+      "Spanish: Argelia",
+      "French: Algérie",
+      "Italian: Algeria",
+      "Chinese: 阿尔及利亚",
+      "Russian: Алжир"
+    ],
+    "regions": [
+      "Africa"
+    ]
+  },
+  {
+    "id": "5",
+    "name": "American Samoa",
+    "ISO2": "AS",
+    "ISO3": "ASM",
+    "SVG": "/imgs/countries/AS-svg.svg",
+    "PNG32": "/imgs/countries/AS-32.png",
+    "PNG128": "/imgs/countries/AS-128.png",
+    "names": [],
+    "regions": [
+      "Asia and the Pacific"
+    ]
+  },
+  {
+    "id": "6",
+    "name": "Andorra",
+    "ISO2": "AD",
+    "ISO3": "AND",
+    "SVG": "/imgs/countries/AD-svg.svg",
+    "PNG32": "/imgs/countries/AD-32.png",
+    "PNG128": "/imgs/countries/AD-128.png",
+    "names": [
+      "Arabic: أندورا",
+      "English: Andorra",
+      "Spanish: Andorra",
+      "French: Andorre",
+      "Italian: Andorra",
+      "Chinese: 安道尔",
+      "Russian: Андорра"
+    ],
+    "regions": [
+      "Europe"
+    ]
+  },
+  {
+    "id": "7",
+    "name": "Angola",
+    "ISO2": "AO",
+    "ISO3": "AGO",
+    "SVG": "/imgs/countries/AO-svg.svg",
+    "PNG32": "/imgs/countries/AO-32.png",
+    "PNG128": "/imgs/countries/AO-128.png",
+    "names": [
+      "Arabic: أنغولا",
+      "English: Angola",
+      "Spanish: Angola",
+      "French: Angola",
+      "Italian: Angola",
+      "Chinese: 安哥拉",
+      "Russian: Ангола"
+    ],
+    "regions": [
+      "Africa"
+    ]
+  },
+  {
+    "id": "8",
+    "name": "Anguilla",
+    "ISO2": "AI",
+    "ISO3": "AIA",
+    "SVG": "/imgs/countries/AI-svg.svg",
+    "PNG32": "/imgs/countries/AI-32.png",
+    "PNG128": "/imgs/countries/AI-128.png",
+    "names": [],
+    "regions": [
+      "Latin America and the Caribbean"
+    ]
+  },
+  {
+    "id": "9",
+    "name": "Antarctica",
+    "ISO2": "AQ",
+    "ISO3": "ATA",
+    "SVG": "/imgs/countries/AQ-svg.svg",
+    "PNG32": "/imgs/countries/AQ-32.png",
+    "PNG128": "/imgs/countries/AQ-128.png",
+    "names": [],
+    "regions": []
+  },
+  {
+    "id": "10",
+    "name": "Antigua and Barbuda",
+    "ISO2": "AG",
+    "ISO3": "ATG",
+    "SVG": "/imgs/countries/AG-svg.svg",
+    "PNG32": "/imgs/countries/AG-32.png",
+    "PNG128": "/imgs/countries/AG-128.png",
+    "names": [
+      "Arabic: أنتيغوا وبربودا",
+      "English: Antigua and Barbuda",
+      "Spanish: Antigua y Barbuda",
+      "French: Antigua-et-Barbuda",
+      "Italian: Antigua e Barbuda",
+      "Chinese: 安提瓜和巴布达",
+      "Russian: Антигуа и Барбуда"
+    ],
+    "regions": [
+      "Latin America and the Caribbean"
+    ]
+  },
+  {
+    "id": "11",
+    "name": "Argentina",
+    "ISO2": "AR",
+    "ISO3": "ARG",
+    "SVG": "/imgs/countries/AR-svg.svg",
+    "PNG32": "/imgs/countries/AR-32.png",
+    "PNG128": "/imgs/countries/AR-128.png",
+    "names": [
+      "Arabic: الأرجنتين",
+      "English: Argentina",
+      "Spanish: Argentina",
+      "French: Argentine",
+      "Italian: Argentina",
+      "Chinese: 阿根廷",
+      "Russian: Аргентина"
+    ],
+    "regions": [
+      "Latin America and the Caribbean"
+    ]
+  },
+  {
+    "id": "12",
+    "name": "Armenia",
+    "ISO2": "AM",
+    "ISO3": "ARM",
+    "SVG": "/imgs/countries/AM-svg.svg",
+    "PNG32": "/imgs/countries/AM-32.png",
+    "PNG128": "/imgs/countries/AM-128.png",
+    "names": [
+      "Arabic: أرمينيا",
+      "English: Armenia",
+      "Spanish: Armenia",
+      "French: Arménie",
+      "Italian: Armenia",
+      "Chinese: 亚美尼亚",
+      "Russian: Армения"
+    ],
+    "regions": [
+      "Europe"
+    ]
+  },
+  {
+    "id": "13",
+    "name": "Aruba",
+    "ISO2": "AW",
+    "ISO3": "ABW",
+    "SVG": "/imgs/countries/AW-svg.svg",
+    "PNG32": "/imgs/countries/AW-32.png",
+    "PNG128": "/imgs/countries/AW-128.png",
+    "names": [],
+    "regions": [
+      "Latin America and the Caribbean"
+    ]
+  },
+  {
+    "id": "14",
+    "name": "Australia",
+    "ISO2": "AU",
+    "ISO3": "AUS",
+    "SVG": "/imgs/countries/AU-svg.svg",
+    "PNG32": "/imgs/countries/AU-32.png",
+    "PNG128": "/imgs/countries/AU-128.png",
+    "names": [
+      "Arabic: أستراليا",
+      "English: Australia",
+      "Spanish: Australia",
+      "French: Australie",
+      "Italian: Australia",
+      "Chinese: 澳大利亚",
+      "Russian: Австралия"
+    ],
+    "regions": [
+      "Asia and the Pacific"
+    ]
+  },
+  {
+    "id": "15",
+    "name": "Austria",
+    "ISO2": "AT",
+    "ISO3": "AUT",
+    "SVG": "/imgs/countries/AT-svg.svg",
+    "PNG32": "/imgs/countries/AT-32.png",
+    "PNG128": "/imgs/countries/AT-128.png",
+    "names": [
+      "Arabic: النمسا",
+      "English: Austria",
+      "Spanish: Austria",
+      "French: Autriche",
+      "Italian: Austria",
+      "Chinese: 奥地利",
+      "Russian: Австрия"
+    ],
+    "regions": [
+      "Europe"
+    ]
+  },
+  {
+    "id": "16",
+    "name": "Azerbaijan",
+    "ISO2": "AZ",
+    "ISO3": "AZE",
+    "SVG": "/imgs/countries/AZ-svg.svg",
+    "PNG32": "/imgs/countries/AZ-32.png",
+    "PNG128": "/imgs/countries/AZ-128.png",
+    "names": [
+      "Arabic: أذربيجان",
+      "English: Azerbaijan",
+      "Spanish: Azerbaiyán",
+      "French: Azerbaïdjan",
+      "Italian: Azerbaigian",
+      "Chinese: 阿塞拜疆",
+      "Russian: Азербайджан"
+    ],
+    "regions": [
+      "Europe"
+    ]
+  },
+  {
+    "id": "17",
+    "name": "Bahamas",
+    "ISO2": "BS",
+    "ISO3": "BHS",
+    "SVG": "/imgs/countries/BS-svg.svg",
+    "PNG32": "/imgs/countries/BS-32.png",
+    "PNG128": "/imgs/countries/BS-128.png",
+    "names": [
+      "Arabic: البهاما جزر",
+      "English: Bahamas",
+      "Spanish: Bahamas",
+      "French: Bahamas",
+      "Italian: Bahamas",
+      "Chinese: 巴哈马",
+      "Russian: Багамские Острова"
+    ],
+    "regions": [
+      "Latin America and the Caribbean"
+    ]
+  },
+  {
+    "id": "18",
+    "name": "Bahrain",
+    "ISO2": "BH",
+    "ISO3": "BHR",
+    "SVG": "/imgs/countries/BH-svg.svg",
+    "PNG32": "/imgs/countries/BH-32.png",
+    "PNG128": "/imgs/countries/BH-128.png",
+    "names": [
+      "Arabic: البحرين",
+      "English: Bahrain",
+      "Spanish: Bahrein",
+      "French: Bahreïn",
+      "Italian: Bahrein",
+      "Chinese: 巴 林",
+      "Russian: Бахрейн"
+    ],
+    "regions": [
+      "West Asia"
+    ]
+  },
+  {
+    "id": "19",
+    "name": "Bangladesh",
+    "ISO2": "BD",
+    "ISO3": "BGD",
+    "SVG": "/imgs/countries/BD-svg.svg",
+    "PNG32": "/imgs/countries/BD-32.png",
+    "PNG128": "/imgs/countries/BD-128.png",
+    "names": [
+      "Arabic: بنغلاديش",
+      "English: Bangladesh",
+      "Spanish: Bangladesh",
+      "French: Bangladesh",
+      "Italian: Bangladesh",
+      "Chinese: 孟加拉国",
+      "Russian: Бангладеш"
+    ],
+    "regions": [
+      "Asia and the Pacific"
+    ]
+  },
+  {
+    "id": "20",
+    "name": "Barbados",
+    "ISO2": "BB",
+    "ISO3": "BRB",
+    "SVG": "/imgs/countries/BB-svg.svg",
+    "PNG32": "/imgs/countries/BB-32.png",
+    "PNG128": "/imgs/countries/BB-128.png",
+    "names": [
+      "Arabic: بربادوس",
+      "English: Barbados",
+      "Spanish: Barbados",
+      "French: Barbade",
+      "Italian: Barbados",
+      "Chinese: 巴巴多斯",
+      "Russian: Барбадос"
+    ],
+    "regions": [
+      "Latin America and the Caribbean"
+    ]
+  },
+  {
+    "id": "21",
+    "name": "Belarus",
+    "ISO2": "BY",
+    "ISO3": "BLR",
+    "SVG": "/imgs/countries/BY-svg.svg",
+    "PNG32": "/imgs/countries/BY-32.png",
+    "PNG128": "/imgs/countries/BY-128.png",
+    "names": [
+      "Arabic: بيلاروس",
+      "English: Belarus",
+      "Spanish: Belarús",
+      "French: Bélarus",
+      "Italian: Bielorussia",
+      "Chinese: 白俄罗斯",
+      "Russian: Беларусь"
+    ],
+    "regions": [
+      "Europe"
+    ]
+  },
+  {
+    "id": "22",
+    "name": "Belgium",
+    "ISO2": "BE",
+    "ISO3": "BEL",
+    "SVG": "/imgs/countries/BE-svg.svg",
+    "PNG32": "/imgs/countries/BE-32.png",
+    "PNG128": "/imgs/countries/BE-128.png",
+    "names": [
+      "Arabic: بلجيكا",
+      "English: Belgium",
+      "Spanish: Bélgica",
+      "French: Belgique",
+      "Italian: Belgio",
+      "Chinese: 比利时",
+      "Russian: Бельгия"
+    ],
+    "regions": [
+      "Europe"
+    ]
+  },
+  {
+    "id": "23",
+    "name": "Belize",
+    "ISO2": "BZ",
+    "ISO3": "BLZ",
+    "SVG": "/imgs/countries/BZ-svg.svg",
+    "PNG32": "/imgs/countries/BZ-32.png",
+    "PNG128": "/imgs/countries/BZ-128.png",
+    "names": [
+      "Arabic: بليز",
+      "English: Belize",
+      "Spanish: Belice",
+      "French: Belize",
+      "Italian: Belize",
+      "Chinese: 伯利兹",
+      "Russian: Белиз"
+    ],
+    "regions": [
+      "Latin America and the Caribbean"
+    ]
+  },
+  {
+    "id": "24",
+    "name": "Benin",
+    "ISO2": "BJ",
+    "ISO3": "BEN",
+    "SVG": "/imgs/countries/BJ-svg.svg",
+    "PNG32": "/imgs/countries/BJ-32.png",
+    "PNG128": "/imgs/countries/BJ-128.png",
+    "names": [
+      "Arabic: بنن",
+      "English: Benin",
+      "Spanish: Benin",
+      "French: Bénin",
+      "Italian: Benin",
+      "Chinese: 贝 宁",
+      "Russian: Бенин"
+    ],
+    "regions": [
+      "Africa"
+    ]
+  },
+  {
+    "id": "25",
+    "name": "Bermuda",
+    "ISO2": "BM",
+    "ISO3": "BMU",
+    "SVG": "/imgs/countries/BM-svg.svg",
+    "PNG32": "/imgs/countries/BM-32.png",
+    "PNG128": "/imgs/countries/BM-128.png",
+    "names": [],
+    "regions": [
+      "North America"
+    ]
+  },
+  {
+    "id": "26",
+    "name": "Bhutan",
+    "ISO2": "BT",
+    "ISO3": "BTN",
+    "SVG": "/imgs/countries/BT-svg.svg",
+    "PNG32": "/imgs/countries/BT-32.png",
+    "PNG128": "/imgs/countries/BT-128.png",
+    "names": [
+      "Arabic: بوتان",
+      "English: Bhutan",
+      "Spanish: Bhután",
+      "French: Bhoutan",
+      "Italian: Bhutan",
+      "Chinese: 不 丹",
+      "Russian: Бутан"
+    ],
+    "regions": [
+      "Asia and the Pacific"
+    ]
+  },
+  {
+    "id": "27",
+    "name": "Bolivia (Plurinational State of)",
+    "ISO2": "BO",
+    "ISO3": "BOL",
+    "SVG": "/imgs/countries/BO-svg.svg",
+    "PNG32": "/imgs/countries/BO-32.png",
+    "PNG128": "/imgs/countries/BO-128.png",
+    "names": [
+      "Arabic: بوليفيا - دولة - المتعددة القوميات",
+      "English: Bolivia (Plurinational State of)",
+      "Spanish: Bolivia (Estado Plurinacional de)",
+      "French: Bolivie (État plurinational de)",
+      "Italian: Bolivia (Stato plurinazionale della)",
+      "Chinese: 玻利维亚（多民族国）",
+      "Russian: Боливия (Многонациональное Государство)"
+    ],
+    "regions": [
+      "Latin America and the Caribbean"
+    ]
+  },
+  {
+    "id": "28",
+    "name": "Bonaire, Saint Eustatius And Saba",
+    "ISO2": "BQ",
+    "ISO3": "BES",
+    "SVG": "/imgs/countries/BQ-svg.svg",
+    "PNG32": "/imgs/countries/BQ-32.png",
+    "PNG128": "/imgs/countries/BQ-128.png",
+    "names": [],
+    "regions": [
+      "Latin America and the Caribbean"
+    ]
+  },
+  {
+    "id": "29",
+    "name": "Bosnia and Herzegovina",
+    "ISO2": "BA",
+    "ISO3": "BIH",
+    "SVG": "/imgs/countries/BA-svg.svg",
+    "PNG32": "/imgs/countries/BA-32.png",
+    "PNG128": "/imgs/countries/BA-128.png",
+    "names": [
+      "Arabic: والهرسك البوسنة",
+      "English: Bosnia and Herzegovina",
+      "Spanish: Bosnia y Herzegovina",
+      "French: Bosnie-Herzégovine",
+      "Italian: Bosnia-Erzegovina",
+      "Chinese: 波斯尼亚和黑塞哥维那",
+      "Russian: Босния и Герцеговина"
+    ],
+    "regions": [
+      "Europe"
+    ]
+  },
+  {
+    "id": "30",
+    "name": "Botswana",
+    "ISO2": "BW",
+    "ISO3": "BWA",
+    "SVG": "/imgs/countries/BW-svg.svg",
+    "PNG32": "/imgs/countries/BW-32.png",
+    "PNG128": "/imgs/countries/BW-128.png",
+    "names": [
+      "Arabic: بوتسوانا",
+      "English: Botswana",
+      "Spanish: Botswana",
+      "French: Botswana",
+      "Italian: Botswana",
+      "Chinese: 博茨瓦纳",
+      "Russian: Ботсвана"
+    ],
+    "regions": [
+      "Africa"
+    ]
+  },
+  {
+    "id": "31",
+    "name": "Bouvet Island",
+    "ISO2": "BV",
+    "ISO3": "BVT",
+    "SVG": "/imgs/countries/BV-svg.svg",
+    "PNG32": "/imgs/countries/BV-32.png",
+    "PNG128": "/imgs/countries/BV-128.png",
+    "names": [],
+    "regions": []
+  },
+  {
+    "id": "32",
+    "name": "Brazil",
+    "ISO2": "BR",
+    "ISO3": "BRA",
+    "SVG": "/imgs/countries/BR-svg.svg",
+    "PNG32": "/imgs/countries/BR-32.png",
+    "PNG128": "/imgs/countries/BR-128.png",
+    "names": [
+      "Arabic: البرازيل",
+      "English: Brazil",
+      "Spanish: Brasil",
+      "French: Brésil",
+      "Italian: Brasile",
+      "Chinese: 巴 西",
+      "Russian: Бразилия"
+    ],
+    "regions": [
+      "Latin America and the Caribbean"
+    ]
+  },
+  {
+    "id": "33",
+    "name": "British Indian Ocean Territory",
+    "ISO2": "IO",
+    "ISO3": "IOT",
+    "SVG": "/imgs/countries/IO-svg.svg",
+    "PNG32": "/imgs/countries/IO-32.png",
+    "PNG128": "/imgs/countries/IO-128.png",
+    "names": [],
+    "regions": []
+  },
+  {
+    "id": "34",
+    "name": "Brunei Darussalam",
+    "ISO2": "BN",
+    "ISO3": "BRN",
+    "SVG": "/imgs/countries/BN-svg.svg",
+    "PNG32": "/imgs/countries/BN-32.png",
+    "PNG128": "/imgs/countries/BN-128.png",
+    "names": [
+      "Arabic: السلام دار برونى",
+      "English: Brunei Darussalam",
+      "Spanish: Brunei Darussalam",
+      "French: Brunéi Darussalam",
+      "Italian: Brunei",
+      "Chinese: 文莱达鲁萨兰国",
+      "Russian: Бруней-Даруссалам"
+    ],
+    "regions": [
+      "Asia and the Pacific"
+    ]
+  },
+  {
+    "id": "35",
+    "name": "Bulgaria",
+    "ISO2": "BG",
+    "ISO3": "BGR",
+    "SVG": "/imgs/countries/BG-svg.svg",
+    "PNG32": "/imgs/countries/BG-32.png",
+    "PNG128": "/imgs/countries/BG-128.png",
+    "names": [
+      "Arabic: بلغاريا",
+      "English: Bulgaria",
+      "Spanish: Bulgaria",
+      "French: Bulgarie",
+      "Italian: Bulgaria",
+      "Chinese: 保加利亚",
+      "Russian: Болгария"
+    ],
+    "regions": [
+      "Europe"
+    ]
+  },
+  {
+    "id": "36",
+    "name": "Burkina Faso",
+    "ISO2": "BF",
+    "ISO3": "BFA",
+    "SVG": "/imgs/countries/BF-svg.svg",
+    "PNG32": "/imgs/countries/BF-32.png",
+    "PNG128": "/imgs/countries/BF-128.png",
+    "names": [
+      "Arabic: بوركينا فاسو",
+      "English: Burkina Faso",
+      "Spanish: Burkina Faso",
+      "French: Burkina Faso",
+      "Italian: Burkina Faso",
+      "Chinese: 布基纳法索",
+      "Russian: Буркина-Фасо"
+    ],
+    "regions": [
+      "Africa"
+    ]
+  },
+  {
+    "id": "37",
+    "name": "Burundi",
+    "ISO2": "BI",
+    "ISO3": "BDI",
+    "SVG": "/imgs/countries/BI-svg.svg",
+    "PNG32": "/imgs/countries/BI-32.png",
+    "PNG128": "/imgs/countries/BI-128.png",
+    "names": [
+      "Arabic: بوروندي",
+      "English: Burundi",
+      "Spanish: Burundi",
+      "French: Burundi",
+      "Italian: Burundi",
+      "Chinese: 布隆迪",
+      "Russian: Бурунди"
+    ],
+    "regions": [
+      "Africa"
+    ]
+  },
+  {
+    "id": "38",
+    "name": "Cabo Verde",
+    "ISO2": "CV",
+    "ISO3": "CPV",
+    "SVG": "/imgs/countries/CV-svg.svg",
+    "PNG32": "/imgs/countries/CV-32.png",
+    "PNG128": "/imgs/countries/CV-128.png",
+    "names": [
+      "Arabic: كابو فيردي",
+      "English: Cabo Verde",
+      "Spanish: Cabo Verde",
+      "French: Cabo Verde",
+      "Italian: Cabo Verde",
+      "Chinese: 佛得角",
+      "Russian: Кабо-Верде"
+    ],
+    "regions": [
+      "Africa"
+    ]
+  },
+  {
+    "id": "39",
+    "name": "Cambodia",
+    "ISO2": "KH",
+    "ISO3": "KHM",
+    "SVG": "/imgs/countries/KH-svg.svg",
+    "PNG32": "/imgs/countries/KH-32.png",
+    "PNG128": "/imgs/countries/KH-128.png",
+    "names": [
+      "Arabic: كمبوديا",
+      "English: Cambodia",
+      "Spanish: Camboya",
+      "French: Cambodge",
+      "Italian: Cambogia",
+      "Chinese: 柬埔寨",
+      "Russian: Камбоджа"
+    ],
+    "regions": [
+      "Asia and the Pacific"
+    ]
+  },
+  {
+    "id": "40",
+    "name": "Cameroon",
+    "ISO2": "CM",
+    "ISO3": "CMR",
+    "SVG": "/imgs/countries/CM-svg.svg",
+    "PNG32": "/imgs/countries/CM-32.png",
+    "PNG128": "/imgs/countries/CM-128.png",
+    "names": [
+      "Arabic: الكاميرون",
+      "English: Cameroon",
+      "Spanish: Camerún",
+      "French: Cameroun",
+      "Italian: Camerun",
+      "Chinese: 喀麦隆",
+      "Russian: Камерун"
+    ],
+    "regions": [
+      "Africa"
+    ]
+  },
+  {
+    "id": "41",
+    "name": "Canada",
+    "ISO2": "CA",
+    "ISO3": "CAN",
+    "SVG": "/imgs/countries/CA-svg.svg",
+    "PNG32": "/imgs/countries/CA-32.png",
+    "PNG128": "/imgs/countries/CA-128.png",
+    "names": [
+      "Arabic: كندا",
+      "English: Canada",
+      "Spanish: Canadá",
+      "French: Canada",
+      "Italian: Canada",
+      "Chinese: 加拿大",
+      "Russian: Канада"
+    ],
+    "regions": [
+      "North America",
+      "Polar: Arctic"
+    ]
+  },
+  {
+    "id": "42",
+    "name": "Cayman Islands",
+    "ISO2": "KY",
+    "ISO3": "CYM",
+    "SVG": "/imgs/countries/KY-svg.svg",
+    "PNG32": "/imgs/countries/KY-32.png",
+    "PNG128": "/imgs/countries/KY-128.png",
+    "names": [],
+    "regions": [
+      "Latin America and the Caribbean"
+    ]
+  },
+  {
+    "id": "43",
+    "name": "Central African Republic",
+    "ISO2": "CF",
+    "ISO3": "CAF",
+    "SVG": "/imgs/countries/CF-svg.svg",
+    "PNG32": "/imgs/countries/CF-32.png",
+    "PNG128": "/imgs/countries/CF-128.png",
+    "names": [
+      "Arabic: الوسطى أفريقيا جمهورية",
+      "English: Central African Republic",
+      "Spanish: República Centroafricana",
+      "French: République centrafricaine",
+      "Italian: Repubblica centrafricana",
+      "Chinese: 中非共和国",
+      "Russian: Центральноафриканская Республика"
+    ],
+    "regions": [
+      "Africa"
+    ]
+  },
+  {
+    "id": "44",
+    "name": "Chad",
+    "ISO2": "TD",
+    "ISO3": "TCD",
+    "SVG": "/imgs/countries/TD-svg.svg",
+    "PNG32": "/imgs/countries/TD-32.png",
+    "PNG128": "/imgs/countries/TD-128.png",
+    "names": [
+      "Arabic: تشاد",
+      "English: Chad",
+      "Spanish: Chad",
+      "French: Tchad",
+      "Italian: Ciad",
+      "Chinese: 乍 得",
+      "Russian: Чад"
+    ],
+    "regions": [
+      "Africa"
+    ]
+  },
+  {
+    "id": "45",
+    "name": "Chile",
+    "ISO2": "CL",
+    "ISO3": "CHL",
+    "SVG": "/imgs/countries/CL-svg.svg",
+    "PNG32": "/imgs/countries/CL-32.png",
+    "PNG128": "/imgs/countries/CL-128.png",
+    "names": [
+      "Arabic: شيلى",
+      "English: Chile",
+      "Spanish: Chile",
+      "French: Chili",
+      "Italian: Cile",
+      "Chinese: 智 利",
+      "Russian: Чили"
+    ],
+    "regions": [
+      "Latin America and the Caribbean"
+    ]
+  },
+  {
+    "id": "46",
+    "name": "China",
+    "ISO2": "CN",
+    "ISO3": "CHN",
+    "SVG": "/imgs/countries/CN-svg.svg",
+    "PNG32": "/imgs/countries/CN-32.png",
+    "PNG128": "/imgs/countries/CN-128.png",
+    "names": [
+      "Arabic: الصين",
+      "English: China",
+      "Spanish: China",
+      "French: Chine",
+      "Italian: Cina",
+      "Chinese: 中 国",
+      "Russian: Китай"
+    ],
+    "regions": [
+      "Asia and the Pacific"
+    ]
+  },
+  {
+    "id": "47",
+    "name": "Christmas Island",
+    "ISO2": "CX",
+    "ISO3": "CXR",
+    "SVG": "/imgs/countries/CX-svg.svg",
+    "PNG32": "/imgs/countries/CX-32.png",
+    "PNG128": "/imgs/countries/CX-128.png",
+    "names": [],
+    "regions": []
+  },
+  {
+    "id": "48",
+    "name": "Cocos (Keeling) Islands",
+    "ISO2": "CC",
+    "ISO3": "CCK",
+    "SVG": "/imgs/countries/CC-svg.svg",
+    "PNG32": "/imgs/countries/CC-32.png",
+    "PNG128": "/imgs/countries/CC-128.png",
+    "names": [],
+    "regions": []
+  },
+  {
+    "id": "49",
+    "name": "Colombia",
+    "ISO2": "CO",
+    "ISO3": "COL",
+    "SVG": "/imgs/countries/CO-svg.svg",
+    "PNG32": "/imgs/countries/CO-32.png",
+    "PNG128": "/imgs/countries/CO-128.png",
+    "names": [
+      "Arabic: كولومبيا",
+      "English: Colombia",
+      "Spanish: Colombia",
+      "French: Colombie",
+      "Italian: Colombia",
+      "Chinese: 哥伦比亚",
+      "Russian: Колумбия"
+    ],
+    "regions": [
+      "Latin America and the Caribbean"
+    ]
+  },
+  {
+    "id": "50",
+    "name": "Comoros",
+    "ISO2": "KM",
+    "ISO3": "COM",
+    "SVG": "/imgs/countries/KM-svg.svg",
+    "PNG32": "/imgs/countries/KM-32.png",
+    "PNG128": "/imgs/countries/KM-128.png",
+    "names": [
+      "Arabic: جزر القمر",
+      "English: Comoros",
+      "Spanish: Comoras",
+      "French: Comores",
+      "Italian: Isole Comore",
+      "Chinese: 科摩罗",
+      "Russian: Коморские Острова"
+    ],
+    "regions": [
+      "Africa"
+    ]
+  },
+  {
+    "id": "51",
+    "name": "Congo",
+    "ISO2": "CG",
+    "ISO3": "COG",
+    "SVG": "/imgs/countries/CG-svg.svg",
+    "PNG32": "/imgs/countries/CG-32.png",
+    "PNG128": "/imgs/countries/CG-128.png",
+    "names": [
+      "Arabic: الكونغو",
+      "English: Congo",
+      "Spanish: Congo",
+      "French: Congo",
+      "Italian: Congo",
+      "Chinese: 刚 果",
+      "Russian: Конго"
+    ],
+    "regions": [
+      "Africa"
+    ]
+  },
+  {
+    "id": "52",
+    "name": "Cook Islands",
+    "ISO2": "CK",
+    "ISO3": "COK",
+    "SVG": "/imgs/countries/CK-svg.svg",
+    "PNG32": "/imgs/countries/CK-32.png",
+    "PNG128": "/imgs/countries/CK-128.png",
+    "names": [
+      "Arabic: كوك جزر",
+      "English: Cook Islands",
+      "Spanish: Islas Cook",
+      "French: Îles Cook",
+      "Italian: Isole Cook",
+      "Chinese: 库克群岛",
+      "Russian: Острова Кука"
+    ],
+    "regions": [
+      "Asia and the Pacific"
+    ]
+  },
+  {
+    "id": "53",
+    "name": "Costa Rica",
+    "ISO2": "CR",
+    "ISO3": "CRI",
+    "SVG": "/imgs/countries/CR-svg.svg",
+    "PNG32": "/imgs/countries/CR-32.png",
+    "PNG128": "/imgs/countries/CR-128.png",
+    "names": [
+      "Arabic: كوستاريكا",
+      "English: Costa Rica",
+      "Spanish: Costa Rica",
+      "French: Costa Rica",
+      "Italian: Costa Rica",
+      "Chinese: 哥斯达黎加",
+      "Russian: Коста-Рика"
+    ],
+    "regions": [
+      "Latin America and the Caribbean"
+    ]
+  },
+  {
+    "id": "54",
+    "name": "Côte d'Ivoire",
+    "ISO2": "CI",
+    "ISO3": "CIV",
+    "SVG": "/imgs/countries/CI-svg.svg",
+    "PNG32": "/imgs/countries/CI-32.png",
+    "PNG128": "/imgs/countries/CI-128.png",
+    "names": [
+      "Arabic: ديفوار كوت",
+      "English: Côte d'Ivoire",
+      "Spanish: Côte d'Ivoire",
+      "French: Côte d'Ivoire",
+      "Italian: Côte d`Ivoire",
+      "Chinese: 科特迪瓦",
+      "Russian: Кот-д`Ивуар"
+    ],
+    "regions": [
+      "Africa"
+    ]
+  },
+  {
+    "id": "55",
+    "name": "Croatia",
+    "ISO2": "HR",
+    "ISO3": "HRV",
+    "SVG": "/imgs/countries/HR-svg.svg",
+    "PNG32": "/imgs/countries/HR-32.png",
+    "PNG128": "/imgs/countries/HR-128.png",
+    "names": [
+      "Arabic: كرواتيا",
+      "English: Croatia",
+      "Spanish: Croacia",
+      "French: Croatie",
+      "Italian: Croazia",
+      "Chinese: 克罗地亚",
+      "Russian: Хорватия"
+    ],
+    "regions": [
+      "Europe"
+    ]
+  },
+  {
+    "id": "56",
+    "name": "Cuba",
+    "ISO2": "CU",
+    "ISO3": "CUB",
+    "SVG": "/imgs/countries/CU-svg.svg",
+    "PNG32": "/imgs/countries/CU-32.png",
+    "PNG128": "/imgs/countries/CU-128.png",
+    "names": [
+      "Arabic: كوبا",
+      "English: Cuba",
+      "Spanish: Cuba",
+      "French: Cuba",
+      "Italian: Cuba",
+      "Chinese: 古 巴",
+      "Russian: Куба"
+    ],
+    "regions": [
+      "Latin America and the Caribbean"
+    ]
+  },
+  {
+    "id": "57",
+    "name": "Curaçao",
+    "ISO2": "CW",
+    "ISO3": "CUW",
+    "SVG": "/imgs/countries/CW-svg.svg",
+    "PNG32": "/imgs/countries/CW-32.png",
+    "PNG128": "/imgs/countries/CW-128.png",
+    "names": [],
+    "regions": [
+      "Latin America and the Caribbean"
+    ]
+  },
+  {
+    "id": "58",
+    "name": "Cyprus",
+    "ISO2": "CY",
+    "ISO3": "CYP",
+    "SVG": "/imgs/countries/CY-svg.svg",
+    "PNG32": "/imgs/countries/CY-32.png",
+    "PNG128": "/imgs/countries/CY-128.png",
+    "names": [
+      "Arabic: قبرص",
+      "English: Cyprus",
+      "Spanish: Chipre",
+      "French: Chypre",
+      "Italian: Cipro",
+      "Chinese: 塞浦路斯",
+      "Russian: Кипр"
+    ],
+    "regions": [
+      "Europe"
+    ]
+  },
+  {
+    "id": "59",
+    "name": "Czechia",
+    "ISO2": "CZ",
+    "ISO3": "CZE",
+    "SVG": "/imgs/countries/CZ-svg.svg",
+    "PNG32": "/imgs/countries/CZ-32.png",
+    "PNG128": "/imgs/countries/CZ-128.png",
+    "names": [
+      "Arabic: التشيكية الجمهورية",
+      "English: Czechia",
+      "Spanish: República Checa",
+      "French: République tchèque",
+      "Italian: Repubblica ceca",
+      "Chinese: 捷克共和国",
+      "Russian: Чешская Республика"
+    ],
+    "regions": [
+      "Europe"
+    ]
+  },
+  {
+    "id": "60",
+    "name": "Democratic People's Republic of Korea",
+    "ISO2": "KP",
+    "ISO3": "PRK",
+    "SVG": "/imgs/countries/KP-svg.svg",
+    "PNG32": "/imgs/countries/KP-32.png",
+    "PNG128": "/imgs/countries/KP-128.png",
+    "names": [
+      "Arabic: الديمقراطية الشعبية كوريا جمهورية",
+      "English: Democratic People's Republic of Korea",
+      "Spanish: República Popular Democrática de Corea",
+      "French: République populaire démocratique de Corée",
+      "Italian: Repubblica popolare democratica di Corea",
+      "Chinese: 朝鲜民主主义人民共和国",
+      "Russian: Корейская Народно-Демократическая Республика"
+    ],
+    "regions": [
+      "Asia and the Pacific"
+    ]
+  },
+  {
+    "id": "61",
+    "name": "Democratic Republic of the Congo",
+    "ISO2": "CD",
+    "ISO3": "COD",
+    "SVG": "/imgs/countries/CD-svg.svg",
+    "PNG32": "/imgs/countries/CD-32.png",
+    "PNG128": "/imgs/countries/CD-128.png",
+    "names": [
+      "Arabic: الديمقراطية الكونغو جمهورية",
+      "English: Democratic Republic of the Congo",
+      "Spanish: República Democrática del Congo",
+      "French: République démocratique du Congo",
+      "Italian: Repubblica democratica del Congo",
+      "Chinese: 刚果民主共和国",
+      "Russian: Демократическая Республика Конго"
+    ],
+    "regions": [
+      "Africa"
+    ]
+  },
+  {
+    "id": "62",
+    "name": "Denmark",
+    "ISO2": "DK",
+    "ISO3": "DNK",
+    "SVG": "/imgs/countries/DK-svg.svg",
+    "PNG32": "/imgs/countries/DK-32.png",
+    "PNG128": "/imgs/countries/DK-128.png",
+    "names": [
+      "Arabic: الدانمرك",
+      "English: Denmark",
+      "Spanish: Dinamarca",
+      "French: Danemark",
+      "Italian: Danimarca",
+      "Chinese: 丹 麦",
+      "Russian: Дания"
+    ],
+    "regions": [
+      "Europe",
+      "Polar: Arctic"
+    ]
+  },
+  {
+    "id": "63",
+    "name": "Djibouti",
+    "ISO2": "DJ",
+    "ISO3": "DJI",
+    "SVG": "/imgs/countries/DJ-svg.svg",
+    "PNG32": "/imgs/countries/DJ-32.png",
+    "PNG128": "/imgs/countries/DJ-128.png",
+    "names": [
+      "Arabic: جيبوتي",
+      "English: Djibouti",
+      "Spanish: Djibouti",
+      "French: Djibouti",
+      "Italian: Gibuti",
+      "Chinese: 吉布提",
+      "Russian: Джибути"
+    ],
+    "regions": [
+      "Africa"
+    ]
+  },
+  {
+    "id": "64",
+    "name": "Dominica",
+    "ISO2": "DM",
+    "ISO3": "DMA",
+    "SVG": "/imgs/countries/DM-svg.svg",
+    "PNG32": "/imgs/countries/DM-32.png",
+    "PNG128": "/imgs/countries/DM-128.png",
+    "names": [
+      "Arabic: دومينيكا",
+      "English: Dominica",
+      "Spanish: Dominica",
+      "French: Dominique",
+      "Italian: Dominica",
+      "Chinese: 多米尼克",
+      "Russian: Доминика"
+    ],
+    "regions": [
+      "Latin America and the Caribbean"
+    ]
+  },
+  {
+    "id": "65",
+    "name": "Dominican Republic",
+    "ISO2": "DO",
+    "ISO3": "DOM",
+    "SVG": "/imgs/countries/DO-svg.svg",
+    "PNG32": "/imgs/countries/DO-32.png",
+    "PNG128": "/imgs/countries/DO-128.png",
+    "names": [
+      "Arabic: الجمهورية الدومينيكية",
+      "English: Dominican Republic",
+      "Spanish: República Dominicana",
+      "French: République dominicaine",
+      "Italian: Repubblica dominicana",
+      "Chinese: 多米尼加共和国",
+      "Russian: Доминиканская Республика"
+    ],
+    "regions": [
+      "Latin America and the Caribbean"
+    ]
+  },
+  {
+    "id": "66",
+    "name": "Ecuador",
+    "ISO2": "EC",
+    "ISO3": "ECU",
+    "SVG": "/imgs/countries/EC-svg.svg",
+    "PNG32": "/imgs/countries/EC-32.png",
+    "PNG128": "/imgs/countries/EC-128.png",
+    "names": [
+      "Arabic: إكوادور",
+      "English: Ecuador",
+      "Spanish: Ecuador",
+      "French: Équateur",
+      "Italian: Ecuador",
+      "Chinese: 厄瓜多尔",
+      "Russian: Эквадор"
+    ],
+    "regions": [
+      "Latin America and the Caribbean"
+    ]
+  },
+  {
+    "id": "67",
+    "name": "Egypt",
+    "ISO2": "EG",
+    "ISO3": "EGY",
+    "SVG": "/imgs/countries/EG-svg.svg",
+    "PNG32": "/imgs/countries/EG-32.png",
+    "PNG128": "/imgs/countries/EG-128.png",
+    "names": [
+      "Arabic: مصر",
+      "English: Egypt",
+      "Spanish: Egipto",
+      "French: Égypte",
+      "Italian: Egitto",
+      "Chinese: 埃 及",
+      "Russian: Египет"
+    ],
+    "regions": [
+      "Africa"
+    ]
+  },
+  {
+    "id": "68",
+    "name": "El Salvador",
+    "ISO2": "SV",
+    "ISO3": "SLV",
+    "SVG": "/imgs/countries/SV-svg.svg",
+    "PNG32": "/imgs/countries/SV-32.png",
+    "PNG128": "/imgs/countries/SV-128.png",
+    "names": [
+      "Arabic: السلفادور",
+      "English: El Salvador",
+      "Spanish: El Salvador",
+      "French: El Salvador",
+      "Italian: El Salvador",
+      "Chinese: 萨尔瓦多",
+      "Russian: Сальвадор"
+    ],
+    "regions": [
+      "Latin America and the Caribbean"
+    ]
+  },
+  {
+    "id": "69",
+    "name": "Equatorial Guinea",
+    "ISO2": "GQ",
+    "ISO3": "GNQ",
+    "SVG": "/imgs/countries/GQ-svg.svg",
+    "PNG32": "/imgs/countries/GQ-32.png",
+    "PNG128": "/imgs/countries/GQ-128.png",
+    "names": [
+      "Arabic: الاستوائية غينيا",
+      "English: Equatorial Guinea",
+      "Spanish: Guinea Ecuatorial",
+      "French: Guinée équatoriale",
+      "Italian: Guinea equatoriale",
+      "Chinese: 赤道几内亚",
+      "Russian: Экваториальная Гвинея"
+    ],
+    "regions": [
+      "Africa"
+    ]
+  },
+  {
+    "id": "70",
+    "name": "Eritrea",
+    "ISO2": "ER",
+    "ISO3": "ERI",
+    "SVG": "/imgs/countries/ER-svg.svg",
+    "PNG32": "/imgs/countries/ER-32.png",
+    "PNG128": "/imgs/countries/ER-128.png",
+    "names": [
+      "Arabic: إريتريا",
+      "English: Eritrea",
+      "Spanish: Eritrea",
+      "French: Érythrée",
+      "Italian: Eritrea",
+      "Chinese: 厄立特里亚",
+      "Russian: Эритрея"
+    ],
+    "regions": [
+      "Africa"
+    ]
+  },
+  {
+    "id": "71",
+    "name": "Estonia",
+    "ISO2": "EE",
+    "ISO3": "EST",
+    "SVG": "/imgs/countries/EE-svg.svg",
+    "PNG32": "/imgs/countries/EE-32.png",
+    "PNG128": "/imgs/countries/EE-128.png",
+    "names": [
+      "Arabic: إستونيا",
+      "English: Estonia",
+      "Spanish: Estonia",
+      "French: Estonie",
+      "Italian: Estonia",
+      "Chinese: 爱沙尼亚",
+      "Russian: Эстония"
+    ],
+    "regions": [
+      "Europe"
+    ]
+  },
+  {
+    "id": "72",
+    "name": "Ethiopia",
+    "ISO2": "ET",
+    "ISO3": "ETH",
+    "SVG": "/imgs/countries/ET-svg.svg",
+    "PNG32": "/imgs/countries/ET-32.png",
+    "PNG128": "/imgs/countries/ET-128.png",
+    "names": [
+      "Arabic: إثيوبيا",
+      "English: Ethiopia",
+      "Spanish: Etiopía",
+      "French: Éthiopie",
+      "Italian: Etiopia",
+      "Chinese: 埃塞俄比亚",
+      "Russian: Эфиопия"
+    ],
+    "regions": [
+      "Africa"
+    ]
+  },
+  {
+    "id": "73",
+    "name": "European Union",
+    "ISO2": "EU",
+    "ISO3": "EUR",
+    "SVG": "/imgs/countries/EU-svg.svg",
+    "PNG32": "/imgs/countries/EU-32.png",
+    "PNG128": "/imgs/countries/EU-128.png",
+    "names": [
+      "Arabic: عضو منظمة - الأوروبي الإتحاد",
+      "English: European Union (Member Organization)",
+      "Spanish: Unión Europea (Organización Miembro)",
+      "French: Union européenne (Organisation membre)",
+      "Italian: Unione europea (Organizzazione membro)",
+      "Chinese: 欧洲联盟 （成员组织）",
+      "Russian: Европейский союз (организация-член)"
+    ],
+    "regions": [
+      "Europe"
+    ]
+  },
+  {
+    "id": "74",
+    "name": "Falkland Islands (Malvinas)",
+    "ISO2": "FK",
+    "ISO3": "FLK",
+    "SVG": "/imgs/countries/FK-svg.svg",
+    "PNG32": "/imgs/countries/FK-32.png",
+    "PNG128": "/imgs/countries/FK-128.png",
+    "names": [],
+    "regions": [
+      "Latin America and the Caribbean"
+    ]
+  },
+  {
+    "id": "75",
+    "name": "Faroe Islands (Associate Member)",
+    "ISO2": "FO",
+    "ISO3": "FRO",
+    "SVG": "/imgs/countries/FO-svg.svg",
+    "PNG32": "/imgs/countries/FO-32.png",
+    "PNG128": "/imgs/countries/FO-128.png",
+    "names": [
+      "Arabic: جزر فيرويه",
+      "English: Faroe Islands (Associate Member)",
+      "Spanish: Islas Feroe (Miembro Asociado)",
+      "French: Îles Féroé (Membre associé)",
+      "Italian: Isole Faer øer",
+      "Chinese: 法罗群岛 (准成员)",
+      "Russian: Фарерские Острова (ассоциированный член)"
+    ],
+    "regions": [
+      "Polar: Arctic"
+    ]
+  },
+  {
+    "id": "76",
+    "name": "Fiji",
+    "ISO2": "FJ",
+    "ISO3": "FJI",
+    "SVG": "/imgs/countries/FJ-svg.svg",
+    "PNG32": "/imgs/countries/FJ-32.png",
+    "PNG128": "/imgs/countries/FJ-128.png",
+    "names": [
+      "Arabic: فيجي",
+      "English: Fiji",
+      "Spanish: Fiji",
+      "French: Fidji",
+      "Italian: Figi",
+      "Chinese: 斐济",
+      "Russian: Фиджи"
+    ],
+    "regions": [
+      "Asia and the Pacific"
+    ]
+  },
+  {
+    "id": "77",
+    "name": "Finland",
+    "ISO2": "FI",
+    "ISO3": "FIN",
+    "SVG": "/imgs/countries/FI-svg.svg",
+    "PNG32": "/imgs/countries/FI-32.png",
+    "PNG128": "/imgs/countries/FI-128.png",
+    "names": [
+      "Arabic: فنلندا",
+      "English: Finland",
+      "Spanish: Finlandia",
+      "French: Finlande",
+      "Italian: Finlandia",
+      "Chinese: 芬 兰",
+      "Russian: Финляндия"
+    ],
+    "regions": [
+      "Europe",
+      "Polar: Arctic"
+    ]
+  },
+  {
+    "id": "78",
+    "name": "France",
+    "ISO2": "FR",
+    "ISO3": "FRA",
+    "SVG": "/imgs/countries/FR-svg.svg",
+    "PNG32": "/imgs/countries/FR-32.png",
+    "PNG128": "/imgs/countries/FR-128.png",
+    "names": [
+      "Arabic: فرنسا",
+      "English: France",
+      "Spanish: Francia",
+      "French: France",
+      "Italian: Francia",
+      "Chinese: 法  国",
+      "Russian: Франция"
+    ],
+    "regions": [
+      "Europe"
+    ]
+  },
+  {
+    "id": "79",
+    "name": "French Guiana",
+    "ISO2": "GF",
+    "ISO3": "GUF",
+    "SVG": "/imgs/countries/GF-svg.svg",
+    "PNG32": "/imgs/countries/GF-32.png",
+    "PNG128": "/imgs/countries/GF-128.png",
+    "names": [],
+    "regions": [
+      "Europe"
+    ]
+  },
+  {
+    "id": "80",
+    "name": "French Polynesia",
+    "ISO2": "PF",
+    "ISO3": "PYF",
+    "SVG": "/imgs/countries/PF-svg.svg",
+    "PNG32": "/imgs/countries/PF-32.png",
+    "PNG128": "/imgs/countries/PF-128.png",
+    "names": [],
+    "regions": [
+      "Asia and the Pacific"
+    ]
+  },
+  {
+    "id": "81",
+    "name": "French Southern and Antarctic Lands",
+    "ISO2": "TF",
+    "ISO3": "ATF",
+    "SVG": "/imgs/countries/TF-svg.svg",
+    "PNG32": "/imgs/countries/TF-32.png",
+    "PNG128": "/imgs/countries/TF-128.png",
+    "names": [],
+    "regions": []
+  },
+  {
+    "id": "82",
+    "name": "Gabon",
+    "ISO2": "GA",
+    "ISO3": "GAB",
+    "SVG": "/imgs/countries/GA-svg.svg",
+    "PNG32": "/imgs/countries/GA-32.png",
+    "PNG128": "/imgs/countries/GA-128.png",
+    "names": [
+      "Arabic: غابون",
+      "English: Gabon",
+      "Spanish: Gabón",
+      "French: Gabon",
+      "Italian: Gabon",
+      "Chinese: 加 蓬",
+      "Russian: Габон"
+    ],
+    "regions": [
+      "Africa"
+    ]
+  },
+  {
+    "id": "83",
+    "name": "Gambia",
+    "ISO2": "GM",
+    "ISO3": "GMB",
+    "SVG": "/imgs/countries/GM-svg.svg",
+    "PNG32": "/imgs/countries/GM-32.png",
+    "PNG128": "/imgs/countries/GM-128.png",
+    "names": [
+      "Arabic: غامبيا",
+      "English: Gambia",
+      "Spanish: Gambia",
+      "French: Gambie",
+      "Italian: Gambia",
+      "Chinese: 冈比亚",
+      "Russian: Гамбия"
+    ],
+    "regions": [
+      "Africa"
+    ]
+  },
+  {
+    "id": "84",
+    "name": "Georgia",
+    "ISO2": "GE",
+    "ISO3": "GEO",
+    "SVG": "/imgs/countries/GE-svg.svg",
+    "PNG32": "/imgs/countries/GE-32.png",
+    "PNG128": "/imgs/countries/GE-128.png",
+    "names": [
+      "Arabic: جورجيا",
+      "English: Georgia",
+      "Spanish: Georgia",
+      "French: Géorgie",
+      "Italian: Georgia",
+      "Chinese: 格鲁吉亚",
+      "Russian: Грузия"
+    ],
+    "regions": [
+      "Europe"
+    ]
+  },
+  {
+    "id": "85",
+    "name": "Germany",
+    "ISO2": "DE",
+    "ISO3": "DEU",
+    "SVG": "/imgs/countries/DE-svg.svg",
+    "PNG32": "/imgs/countries/DE-32.png",
+    "PNG128": "/imgs/countries/DE-128.png",
+    "names": [
+      "Arabic: ألمانيا",
+      "English: Germany",
+      "Spanish: Alemania",
+      "French: Allemagne",
+      "Italian: Germania",
+      "Chinese: 德 国",
+      "Russian: Германия"
+    ],
+    "regions": [
+      "Europe"
+    ]
+  },
+  {
+    "id": "86",
+    "name": "Ghana",
+    "ISO2": "GH",
+    "ISO3": "GHA",
+    "SVG": "/imgs/countries/GH-svg.svg",
+    "PNG32": "/imgs/countries/GH-32.png",
+    "PNG128": "/imgs/countries/GH-128.png",
+    "names": [
+      "Arabic: غانا",
+      "English: Ghana",
+      "Spanish: Ghana",
+      "French: Ghana",
+      "Italian: Ghana",
+      "Chinese: 加 纳",
+      "Russian: Гана"
+    ],
+    "regions": [
+      "Africa"
+    ]
+  },
+  {
+    "id": "87",
+    "name": "Gibraltar",
+    "ISO2": "GI",
+    "ISO3": "GIB",
+    "SVG": "/imgs/countries/GI-svg.svg",
+    "PNG32": "/imgs/countries/GI-32.png",
+    "PNG128": "/imgs/countries/GI-128.png",
+    "names": [],
+    "regions": [
+      "Europe"
+    ]
+  },
+  {
+    "id": "88",
+    "name": "Greece",
+    "ISO2": "GR",
+    "ISO3": "GRC",
+    "SVG": "/imgs/countries/GR-svg.svg",
+    "PNG32": "/imgs/countries/GR-32.png",
+    "PNG128": "/imgs/countries/GR-128.png",
+    "names": [
+      "Arabic: اليونان",
+      "English: Greece",
+      "Spanish: Grecia",
+      "French: Grèce",
+      "Italian: Grecia",
+      "Chinese: 希 腊",
+      "Russian: Греция"
+    ],
+    "regions": [
+      "Europe"
+    ]
+  },
+  {
+    "id": "89",
+    "name": "Greenland",
+    "ISO2": "GL",
+    "ISO3": "GRL",
+    "SVG": "/imgs/countries/GL-svg.svg",
+    "PNG32": "/imgs/countries/GL-32.png",
+    "PNG128": "/imgs/countries/GL-128.png",
+    "names": [],
+    "regions": [
+      "Polar: Arctic"
+    ]
+  },
+  {
+    "id": "90",
+    "name": "Grenada",
+    "ISO2": "GD",
+    "ISO3": "GRD",
+    "SVG": "/imgs/countries/GD-svg.svg",
+    "PNG32": "/imgs/countries/GD-32.png",
+    "PNG128": "/imgs/countries/GD-128.png",
+    "names": [
+      "Arabic: غرينادا",
+      "English: Grenada",
+      "Spanish: Granada",
+      "French: Grenade",
+      "Italian: Grenada",
+      "Chinese: 格林纳达",
+      "Russian: Гренада"
+    ],
+    "regions": [
+      "Latin America and the Caribbean"
+    ]
+  },
+  {
+    "id": "91",
+    "name": "Guadeloupe",
+    "ISO2": "GP",
+    "ISO3": "GLP",
+    "SVG": "/imgs/countries/GP-svg.svg",
+    "PNG32": "/imgs/countries/GP-32.png",
+    "PNG128": "/imgs/countries/GP-128.png",
+    "names": [],
+    "regions": [
+      "Latin America and the Caribbean"
+    ]
+  },
+  {
+    "id": "92",
+    "name": "Guam",
+    "ISO2": "GU",
+    "ISO3": "GUM",
+    "SVG": "/imgs/countries/GU-svg.svg",
+    "PNG32": "/imgs/countries/GU-32.png",
+    "PNG128": "/imgs/countries/GU-128.png",
+    "names": [],
+    "regions": [
+      "Asia and the Pacific"
+    ]
+  },
+  {
+    "id": "93",
+    "name": "Guatemala",
+    "ISO2": "GT",
+    "ISO3": "GTM",
+    "SVG": "/imgs/countries/GT-svg.svg",
+    "PNG32": "/imgs/countries/GT-32.png",
+    "PNG128": "/imgs/countries/GT-128.png",
+    "names": [
+      "Arabic: غواتيمالا",
+      "English: Guatemala",
+      "Spanish: Guatemala",
+      "French: Guatemala",
+      "Italian: Guatemala",
+      "Chinese: 危地马拉",
+      "Russian: Гватемала"
+    ],
+    "regions": [
+      "Latin America and the Caribbean"
+    ]
+  },
+  {
+    "id": "94",
+    "name": "Guernsey",
+    "ISO2": "GG",
+    "ISO3": "GGY",
+    "SVG": "/imgs/countries/GG-svg.svg",
+    "PNG32": "/imgs/countries/GG-32.png",
+    "PNG128": "/imgs/countries/GG-128.png",
+    "names": [],
+    "regions": [
+      "Europe"
+    ]
+  },
+  {
+    "id": "95",
+    "name": "Guinea",
+    "ISO2": "GN",
+    "ISO3": "GIN",
+    "SVG": "/imgs/countries/GN-svg.svg",
+    "PNG32": "/imgs/countries/GN-32.png",
+    "PNG128": "/imgs/countries/GN-128.png",
+    "names": [
+      "Arabic: غينيا",
+      "English: Guinea",
+      "Spanish: Guinea",
+      "French: Guinée",
+      "Italian: Guinea",
+      "Chinese: 几内亚",
+      "Russian: Гвинея"
+    ],
+    "regions": [
+      "Africa"
+    ]
+  },
+  {
+    "id": "96",
+    "name": "Guinea-Bissau",
+    "ISO2": "GW",
+    "ISO3": "GNB",
+    "SVG": "/imgs/countries/GW-svg.svg",
+    "PNG32": "/imgs/countries/GW-32.png",
+    "PNG128": "/imgs/countries/GW-128.png",
+    "names": [
+      "Arabic: غينيا - بيساو",
+      "English: Guinea-Bissau",
+      "Spanish: Guinea-Bissau",
+      "French: Guinée-Bissau",
+      "Italian: Guinea-Bissau",
+      "Chinese: 几内亚比绍",
+      "Russian: Гвинея-Бисау"
+    ],
+    "regions": [
+      "Africa"
+    ]
+  },
+  {
+    "id": "97",
+    "name": "Guyana",
+    "ISO2": "GY",
+    "ISO3": "GUY",
+    "SVG": "/imgs/countries/GY-svg.svg",
+    "PNG32": "/imgs/countries/GY-32.png",
+    "PNG128": "/imgs/countries/GY-128.png",
+    "names": [
+      "Arabic: غيانا",
+      "English: Guyana",
+      "Spanish: Guyana",
+      "French: Guyana",
+      "Italian: Guyana",
+      "Chinese: 圭亚那",
+      "Russian: Гайана"
+    ],
+    "regions": [
+      "Latin America and the Caribbean"
+    ]
+  },
+  {
+    "id": "98",
+    "name": "Haiti",
+    "ISO2": "HT",
+    "ISO3": "HTI",
+    "SVG": "/imgs/countries/HT-svg.svg",
+    "PNG32": "/imgs/countries/HT-32.png",
+    "PNG128": "/imgs/countries/HT-128.png",
+    "names": [
+      "Arabic: هايتي",
+      "English: Haiti",
+      "Spanish: Haití",
+      "French: Haïti",
+      "Italian: Haiti",
+      "Chinese: 海 地",
+      "Russian: Гаити"
+    ],
+    "regions": [
+      "Latin America and the Caribbean"
+    ]
+  },
+  {
+    "id": "99",
+    "name": "Heard Island And McDonald Islands",
+    "ISO2": "HM",
+    "ISO3": "HMD",
+    "SVG": "/imgs/countries/HM-svg.svg",
+    "PNG32": "/imgs/countries/HM-32.png",
+    "PNG128": "/imgs/countries/HM-128.png",
+    "names": [],
+    "regions": []
+  },
+  {
+    "id": "100",
+    "name": "Holy See",
+    "ISO2": "VA",
+    "ISO3": "VAT",
+    "SVG": "/imgs/countries/VA-svg.svg",
+    "PNG32": "/imgs/countries/VA-32.png",
+    "PNG128": "/imgs/countries/VA-128.png",
+    "names": [
+      "Arabic: الكرسي الرسولي",
+      "English: Holy See",
+      "Spanish: Santa Sede",
+      "French: Saint-Siège",
+      "Italian: Santa Sede",
+      "Chinese: 教廷",
+      "Russian: Святой Престол"
+    ],
+    "regions": [
+      "Africa"
+    ]
+  },
+  {
+    "id": "101",
+    "name": "Honduras",
+    "ISO2": "HN",
+    "ISO3": "HND",
+    "SVG": "/imgs/countries/HN-svg.svg",
+    "PNG32": "/imgs/countries/HN-32.png",
+    "PNG128": "/imgs/countries/HN-128.png",
+    "names": [
+      "Arabic: هندوراس",
+      "English: Honduras",
+      "Spanish: Honduras",
+      "French: Honduras",
+      "Italian: Honduras",
+      "Chinese: 洪都拉斯",
+      "Russian: Гондурас"
+    ],
+    "regions": [
+      "Latin America and the Caribbean"
+    ]
+  },
+  {
+    "id": "102",
+    "name": "Hong Kong",
+    "ISO2": "HK",
+    "ISO3": "HKG",
+    "SVG": "/imgs/countries/HK-svg.svg",
+    "PNG32": "/imgs/countries/HK-32.png",
+    "PNG128": "/imgs/countries/HK-128.png",
+    "names": [],
+    "regions": [
+      "Asia and the Pacific"
+    ]
+  },
+  {
+    "id": "103",
+    "name": "Hungary",
+    "ISO2": "HU",
+    "ISO3": "HUN",
+    "SVG": "/imgs/countries/HU-svg.svg",
+    "PNG32": "/imgs/countries/HU-32.png",
+    "PNG128": "/imgs/countries/HU-128.png",
+    "names": [
+      "Arabic: هنغاريا",
+      "English: Hungary",
+      "Spanish: Hungría",
+      "French: Hongrie",
+      "Italian: Ungheria",
+      "Chinese: 匈牙利",
+      "Russian: Венгрия"
+    ],
+    "regions": [
+      "Europe"
+    ]
+  },
+  {
+    "id": "104",
+    "name": "Iceland",
+    "ISO2": "IS",
+    "ISO3": "ISL",
+    "SVG": "/imgs/countries/IS-svg.svg",
+    "PNG32": "/imgs/countries/IS-32.png",
+    "PNG128": "/imgs/countries/IS-128.png",
+    "names": [
+      "Arabic: آيسلندا",
+      "English: Iceland",
+      "Spanish: Islandia",
+      "French: Islande",
+      "Italian: Islanda",
+      "Chinese: 冰 岛",
+      "Russian: Исландия"
+    ],
+    "regions": [
+      "Europe",
+      "Polar: Arctic"
+    ]
+  },
+  {
+    "id": "105",
+    "name": "India",
+    "ISO2": "IN",
+    "ISO3": "IND",
+    "SVG": "/imgs/countries/IN-svg.svg",
+    "PNG32": "/imgs/countries/IN-32.png",
+    "PNG128": "/imgs/countries/IN-128.png",
+    "names": [
+      "Arabic: الهند",
+      "English: India",
+      "Spanish: India",
+      "French: Inde",
+      "Italian: India",
+      "Chinese: 印 度",
+      "Russian: Индия"
+    ],
+    "regions": [
+      "Asia and the Pacific"
+    ]
+  },
+  {
+    "id": "106",
+    "name": "Indonesia",
+    "ISO2": "ID",
+    "ISO3": "IDN",
+    "SVG": "/imgs/countries/ID-svg.svg",
+    "PNG32": "/imgs/countries/ID-32.png",
+    "PNG128": "/imgs/countries/ID-128.png",
+    "names": [
+      "Arabic: إندونيسيا",
+      "English: Indonesia",
+      "Spanish: Indonesia",
+      "French: Indonésie",
+      "Italian: Indonesia",
+      "Chinese: 印度尼西亚",
+      "Russian: Индонезия"
+    ],
+    "regions": [
+      "Asia and the Pacific"
+    ]
+  },
+  {
+    "id": "107",
+    "name": "Iran (Islamic Republic of)",
+    "ISO2": "IR",
+    "ISO3": "IRN",
+    "SVG": "/imgs/countries/IR-svg.svg",
+    "PNG32": "/imgs/countries/IR-32.png",
+    "PNG128": "/imgs/countries/IR-128.png",
+    "names": [
+      "Arabic: الإسلامية - جمهورية - إيران",
+      "English: Iran",
+      "Spanish: Irán",
+      "French: Iran",
+      "Italian: Iran",
+      "Chinese: 伊 朗(伊斯兰共和国)",
+      "Russian: Иран (Исламская Республика)"
+    ],
+    "regions": [
+      "Asia and the Pacific"
+    ]
+  },
+  {
+    "id": "108",
+    "name": "Iraq",
+    "ISO2": "IQ",
+    "ISO3": "IRQ",
+    "SVG": "/imgs/countries/IQ-svg.svg",
+    "PNG32": "/imgs/countries/IQ-32.png",
+    "PNG128": "/imgs/countries/IQ-128.png",
+    "names": [
+      "Arabic: العراق",
+      "English: Iraq",
+      "Spanish: Iraq",
+      "French: Iraq",
+      "Italian: Iraq",
+      "Chinese: 伊拉克",
+      "Russian: Ирак"
+    ],
+    "regions": [
+      "West Asia"
+    ]
+  },
+  {
+    "id": "109",
+    "name": "Ireland",
+    "ISO2": "IE",
+    "ISO3": "IRL",
+    "SVG": "/imgs/countries/IE-svg.svg",
+    "PNG32": "/imgs/countries/IE-32.png",
+    "PNG128": "/imgs/countries/IE-128.png",
+    "names": [
+      "Arabic: آيرلندا",
+      "English: Ireland",
+      "Spanish: Irlanda",
+      "French: Irlande",
+      "Italian: Irlanda",
+      "Chinese: 爱尔兰",
+      "Russian: Ирландия"
+    ],
+    "regions": [
+      "Europe"
+    ]
+  },
+  {
+    "id": "110",
+    "name": "Isle of Man",
+    "ISO2": "IM",
+    "ISO3": "IMN",
+    "SVG": "/imgs/countries/IM-svg.svg",
+    "PNG32": "/imgs/countries/IM-32.png",
+    "PNG128": "/imgs/countries/IM-128.png",
+    "names": [],
+    "regions": [
+      "Europe"
+    ]
+  },
+  {
+    "id": "111",
+    "name": "Israel",
+    "ISO2": "IL",
+    "ISO3": "ISR",
+    "SVG": "/imgs/countries/IL-svg.svg",
+    "PNG32": "/imgs/countries/IL-32.png",
+    "PNG128": "/imgs/countries/IL-128.png",
+    "names": [
+      "Arabic: إسرائيل",
+      "English: Israel",
+      "Spanish: Israel",
+      "French: Israël",
+      "Italian: Israele",
+      "Chinese: 以色列",
+      "Russian: Израиль"
+    ],
+    "regions": [
+      "Europe"
+    ]
+  },
+  {
+    "id": "112",
+    "name": "Italy",
+    "ISO2": "IT",
+    "ISO3": "ITA",
+    "SVG": "/imgs/countries/IT-svg.svg",
+    "PNG32": "/imgs/countries/IT-32.png",
+    "PNG128": "/imgs/countries/IT-128.png",
+    "names": [
+      "Arabic: إيطاليا",
+      "English: Italy",
+      "Spanish: Italia",
+      "French: Italie",
+      "Italian: Italia",
+      "Chinese: 意大利",
+      "Russian: Италия"
+    ],
+    "regions": [
+      "Europe"
+    ]
+  },
+  {
+    "id": "113",
+    "name": "Jamaica",
+    "ISO2": "JM",
+    "ISO3": "JAM",
+    "SVG": "/imgs/countries/JM-svg.svg",
+    "PNG32": "/imgs/countries/JM-32.png",
+    "PNG128": "/imgs/countries/JM-128.png",
+    "names": [
+      "Arabic: جامايكا",
+      "English: Jamaica",
+      "Spanish: Jamaica",
+      "French: Jamaïque",
+      "Italian: Giamaica",
+      "Chinese: 牙买加",
+      "Russian: Ямайка"
+    ],
+    "regions": [
+      "Latin America and the Caribbean"
+    ]
+  },
+  {
+    "id": "114",
+    "name": "Japan",
+    "ISO2": "JP",
+    "ISO3": "JPN",
+    "SVG": "/imgs/countries/JP-svg.svg",
+    "PNG32": "/imgs/countries/JP-32.png",
+    "PNG128": "/imgs/countries/JP-128.png",
+    "names": [
+      "Arabic: اليابان",
+      "English: Japan",
+      "Spanish: Japón",
+      "French: Japon",
+      "Italian: Giappone",
+      "Chinese: 日 本",
+      "Russian: Япония"
+    ],
+    "regions": [
+      "Asia and the Pacific"
+    ]
+  },
+  {
+    "id": "115",
+    "name": "Jersey",
+    "ISO2": "JE",
+    "ISO3": "JEY",
+    "SVG": "/imgs/countries/JE-svg.svg",
+    "PNG32": "/imgs/countries/JE-32.png",
+    "PNG128": "/imgs/countries/JE-128.png",
+    "names": [],
+    "regions": [
+      "Africa"
+    ]
+  },
+  {
+    "id": "116",
+    "name": "Jordan",
+    "ISO2": "JO",
+    "ISO3": "JOR",
+    "SVG": "/imgs/countries/JO-svg.svg",
+    "PNG32": "/imgs/countries/JO-32.png",
+    "PNG128": "/imgs/countries/JO-128.png",
+    "names": [
+      "Arabic: الأردن",
+      "English: Jordan",
+      "Spanish: Jordania",
+      "French: Jordanie",
+      "Italian: Giordania",
+      "Chinese: 约 旦",
+      "Russian: Иордания"
+    ],
+    "regions": [
+      "West Asia"
+    ]
+  },
+  {
+    "id": "117",
+    "name": "Kazakhstan",
+    "ISO2": "KZ",
+    "ISO3": "KAZ",
+    "SVG": "/imgs/countries/KZ-svg.svg",
+    "PNG32": "/imgs/countries/KZ-32.png",
+    "PNG128": "/imgs/countries/KZ-128.png",
+    "names": [
+      "Arabic: كازاخستان",
+      "English: Kazakhstan",
+      "Spanish: Kazajstán",
+      "French: Kazakhstan",
+      "Italian: Kazakistan",
+      "Chinese: 哈萨克斯坦",
+      "Russian: Казахстан"
+    ],
+    "regions": [
+      "Europe"
+    ]
+  },
+  {
+    "id": "118",
+    "name": "Kenya",
+    "ISO2": "KE",
+    "ISO3": "KEN",
+    "SVG": "/imgs/countries/KE-svg.svg",
+    "PNG32": "/imgs/countries/KE-32.png",
+    "PNG128": "/imgs/countries/KE-128.png",
+    "names": [
+      "Arabic: كينيا",
+      "English: Kenya",
+      "Spanish: Kenya",
+      "French: Kenya",
+      "Italian: Kenya",
+      "Chinese: 肯尼亚",
+      "Russian: Кения"
+    ],
+    "regions": [
+      "Africa"
+    ]
+  },
+  {
+    "id": "119",
+    "name": "Kiribati",
+    "ISO2": "KI",
+    "ISO3": "KIR",
+    "SVG": "/imgs/countries/KI-svg.svg",
+    "PNG32": "/imgs/countries/KI-32.png",
+    "PNG128": "/imgs/countries/KI-128.png",
+    "names": [
+      "Arabic: كيريباس",
+      "English: Kiribati",
+      "Spanish: Kiribati",
+      "French: Kiribati",
+      "Italian: Kiribati",
+      "Chinese: 基里巴斯",
+      "Russian: Кирибати"
+    ],
+    "regions": [
+      "Asia and the Pacific"
+    ]
+  },
+  {
+    "id": "120",
+    "name": "Kuwait",
+    "ISO2": "KW",
+    "ISO3": "KWT",
+    "SVG": "/imgs/countries/KW-svg.svg",
+    "PNG32": "/imgs/countries/KW-32.png",
+    "PNG128": "/imgs/countries/KW-128.png",
+    "names": [
+      "Arabic: الكويت",
+      "English: Kuwait",
+      "Spanish: Kuwait",
+      "French: Koweït",
+      "Italian: Kuwait",
+      "Chinese: 科威特",
+      "Russian: Кувейт"
+    ],
+    "regions": [
+      "West Asia"
+    ]
+  },
+  {
+    "id": "121",
+    "name": "Kyrgyzstan",
+    "ISO2": "KG",
+    "ISO3": "KGZ",
+    "SVG": "/imgs/countries/KG-svg.svg",
+    "PNG32": "/imgs/countries/KG-32.png",
+    "PNG128": "/imgs/countries/KG-128.png",
+    "names": [
+      "Arabic: قيرغيزستان",
+      "English: Kyrgyzstan",
+      "Spanish: Kirguistán",
+      "French: Kirghizistan",
+      "Italian: Kirghizistan",
+      "Chinese: 吉尔吉斯斯坦",
+      "Russian: Кыргызстан"
+    ],
+    "regions": [
+      "Europe"
+    ]
+  },
+  {
+    "id": "122",
+    "name": "Lao People's Democratic Republic",
+    "ISO2": "LA",
+    "ISO3": "LAO",
+    "SVG": "/imgs/countries/LA-svg.svg",
+    "PNG32": "/imgs/countries/LA-32.png",
+    "PNG128": "/imgs/countries/LA-128.png",
+    "names": [
+      "Arabic: الشعبية الديمقراطية لاو جمهورية",
+      "English: Lao People's Democratic Republic",
+      "Spanish: República Democrática Popular Lao",
+      "French: République démocratique populaire lao",
+      "Italian: Repubblica democratica popolare del Laos",
+      "Chinese: 老挝人民民主共和国",
+      "Russian: Лаосская Народно-Демократическая Республика"
+    ],
+    "regions": [
+      "Asia and the Pacific"
+    ]
+  },
+  {
+    "id": "123",
+    "name": "Latvia",
+    "ISO2": "LV",
+    "ISO3": "LVA",
+    "SVG": "/imgs/countries/LV-svg.svg",
+    "PNG32": "/imgs/countries/LV-32.png",
+    "PNG128": "/imgs/countries/LV-128.png",
+    "names": [
+      "Arabic: لاتفيا",
+      "English: Latvia",
+      "Spanish: Letonia",
+      "French: Lettonie",
+      "Italian: Lettonia",
+      "Chinese: 拉脱维亚",
+      "Russian: Латвия"
+    ],
+    "regions": [
+      "Europe"
+    ]
+  },
+  {
+    "id": "124",
+    "name": "Lebanon",
+    "ISO2": "LB",
+    "ISO3": "LBN",
+    "SVG": "/imgs/countries/LB-svg.svg",
+    "PNG32": "/imgs/countries/LB-32.png",
+    "PNG128": "/imgs/countries/LB-128.png",
+    "names": [
+      "Arabic: لبنان",
+      "English: Lebanon",
+      "Spanish: Líbano",
+      "French: Liban",
+      "Italian: Libano",
+      "Chinese: 黎巴嫩",
+      "Russian: Ливан"
+    ],
+    "regions": [
+      "West Asia"
+    ]
+  },
+  {
+    "id": "125",
+    "name": "Lesotho",
+    "ISO2": "LS",
+    "ISO3": "LSO",
+    "SVG": "/imgs/countries/LS-svg.svg",
+    "PNG32": "/imgs/countries/LS-32.png",
+    "PNG128": "/imgs/countries/LS-128.png",
+    "names": [
+      "Arabic: ليسوتو",
+      "English: Lesotho",
+      "Spanish: Lesotho",
+      "French: Lesotho",
+      "Italian: Lesotho",
+      "Chinese: 莱索托",
+      "Russian: Лесото"
+    ],
+    "regions": [
+      "Africa"
+    ]
+  },
+  {
+    "id": "126",
+    "name": "Liberia",
+    "ISO2": "LR",
+    "ISO3": "LBR",
+    "SVG": "/imgs/countries/LR-svg.svg",
+    "PNG32": "/imgs/countries/LR-32.png",
+    "PNG128": "/imgs/countries/LR-128.png",
+    "names": [
+      "Arabic: ليبريا",
+      "English: Liberia",
+      "Spanish: Liberia",
+      "French: Libéria",
+      "Italian: Liberia",
+      "Chinese: 利比里亚",
+      "Russian: Либерия"
+    ],
+    "regions": [
+      "Africa"
+    ]
+  },
+  {
+    "id": "127",
+    "name": "Libya",
+    "ISO2": "LY",
+    "ISO3": "LBY",
+    "SVG": "/imgs/countries/LY-svg.svg",
+    "PNG32": "/imgs/countries/LY-32.png",
+    "PNG128": "/imgs/countries/LY-128.png",
+    "names": [
+      "Arabic: ليبيا",
+      "English: Libya",
+      "Spanish: Libia",
+      "French: Libye",
+      "Italian: Libia",
+      "Chinese: 利比亚",
+      "Russian: Ливия"
+    ],
+    "regions": [
+      "Africa"
+    ]
+  },
+  {
+    "id": "128",
+    "name": "Liechtenstein",
+    "ISO2": "LI",
+    "ISO3": "LIE",
+    "SVG": "/imgs/countries/LI-svg.svg",
+    "PNG32": "/imgs/countries/LI-32.png",
+    "PNG128": "/imgs/countries/LI-128.png",
+    "names": [
+      "Arabic: لختنشتاين",
+      "English: Liechtenstein",
+      "Spanish: Liechtenstein",
+      "French: Liechtenstein",
+      "Italian: Liechtenstein",
+      "Chinese: 列支敦士登",
+      "Russian: Лихтенштейн"
+    ],
+    "regions": [
+      "Europe"
+    ]
+  },
+  {
+    "id": "129",
+    "name": "Lithuania",
+    "ISO2": "LT",
+    "ISO3": "LTU",
+    "SVG": "/imgs/countries/LT-svg.svg",
+    "PNG32": "/imgs/countries/LT-32.png",
+    "PNG128": "/imgs/countries/LT-128.png",
+    "names": [
+      "Arabic: ليتوانيا",
+      "English: Lithuania",
+      "Spanish: Lituania",
+      "French: Lituanie",
+      "Italian: Lituania",
+      "Chinese: 立陶宛",
+      "Russian: Литва"
+    ],
+    "regions": [
+      "Europe"
+    ]
+  },
+  {
+    "id": "130",
+    "name": "Luxembourg",
+    "ISO2": "LU",
+    "ISO3": "LUX",
+    "SVG": "/imgs/countries/LU-svg.svg",
+    "PNG32": "/imgs/countries/LU-32.png",
+    "PNG128": "/imgs/countries/LU-128.png",
+    "names": [
+      "Arabic: لكسمبرغ",
+      "English: Luxembourg",
+      "Spanish: Luxemburgo",
+      "French: Luxembourg",
+      "Italian: Lussemburgo",
+      "Chinese: 卢森堡",
+      "Russian: Люксембург"
+    ],
+    "regions": [
+      "Europe"
+    ]
+  },
+  {
+    "id": "131",
+    "name": "Macao",
+    "ISO2": "MO",
+    "ISO3": "MAC",
+    "SVG": "/imgs/countries/MO-svg.svg",
+    "PNG32": "/imgs/countries/MO-32.png",
+    "PNG128": "/imgs/countries/MO-128.png",
+    "names": [],
+    "regions": [
+      "Asia and the Pacific"
+    ]
+  },
+  {
+    "id": "132",
+    "name": "Madagascar",
+    "ISO2": "MG",
+    "ISO3": "MDG",
+    "SVG": "/imgs/countries/MG-svg.svg",
+    "PNG32": "/imgs/countries/MG-32.png",
+    "PNG128": "/imgs/countries/MG-128.png",
+    "names": [
+      "Arabic: مدغشقر",
+      "English: Madagascar",
+      "Spanish: Madagascar",
+      "French: Madagascar",
+      "Italian: Madagascar",
+      "Chinese: 马达加斯加",
+      "Russian: Мадагаскар"
+    ],
+    "regions": [
+      "Africa"
+    ]
+  },
+  {
+    "id": "133",
+    "name": "Malawi",
+    "ISO2": "MW",
+    "ISO3": "MWI",
+    "SVG": "/imgs/countries/MW-svg.svg",
+    "PNG32": "/imgs/countries/MW-32.png",
+    "PNG128": "/imgs/countries/MW-128.png",
+    "names": [
+      "Arabic: ملاوي",
+      "English: Malawi",
+      "Spanish: Malawi",
+      "French: Malawi",
+      "Italian: Malawi",
+      "Chinese: 马拉维",
+      "Russian: Малави"
+    ],
+    "regions": [
+      "Africa"
+    ]
+  },
+  {
+    "id": "134",
+    "name": "Malaysia",
+    "ISO2": "MY",
+    "ISO3": "MYS",
+    "SVG": "/imgs/countries/MY-svg.svg",
+    "PNG32": "/imgs/countries/MY-32.png",
+    "PNG128": "/imgs/countries/MY-128.png",
+    "names": [
+      "Arabic: ماليزيا",
+      "English: Malaysia",
+      "Spanish: Malasia",
+      "French: Malaisie",
+      "Italian: Malaysia",
+      "Chinese: 马来西亚",
+      "Russian: Малайзия"
+    ],
+    "regions": [
+      "Asia and the Pacific"
+    ]
+  },
+  {
+    "id": "135",
+    "name": "Maldives",
+    "ISO2": "MV",
+    "ISO3": "MDV",
+    "SVG": "/imgs/countries/MV-svg.svg",
+    "PNG32": "/imgs/countries/MV-32.png",
+    "PNG128": "/imgs/countries/MV-128.png",
+    "names": [
+      "Arabic: ملديف",
+      "English: Maldives",
+      "Spanish: Maldivas",
+      "French: Maldives",
+      "Italian: Maldive",
+      "Chinese: 马尔代夫",
+      "Russian: Мальдивы"
+    ],
+    "regions": [
+      "Asia and the Pacific"
+    ]
+  },
+  {
+    "id": "136",
+    "name": "Mali",
+    "ISO2": "ML",
+    "ISO3": "MLI",
+    "SVG": "/imgs/countries/ML-svg.svg",
+    "PNG32": "/imgs/countries/ML-32.png",
+    "PNG128": "/imgs/countries/ML-128.png",
+    "names": [
+      "Arabic: مالي",
+      "English: Mali",
+      "Spanish: Malí",
+      "French: Mali",
+      "Italian: Mali",
+      "Chinese: 马 里",
+      "Russian: Мали"
+    ],
+    "regions": [
+      "Africa"
+    ]
+  },
+  {
+    "id": "137",
+    "name": "Malta",
+    "ISO2": "MT",
+    "ISO3": "MLT",
+    "SVG": "/imgs/countries/MT-svg.svg",
+    "PNG32": "/imgs/countries/MT-32.png",
+    "PNG128": "/imgs/countries/MT-128.png",
+    "names": [
+      "Arabic: مالطة",
+      "English: Malta",
+      "Spanish: Malta",
+      "French: Malte",
+      "Italian: Malta",
+      "Chinese: 马耳他",
+      "Russian: Мальта"
+    ],
+    "regions": [
+      "Europe"
+    ]
+  },
+  {
+    "id": "138",
+    "name": "Marshall Islands",
+    "ISO2": "MH",
+    "ISO3": "MHL",
+    "SVG": "/imgs/countries/MH-svg.svg",
+    "PNG32": "/imgs/countries/MH-32.png",
+    "PNG128": "/imgs/countries/MH-128.png",
+    "names": [
+      "Arabic: جزر مارشال",
+      "English: Marshall Islands",
+      "Spanish: Islas Marshall",
+      "French: Îles Marshall",
+      "Italian: Isole Marshall",
+      "Chinese: 马绍尔群岛",
+      "Russian: Маршалловы Острова"
+    ],
+    "regions": [
+      "Asia and the Pacific"
+    ]
+  },
+  {
+    "id": "139",
+    "name": "Martinique",
+    "ISO2": "MQ",
+    "ISO3": "MTQ",
+    "SVG": "/imgs/countries/MQ-svg.svg",
+    "PNG32": "/imgs/countries/MQ-32.png",
+    "PNG128": "/imgs/countries/MQ-128.png",
+    "names": [],
+    "regions": [
+      "Latin America and the Caribbean"
+    ]
+  },
+  {
+    "id": "140",
+    "name": "Mauritania",
+    "ISO2": "MR",
+    "ISO3": "MRT",
+    "SVG": "/imgs/countries/MR-svg.svg",
+    "PNG32": "/imgs/countries/MR-32.png",
+    "PNG128": "/imgs/countries/MR-128.png",
+    "names": [
+      "Arabic: موريتانيا",
+      "English: Mauritania",
+      "Spanish: Mauritania",
+      "French: Mauritanie",
+      "Italian: Mauritania",
+      "Chinese: 毛里塔尼亚",
+      "Russian: Мавритания"
+    ],
+    "regions": [
+      "Africa"
+    ]
+  },
+  {
+    "id": "141",
+    "name": "Mauritius",
+    "ISO2": "MU",
+    "ISO3": "MUS",
+    "SVG": "/imgs/countries/MU-svg.svg",
+    "PNG32": "/imgs/countries/MU-32.png",
+    "PNG128": "/imgs/countries/MU-128.png",
+    "names": [
+      "Arabic: موريشيوس",
+      "English: Mauritius",
+      "Spanish: Mauricio",
+      "French: Maurice",
+      "Italian: Maurizio",
+      "Chinese: 毛里求斯",
+      "Russian: Маврикий"
+    ],
+    "regions": [
+      "Africa"
+    ]
+  },
+  {
+    "id": "142",
+    "name": "Mayotte",
+    "ISO2": "YT",
+    "ISO3": "MYT",
+    "SVG": "/imgs/countries/YT-svg.svg",
+    "PNG32": "/imgs/countries/YT-32.png",
+    "PNG128": "/imgs/countries/YT-128.png",
+    "names": [],
+    "regions": [
+      "Africa"
+    ]
+  },
+  {
+    "id": "143",
+    "name": "Mexico",
+    "ISO2": "MX",
+    "ISO3": "MEX",
+    "SVG": "/imgs/countries/MX-svg.svg",
+    "PNG32": "/imgs/countries/MX-32.png",
+    "PNG128": "/imgs/countries/MX-128.png",
+    "names": [
+      "Arabic: المكسيك",
+      "English: Mexico",
+      "Spanish: México",
+      "French: Mexique",
+      "Italian: Messico",
+      "Chinese: 墨西哥",
+      "Russian: Мексика"
+    ],
+    "regions": [
+      "Latin America and the Caribbean"
+    ]
+  },
+  {
+    "id": "144",
+    "name": "Micronesia (Federated States of)",
+    "ISO2": "FM",
+    "ISO3": "FSM",
+    "SVG": "/imgs/countries/FM-svg.svg",
+    "PNG32": "/imgs/countries/FM-32.png",
+    "PNG128": "/imgs/countries/FM-128.png",
+    "names": [
+      "Arabic: ميكرونيزيا",
+      "English: Micronesia (Federated States of)",
+      "Spanish: Micronesia (Estados Federados de)",
+      "French: Micronésie (États fédérés de)",
+      "Italian: Micronesia (Stati federati di)",
+      "Chinese: 密克罗尼西亚(联邦)",
+      "Russian: Микронезия (Федеративные Штаты)"
+    ],
+    "regions": [
+      "Asia and the Pacific"
+    ]
+  },
+  {
+    "id": "145",
+    "name": "Monaco",
+    "ISO2": "MC",
+    "ISO3": "MCO",
+    "SVG": "/imgs/countries/MC-svg.svg",
+    "PNG32": "/imgs/countries/MC-32.png",
+    "PNG128": "/imgs/countries/MC-128.png",
+    "names": [
+      "Arabic: موناكو",
+      "English: Monaco",
+      "Spanish: Mónaco",
+      "French: Monaco",
+      "Italian: Monaco",
+      "Chinese: 摩纳哥",
+      "Russian: Монако"
+    ],
+    "regions": [
+      "Europe"
+    ]
+  },
+  {
+    "id": "146",
+    "name": "Mongolia",
+    "ISO2": "MN",
+    "ISO3": "MNG",
+    "SVG": "/imgs/countries/MN-svg.svg",
+    "PNG32": "/imgs/countries/MN-32.png",
+    "PNG128": "/imgs/countries/MN-128.png",
+    "names": [
+      "Arabic: منغوليا",
+      "English: Mongolia",
+      "Spanish: Mongolia",
+      "French: Mongolie",
+      "Italian: Mongolia",
+      "Chinese: 蒙 古",
+      "Russian: Монголия"
+    ],
+    "regions": [
+      "Asia and the Pacific"
+    ]
+  },
+  {
+    "id": "147",
+    "name": "Montenegro",
+    "ISO2": "ME",
+    "ISO3": "MNE",
+    "SVG": "/imgs/countries/ME-svg.svg",
+    "PNG32": "/imgs/countries/ME-32.png",
+    "PNG128": "/imgs/countries/ME-128.png",
+    "names": [
+      "Arabic: الأسود الجبل",
+      "English: Montenegro",
+      "Spanish: Montenegro",
+      "French: Monténégro",
+      "Italian: Montenegro",
+      "Chinese: 黑山",
+      "Russian: Черногория"
+    ],
+    "regions": [
+      "Europe"
+    ]
+  },
+  {
+    "id": "148",
+    "name": "Montserrat",
+    "ISO2": "MS",
+    "ISO3": "MSR",
+    "SVG": "/imgs/countries/MS-svg.svg",
+    "PNG32": "/imgs/countries/MS-32.png",
+    "PNG128": "/imgs/countries/MS-128.png",
+    "names": [],
+    "regions": [
+      "Latin America and the Caribbean"
+    ]
+  },
+  {
+    "id": "149",
+    "name": "Morocco",
+    "ISO2": "MA",
+    "ISO3": "MAR",
+    "SVG": "/imgs/countries/MA-svg.svg",
+    "PNG32": "/imgs/countries/MA-32.png",
+    "PNG128": "/imgs/countries/MA-128.png",
+    "names": [
+      "Arabic: المغرب",
+      "English: Morocco",
+      "Spanish: Marruecos",
+      "French: Maroc",
+      "Italian: Marocco",
+      "Chinese: 摩洛哥",
+      "Russian: Марокко"
+    ],
+    "regions": [
+      "Africa"
+    ]
+  },
+  {
+    "id": "150",
+    "name": "Mozambique",
+    "ISO2": "MZ",
+    "ISO3": "MOZ",
+    "SVG": "/imgs/countries/MZ-svg.svg",
+    "PNG32": "/imgs/countries/MZ-32.png",
+    "PNG128": "/imgs/countries/MZ-128.png",
+    "names": [
+      "Arabic: موزامبيق",
+      "English: Mozambique",
+      "Spanish: Mozambique",
+      "French: Mozambique",
+      "Italian: Mozambico",
+      "Chinese: 莫桑比克",
+      "Russian: Мозамбик"
+    ],
+    "regions": [
+      "Africa"
+    ]
+  },
+  {
+    "id": "151",
+    "name": "Myanmar",
+    "ISO2": "MM",
+    "ISO3": "MMR",
+    "SVG": "/imgs/countries/MM-svg.svg",
+    "PNG32": "/imgs/countries/MM-32.png",
+    "PNG128": "/imgs/countries/MM-128.png",
+    "names": [
+      "Arabic: ميانمار",
+      "English: Myanmar",
+      "Spanish: Myanmar",
+      "French: Myanmar",
+      "Italian: Myanmar",
+      "Chinese: 缅 甸",
+      "Russian: Мьянма"
+    ],
+    "regions": [
+      "Asia and the Pacific"
+    ]
+  },
+  {
+    "id": "152",
+    "name": "Namibia",
+    "ISO2": "NA",
+    "ISO3": "NAM",
+    "SVG": "/imgs/countries/NA-svg.svg",
+    "PNG32": "/imgs/countries/NA-32.png",
+    "PNG128": "/imgs/countries/NA-128.png",
+    "names": [
+      "Arabic: ناميبيا",
+      "English: Namibia",
+      "Spanish: Namibia",
+      "French: Namibie",
+      "Italian: Namibia",
+      "Chinese: 纳米比亚",
+      "Russian: Намибия"
+    ],
+    "regions": [
+      "Africa"
+    ]
+  },
+  {
+    "id": "153",
+    "name": "Nauru",
+    "ISO2": "NR",
+    "ISO3": "NRU",
+    "SVG": "/imgs/countries/NR-svg.svg",
+    "PNG32": "/imgs/countries/NR-32.png",
+    "PNG128": "/imgs/countries/NR-128.png",
+    "names": [
+      "Arabic: ناورو",
+      "English: Nauru",
+      "Spanish: Nauru",
+      "French: Nauru",
+      "Italian: Nauru",
+      "Chinese: 瑙 鲁",
+      "Russian: Науру"
+    ],
+    "regions": [
+      "Asia and the Pacific"
+    ]
+  },
+  {
+    "id": "154",
+    "name": "Nepal",
+    "ISO2": "NP",
+    "ISO3": "NPL",
+    "SVG": "/imgs/countries/NP-svg.svg",
+    "PNG32": "/imgs/countries/NP-32.png",
+    "PNG128": "/imgs/countries/NP-128.png",
+    "names": [
+      "Arabic: نيبال",
+      "English: Nepal",
+      "Spanish: Nepal",
+      "French: Népal",
+      "Italian: Nepal",
+      "Chinese: 尼泊尔",
+      "Russian: Непал"
+    ],
+    "regions": [
+      "Asia and the Pacific"
+    ]
+  },
+  {
+    "id": "155",
+    "name": "Netherlands",
+    "ISO2": "NL",
+    "ISO3": "NLD",
+    "SVG": "/imgs/countries/NL-svg.svg",
+    "PNG32": "/imgs/countries/NL-32.png",
+    "PNG128": "/imgs/countries/NL-128.png",
+    "names": [
+      "Arabic: هولندا",
+      "English: Netherlands",
+      "Spanish: Países Bajos",
+      "French: Pays-Bas",
+      "Italian: Paesi Bassi",
+      "Chinese: 荷 兰",
+      "Russian: Нидерланды"
+    ],
+    "regions": [
+      "Europe"
+    ]
+  },
+  {
+    "id": "156",
+    "name": "New Caledonia",
+    "ISO2": "NC",
+    "ISO3": "NCL",
+    "SVG": "/imgs/countries/NC-svg.svg",
+    "PNG32": "/imgs/countries/NC-32.png",
+    "PNG128": "/imgs/countries/NC-128.png",
+    "names": [],
+    "regions": [
+      "Asia and the Pacific"
+    ]
+  },
+  {
+    "id": "157",
+    "name": "New Zealand",
+    "ISO2": "NZ",
+    "ISO3": "NZL",
+    "SVG": "/imgs/countries/NZ-svg.svg",
+    "PNG32": "/imgs/countries/NZ-32.png",
+    "PNG128": "/imgs/countries/NZ-128.png",
+    "names": [
+      "Arabic: نيوزيلندا",
+      "English: New Zealand",
+      "Spanish: Nueva Zelandia",
+      "French: Nouvelle-Zélande",
+      "Italian: Nuova Zelanda",
+      "Chinese: 新西兰",
+      "Russian: Новая Зеландия"
+    ],
+    "regions": [
+      "Asia and the Pacific"
+    ]
+  },
+  {
+    "id": "158",
+    "name": "Nicaragua",
+    "ISO2": "NI",
+    "ISO3": "NIC",
+    "SVG": "/imgs/countries/NI-svg.svg",
+    "PNG32": "/imgs/countries/NI-32.png",
+    "PNG128": "/imgs/countries/NI-128.png",
+    "names": [
+      "Arabic: نيكاراغوا",
+      "English: Nicaragua",
+      "Spanish: Nicaragua",
+      "French: Nicaragua",
+      "Italian: Nicaragua",
+      "Chinese: 尼加拉瓜",
+      "Russian: Никарагуа"
+    ],
+    "regions": [
+      "Latin America and the Caribbean"
+    ]
+  },
+  {
+    "id": "159",
+    "name": "Niger",
+    "ISO2": "NE",
+    "ISO3": "NER",
+    "SVG": "/imgs/countries/NE-svg.svg",
+    "PNG32": "/imgs/countries/NE-32.png",
+    "PNG128": "/imgs/countries/NE-128.png",
+    "names": [
+      "Arabic: النيجر",
+      "English: Niger",
+      "Spanish: Níger",
+      "French: Niger",
+      "Italian: Niger",
+      "Chinese: 尼日尔",
+      "Russian: Нигер"
+    ],
+    "regions": [
+      "Africa"
+    ]
+  },
+  {
+    "id": "160",
+    "name": "Nigeria",
+    "ISO2": "NG",
+    "ISO3": "NGA",
+    "SVG": "/imgs/countries/NG-svg.svg",
+    "PNG32": "/imgs/countries/NG-32.png",
+    "PNG128": "/imgs/countries/NG-128.png",
+    "names": [
+      "Arabic: نيجيريا",
+      "English: Nigeria",
+      "Spanish: Nigeria",
+      "French: Nigéria",
+      "Italian: Nigeria",
+      "Chinese: 尼日利亚",
+      "Russian: Нигерия"
+    ],
+    "regions": [
+      "Africa"
+    ]
+  },
+  {
+    "id": "161",
+    "name": "Niue",
+    "ISO2": "NU",
+    "ISO3": "NIU",
+    "SVG": "/imgs/countries/NU-svg.svg",
+    "PNG32": "/imgs/countries/NU-32.png",
+    "PNG128": "/imgs/countries/NU-128.png",
+    "names": [
+      "Arabic: نيوى",
+      "English: Niue",
+      "Spanish: Niue",
+      "French: Nioué",
+      "Italian: Niue",
+      "Chinese: 纽 埃",
+      "Russian: Ниуэ"
+    ],
+    "regions": [
+      "Asia and the Pacific"
+    ]
+  },
+  {
+    "id": "162",
+    "name": "Norfolk Island",
+    "ISO2": "NF",
+    "ISO3": "NFK",
+    "SVG": "/imgs/countries/NF-svg.svg",
+    "PNG32": "/imgs/countries/NF-32.png",
+    "PNG128": "/imgs/countries/NF-128.png",
+    "names": [],
+    "regions": [
+      "Asia and the Pacific"
+    ]
+  },
+  {
+    "id": "163",
+    "name": "Northern Mariana Islands",
+    "ISO2": "MP",
+    "ISO3": "MNP",
+    "SVG": "/imgs/countries/MP-svg.svg",
+    "PNG32": "/imgs/countries/MP-32.png",
+    "PNG128": "/imgs/countries/MP-128.png",
+    "names": [],
+    "regions": [
+      "Asia and the Pacific"
+    ]
+  },
+  {
+    "id": "164",
+    "name": "Norway",
+    "ISO2": "NO",
+    "ISO3": "NOR",
+    "SVG": "/imgs/countries/NO-svg.svg",
+    "PNG32": "/imgs/countries/NO-32.png",
+    "PNG128": "/imgs/countries/NO-128.png",
+    "names": [
+      "Arabic: النرويج",
+      "English: Norway",
+      "Spanish: Noruega",
+      "French: Norvège",
+      "Italian: Norvegia",
+      "Chinese: 挪 威",
+      "Russian: Норвегия"
+    ],
+    "regions": [
+      "Europe",
+      "Polar: Arctic"
+    ]
+  },
+  {
+    "id": "165",
+    "name": "Oman",
+    "ISO2": "OM",
+    "ISO3": "OMN",
+    "SVG": "/imgs/countries/OM-svg.svg",
+    "PNG32": "/imgs/countries/OM-32.png",
+    "PNG128": "/imgs/countries/OM-128.png",
+    "names": [
+      "Arabic: عمان",
+      "English: Oman",
+      "Spanish: Omán",
+      "French: Oman",
+      "Italian: Oman",
+      "Chinese: 阿 曼",
+      "Russian: Оман"
+    ],
+    "regions": [
+      "West Asia"
+    ]
+  },
+  {
+    "id": "166",
+    "name": "Pakistan",
+    "ISO2": "PK",
+    "ISO3": "PAK",
+    "SVG": "/imgs/countries/PK-svg.svg",
+    "PNG32": "/imgs/countries/PK-32.png",
+    "PNG128": "/imgs/countries/PK-128.png",
+    "names": [
+      "Arabic: باكستان",
+      "English: Pakistan",
+      "Spanish: Pakistán",
+      "French: Pakistan",
+      "Italian: Pakistan",
+      "Chinese: 巴基斯坦",
+      "Russian: Пакистан"
+    ],
+    "regions": [
+      "Asia and the Pacific"
+    ]
+  },
+  {
+    "id": "167",
+    "name": "Palau",
+    "ISO2": "PW",
+    "ISO3": "PLW",
+    "SVG": "/imgs/countries/PW-svg.svg",
+    "PNG32": "/imgs/countries/PW-32.png",
+    "PNG128": "/imgs/countries/PW-128.png",
+    "names": [
+      "Arabic: بالاو",
+      "English: Palau",
+      "Spanish: Palau",
+      "French: Palaos",
+      "Italian: Palau",
+      "Chinese: 帕劳",
+      "Russian: Палау"
+    ],
+    "regions": [
+      "Asia and the Pacific"
+    ]
+  },
+  {
+    "id": "168",
+    "name": "Palestinian Territory, Occupied",
+    "ISO2": "PS",
+    "ISO3": "PSE",
+    "SVG": "/imgs/countries/PS-svg.svg",
+    "PNG32": "/imgs/countries/PS-32.png",
+    "PNG128": "/imgs/countries/PS-128.png",
+    "names": [],
+    "regions": [
+      "West Asia"
+    ]
+  },
+  {
+    "id": "169",
+    "name": "Panama",
+    "ISO2": "PA",
+    "ISO3": "PAN",
+    "SVG": "/imgs/countries/PA-svg.svg",
+    "PNG32": "/imgs/countries/PA-32.png",
+    "PNG128": "/imgs/countries/PA-128.png",
+    "names": [
+      "Arabic: بنما",
+      "English: Panama",
+      "Spanish: Panamá",
+      "French: Panama",
+      "Italian: Panama",
+      "Chinese: 巴拿马",
+      "Russian: Панама"
+    ],
+    "regions": [
+      "Latin America and the Caribbean"
+    ]
+  },
+  {
+    "id": "170",
+    "name": "Papua New Guinea",
+    "ISO2": "PG",
+    "ISO3": "PNG",
+    "SVG": "/imgs/countries/PG-svg.svg",
+    "PNG32": "/imgs/countries/PG-32.png",
+    "PNG128": "/imgs/countries/PG-128.png",
+    "names": [
+      "Arabic: الجديدة غينيا بابوا",
+      "English: Papua New Guinea",
+      "Spanish: Papua Nueva Guinea",
+      "French: Papouasie-Nouvelle-Guinée",
+      "Italian: Papua Nuova Guinea",
+      "Chinese: 巴布亚新几内亚",
+      "Russian: Папуа-Новая Гвинея"
+    ],
+    "regions": [
+      "Asia and the Pacific"
+    ]
+  },
+  {
+    "id": "171",
+    "name": "Paraguay",
+    "ISO2": "PY",
+    "ISO3": "PRY",
+    "SVG": "/imgs/countries/PY-svg.svg",
+    "PNG32": "/imgs/countries/PY-32.png",
+    "PNG128": "/imgs/countries/PY-128.png",
+    "names": [
+      "Arabic: باراغواي",
+      "English: Paraguay",
+      "Spanish: Paraguay",
+      "French: Paraguay",
+      "Italian: Paraguay",
+      "Chinese: 巴拉圭",
+      "Russian: Парагвай"
+    ],
+    "regions": [
+      "Latin America and the Caribbean"
+    ]
+  },
+  {
+    "id": "172",
+    "name": "Peru",
+    "ISO2": "PE",
+    "ISO3": "PER",
+    "SVG": "/imgs/countries/PE-svg.svg",
+    "PNG32": "/imgs/countries/PE-32.png",
+    "PNG128": "/imgs/countries/PE-128.png",
+    "names": [
+      "Arabic: بيرو",
+      "English: Peru",
+      "Spanish: Perú",
+      "French: Pérou",
+      "Italian: Perù",
+      "Chinese: 秘 鲁",
+      "Russian: Перу"
+    ],
+    "regions": [
+      "Latin America and the Caribbean"
+    ]
+  },
+  {
+    "id": "173",
+    "name": "Philippines",
+    "ISO2": "PH",
+    "ISO3": "PHL",
+    "SVG": "/imgs/countries/PH-svg.svg",
+    "PNG32": "/imgs/countries/PH-32.png",
+    "PNG128": "/imgs/countries/PH-128.png",
+    "names": [
+      "Arabic: الفلبين",
+      "English: Philippines",
+      "Spanish: Filipinas",
+      "French: Philippines",
+      "Italian: Filippine",
+      "Chinese: 菲律宾",
+      "Russian: Филиппины"
+    ],
+    "regions": [
+      "Asia and the Pacific"
+    ]
+  },
+  {
+    "id": "174",
+    "name": "Pitcairn Islands",
+    "ISO2": "PN",
+    "ISO3": "PCN",
+    "SVG": "/imgs/countries/PN-svg.svg",
+    "PNG32": "/imgs/countries/PN-32.png",
+    "PNG128": "/imgs/countries/PN-128.png",
+    "names": [],
+    "regions": [
+      "Asia and the Pacific"
+    ]
+  },
+  {
+    "id": "175",
+    "name": "Poland",
+    "ISO2": "PL",
+    "ISO3": "POL",
+    "SVG": "/imgs/countries/PL-svg.svg",
+    "PNG32": "/imgs/countries/PL-32.png",
+    "PNG128": "/imgs/countries/PL-128.png",
+    "names": [
+      "Arabic: بولندا",
+      "English: Poland",
+      "Spanish: Polonia",
+      "French: Pologne",
+      "Italian: Polonia",
+      "Chinese: 波 兰",
+      "Russian: Польша"
+    ],
+    "regions": [
+      "Europe"
+    ]
+  },
+  {
+    "id": "176",
+    "name": "Portugal",
+    "ISO2": "PT",
+    "ISO3": "PRT",
+    "SVG": "/imgs/countries/PT-svg.svg",
+    "PNG32": "/imgs/countries/PT-32.png",
+    "PNG128": "/imgs/countries/PT-128.png",
+    "names": [
+      "Arabic: البرتغال",
+      "English: Portugal",
+      "Spanish: Portugal",
+      "French: Portugal",
+      "Italian: Portogallo",
+      "Chinese: 葡萄牙",
+      "Russian: Португалия"
+    ],
+    "regions": [
+      "Europe"
+    ]
+  },
+  {
+    "id": "177",
+    "name": "Puerto Rico",
+    "ISO2": "PR",
+    "ISO3": "PRI",
+    "SVG": "/imgs/countries/PR-svg.svg",
+    "PNG32": "/imgs/countries/PR-32.png",
+    "PNG128": "/imgs/countries/PR-128.png",
+    "names": [],
+    "regions": [
+      "Latin America and the Caribbean"
+    ]
+  },
+  {
+    "id": "178",
+    "name": "Qatar",
+    "ISO2": "QA",
+    "ISO3": "QAT",
+    "SVG": "/imgs/countries/QA-svg.svg",
+    "PNG32": "/imgs/countries/QA-32.png",
+    "PNG128": "/imgs/countries/QA-128.png",
+    "names": [
+      "Arabic: قطر",
+      "English: Qatar",
+      "Spanish: Qatar",
+      "French: Qatar",
+      "Italian: Qatar",
+      "Chinese: 卡塔尔",
+      "Russian: Катар"
+    ],
+    "regions": [
+      "West Asia"
+    ]
+  },
+  {
+    "id": "179",
+    "name": "Republic of Korea",
+    "ISO2": "KR",
+    "ISO3": "KOR",
+    "SVG": "/imgs/countries/KR-svg.svg",
+    "PNG32": "/imgs/countries/KR-32.png",
+    "PNG128": "/imgs/countries/KR-128.png",
+    "names": [
+      "Arabic: جمهورية كوريا",
+      "English: Republic of Korea",
+      "Spanish: República de Corea",
+      "French: République de Corée",
+      "Italian: Repubblica di Corea",
+      "Chinese: 大韩民国",
+      "Russian: Республика Корея"
+    ],
+    "regions": [
+      "Asia and the Pacific"
+    ]
+  },
+  {
+    "id": "180",
+    "name": "Republic of Moldova",
+    "ISO2": "MD",
+    "ISO3": "MDA",
+    "SVG": "/imgs/countries/MD-svg.svg",
+    "PNG32": "/imgs/countries/MD-32.png",
+    "PNG128": "/imgs/countries/MD-128.png",
+    "names": [
+      "Arabic: جمهورية مولدوفا",
+      "English: Republic of Moldova",
+      "Spanish: República de Moldova",
+      "French: République de Moldova",
+      "Italian: Repubblica di Moldova",
+      "Chinese: 摩尔多瓦共和国",
+      "Russian: Республика Молдова"
+    ],
+    "regions": [
+      "Europe"
+    ]
+  },
+  {
+    "id": "181",
+    "name": "Réunion",
+    "ISO2": "RE",
+    "ISO3": "REU",
+    "SVG": "/imgs/countries/RE-svg.svg",
+    "PNG32": "/imgs/countries/RE-32.png",
+    "PNG128": "/imgs/countries/RE-128.png",
+    "names": [],
+    "regions": [
+      "Africa"
+    ]
+  },
+  {
+    "id": "182",
+    "name": "Romania",
+    "ISO2": "RO",
+    "ISO3": "ROU",
+    "SVG": "/imgs/countries/RO-svg.svg",
+    "PNG32": "/imgs/countries/RO-32.png",
+    "PNG128": "/imgs/countries/RO-128.png",
+    "names": [
+      "Arabic: رومانيا",
+      "English: Romania",
+      "Spanish: Rumania",
+      "French: Roumanie",
+      "Italian: Romania",
+      "Chinese: 罗马尼亚",
+      "Russian: Румыния"
+    ],
+    "regions": [
+      "Europe"
+    ]
+  },
+  {
+    "id": "183",
+    "name": "Russian Federation",
+    "ISO2": "RU",
+    "ISO3": "RUS",
+    "SVG": "/imgs/countries/RU-svg.svg",
+    "PNG32": "/imgs/countries/RU-32.png",
+    "PNG128": "/imgs/countries/RU-128.png",
+    "names": [
+      "Arabic: الاتحاد الروسي",
+      "English: Russian Federation",
+      "Spanish: Federación de Rusia",
+      "French: Fédération de Russie",
+      "Italian: Russia",
+      "Chinese: 俄罗斯联邦",
+      "Russian: Российская Федерация"
+    ],
+    "regions": [
+      "Europe",
+      "Polar: Arctic"
+    ]
+  },
+  {
+    "id": "184",
+    "name": "Rwanda",
+    "ISO2": "RW",
+    "ISO3": "RWA",
+    "SVG": "/imgs/countries/RW-svg.svg",
+    "PNG32": "/imgs/countries/RW-32.png",
+    "PNG128": "/imgs/countries/RW-128.png",
+    "names": [
+      "Arabic: رواندا",
+      "English: Rwanda",
+      "Spanish: Rwanda",
+      "French: Rwanda",
+      "Italian: Ruanda",
+      "Chinese: 卢旺达",
+      "Russian: Руанда"
+    ],
+    "regions": [
+      "Africa"
+    ]
+  },
+  {
+    "id": "185",
+    "name": "Saint Barthélemy",
+    "ISO2": "BL",
+    "ISO3": "BLM",
+    "SVG": "/imgs/countries/BL-svg.svg",
+    "PNG32": "/imgs/countries/BL-32.png",
+    "PNG128": "/imgs/countries/BL-128.png",
+    "names": [],
+    "regions": [
+      "Latin America and the Caribbean"
+    ]
+  },
+  {
+    "id": "186",
+    "name": "Saint Helena, Ascension and Tristan da Cunha",
+    "ISO2": "SH",
+    "ISO3": "SHN",
+    "SVG": "/imgs/countries/SH-svg.svg",
+    "PNG32": "/imgs/countries/SH-32.png",
+    "PNG128": "/imgs/countries/SH-128.png",
+    "names": [],
+    "regions": [
+      "Africa"
+    ]
+  },
+  {
+    "id": "187",
+    "name": "Saint Kitts and Nevis",
+    "ISO2": "KN",
+    "ISO3": "KNA",
+    "SVG": "/imgs/countries/KN-svg.svg",
+    "PNG32": "/imgs/countries/KN-32.png",
+    "PNG128": "/imgs/countries/KN-128.png",
+    "names": [
+      "Arabic: ونيفيس كيتس سانت",
+      "English: Saint Kitts and Nevis",
+      "Spanish: Saint Kitts y Nevis",
+      "French: Saint-Kitts-et-Nevis",
+      "Italian: Saint Christopher e Nevis",
+      "Chinese: 圣基茨和尼维斯",
+      "Russian: Сент-Китс и Невис"
+    ],
+    "regions": [
+      "Latin America and the Caribbean"
+    ]
+  },
+  {
+    "id": "188",
+    "name": "Saint Lucia",
+    "ISO2": "LC",
+    "ISO3": "LCA",
+    "SVG": "/imgs/countries/LC-svg.svg",
+    "PNG32": "/imgs/countries/LC-32.png",
+    "PNG128": "/imgs/countries/LC-128.png",
+    "names": [
+      "Arabic: لوسيا سانت",
+      "English: Saint Lucia",
+      "Spanish: Santa Lucía",
+      "French: Sainte-Lucie",
+      "Italian: Santa Lucia",
+      "Chinese: 圣卢西亚",
+      "Russian: Сент-Люсия"
+    ],
+    "regions": [
+      "Latin America and the Caribbean"
+    ]
+  },
+  {
+    "id": "189",
+    "name": "Saint Martin",
+    "ISO2": "MF",
+    "ISO3": "MAF",
+    "SVG": "/imgs/countries/MF-svg.svg",
+    "PNG32": "/imgs/countries/MF-32.png",
+    "PNG128": "/imgs/countries/MF-128.png",
+    "names": [],
+    "regions": [
+      "Latin America and the Caribbean"
+    ]
+  },
+  {
+    "id": "190",
+    "name": "Saint Pierre and Miquelon",
+    "ISO2": "PM",
+    "ISO3": "SPM",
+    "SVG": "/imgs/countries/PM-svg.svg",
+    "PNG32": "/imgs/countries/PM-32.png",
+    "PNG128": "/imgs/countries/PM-128.png",
+    "names": [],
+    "regions": [
+      "North America"
+    ]
+  },
+  {
+    "id": "191",
+    "name": "Saint Vincent and the Grenadines",
+    "ISO2": "VC",
+    "ISO3": "VCT",
+    "SVG": "/imgs/countries/VC-svg.svg",
+    "PNG32": "/imgs/countries/VC-32.png",
+    "PNG128": "/imgs/countries/VC-128.png",
+    "names": [
+      "Arabic: سانت فنسنت وجزر غرينادين",
+      "English: Saint Vincent and the Grenadines",
+      "Spanish: San Vicente y las Granadinas",
+      "French: Saint-Vincent-et-les Grenadines",
+      "Italian: Saint Vincent e Grenadine",
+      "Chinese: 圣文森特和格林纳丁斯",
+      "Russian: Сент-Винсент и Гренадины"
+    ],
+    "regions": [
+      "Latin America and the Caribbean"
+    ]
+  },
+  {
+    "id": "192",
+    "name": "Samoa",
+    "ISO2": "WS",
+    "ISO3": "WSM",
+    "SVG": "/imgs/countries/WS-svg.svg",
+    "PNG32": "/imgs/countries/WS-32.png",
+    "PNG128": "/imgs/countries/WS-128.png",
+    "names": [
+      "Arabic: ساموا",
+      "English: Samoa",
+      "Spanish: Samoa",
+      "French: Samoa",
+      "Italian: Samoa",
+      "Chinese: 萨摩亚",
+      "Russian: Самоа"
+    ],
+    "regions": [
+      "Asia and the Pacific"
+    ]
+  },
+  {
+    "id": "193",
+    "name": "San Marino",
+    "ISO2": "SM",
+    "ISO3": "SMR",
+    "SVG": "/imgs/countries/SM-svg.svg",
+    "PNG32": "/imgs/countries/SM-32.png",
+    "PNG128": "/imgs/countries/SM-128.png",
+    "names": [
+      "Arabic: مارينو سان",
+      "English: San Marino",
+      "Spanish: San Marino",
+      "French: Saint-Marin",
+      "Italian: San Marino",
+      "Chinese: 圣马力诺",
+      "Russian: Сан-Марино"
+    ],
+    "regions": [
+      "Europe"
+    ]
+  },
+  {
+    "id": "194",
+    "name": "Sao Tome and Principe",
+    "ISO2": "ST",
+    "ISO3": "STP",
+    "SVG": "/imgs/countries/ST-svg.svg",
+    "PNG32": "/imgs/countries/ST-32.png",
+    "PNG128": "/imgs/countries/ST-128.png",
+    "names": [
+      "Arabic: وبرنسيبي تومي سان",
+      "English: Sao Tome and Principe",
+      "Spanish: Santo Tomé y Príncipe",
+      "French: Sao Tomé-et-Principe",
+      "Italian: São Tomé e Príncipe",
+      "Chinese: 圣多美和普林西比",
+      "Russian: Сан-Томе и Принсипи"
+    ],
+    "regions": [
+      "Africa"
+    ]
+  },
+  {
+    "id": "195",
+    "name": "Saudi Arabia",
+    "ISO2": "SA",
+    "ISO3": "SAU",
+    "SVG": "/imgs/countries/SA-svg.svg",
+    "PNG32": "/imgs/countries/SA-32.png",
+    "PNG128": "/imgs/countries/SA-128.png",
+    "names": [
+      "Arabic: السعودية العربية المملكة",
+      "English: Saudi Arabia",
+      "Spanish: Arabia Saudita",
+      "French: Arabie saoudite",
+      "Italian: Arabia Saudita",
+      "Chinese: 沙特阿拉伯",
+      "Russian: Саудовская Аравия"
+    ],
+    "regions": [
+      "West Asia"
+    ]
+  },
+  {
+    "id": "196",
+    "name": "Senegal",
+    "ISO2": "SN",
+    "ISO3": "SEN",
+    "SVG": "/imgs/countries/SN-svg.svg",
+    "PNG32": "/imgs/countries/SN-32.png",
+    "PNG128": "/imgs/countries/SN-128.png",
+    "names": [
+      "Arabic: السنغال",
+      "English: Senegal",
+      "Spanish: Senegal",
+      "French: Sénégal",
+      "Italian: Senegal",
+      "Chinese: 塞内加尔",
+      "Russian: Сенегал"
+    ],
+    "regions": [
+      "Africa"
+    ]
+  },
+  {
+    "id": "197",
+    "name": "Serbia",
+    "ISO2": "RS",
+    "ISO3": "SRB",
+    "SVG": "/imgs/countries/RS-svg.svg",
+    "PNG32": "/imgs/countries/RS-32.png",
+    "PNG128": "/imgs/countries/RS-128.png",
+    "names": [
+      "Arabic: صربيا",
+      "English: Serbia",
+      "Spanish: Serbia",
+      "French: Serbie",
+      "Italian: Serbia",
+      "Chinese: 塞尔维亚",
+      "Russian: Сербия"
+    ],
+    "regions": [
+      "Europe"
+    ]
+  },
+  {
+    "id": "198",
+    "name": "Seychelles",
+    "ISO2": "SC",
+    "ISO3": "SYC",
+    "SVG": "/imgs/countries/SC-svg.svg",
+    "PNG32": "/imgs/countries/SC-32.png",
+    "PNG128": "/imgs/countries/SC-128.png",
+    "names": [
+      "Arabic: سيشيل",
+      "English: Seychelles",
+      "Spanish: Seychelles",
+      "French: Seychelles",
+      "Italian: Seychelles",
+      "Chinese: 塞舌尔",
+      "Russian: Сейшельские Острова"
+    ],
+    "regions": [
+      "Africa"
+    ]
+  },
+  {
+    "id": "199",
+    "name": "Sierra Leone",
+    "ISO2": "SL",
+    "ISO3": "SLE",
+    "SVG": "/imgs/countries/SL-svg.svg",
+    "PNG32": "/imgs/countries/SL-32.png",
+    "PNG128": "/imgs/countries/SL-128.png",
+    "names": [
+      "Arabic: سيراليون",
+      "English: Sierra Leone",
+      "Spanish: Sierra Leona",
+      "French: Sierra Leone",
+      "Italian: Sierra Leone",
+      "Chinese: 塞拉利昂",
+      "Russian: Сьерра-Леоне"
+    ],
+    "regions": [
+      "Africa"
+    ]
+  },
+  {
+    "id": "200",
+    "name": "Singapore",
+    "ISO2": "SG",
+    "ISO3": "SGP",
+    "SVG": "/imgs/countries/SG-svg.svg",
+    "PNG32": "/imgs/countries/SG-32.png",
+    "PNG128": "/imgs/countries/SG-128.png",
+    "names": [
+      "Arabic: سنغافورة",
+      "English: Singapore",
+      "Spanish: Singapur",
+      "French: Singapour",
+      "Italian: Singapore",
+      "Chinese: 新加坡",
+      "Russian: Сингапур"
+    ],
+    "regions": [
+      "Asia and the Pacific"
+    ]
+  },
+  {
+    "id": "201",
+    "name": "Sint Maarten",
+    "ISO2": "SX",
+    "ISO3": "SXM",
+    "SVG": "/imgs/countries/SX-svg.svg",
+    "PNG32": "/imgs/countries/SX-32.png",
+    "PNG128": "/imgs/countries/SX-128.png",
+    "names": [],
+    "regions": [
+      "Latin America and the Caribbean"
+    ]
+  },
+  {
+    "id": "202",
+    "name": "Slovakia",
+    "ISO2": "SK",
+    "ISO3": "SVK",
+    "SVG": "/imgs/countries/SK-svg.svg",
+    "PNG32": "/imgs/countries/SK-32.png",
+    "PNG128": "/imgs/countries/SK-128.png",
+    "names": [
+      "Arabic: سلوفاكيا",
+      "English: Slovakia",
+      "Spanish: Eslovaquia",
+      "French: Slovaquie",
+      "Italian: Slovacchia",
+      "Chinese: 斯洛伐克",
+      "Russian: Словакия"
+    ],
+    "regions": [
+      "Europe"
+    ]
+  },
+  {
+    "id": "203",
+    "name": "Slovenia",
+    "ISO2": "SI",
+    "ISO3": "SVN",
+    "SVG": "/imgs/countries/SI-svg.svg",
+    "PNG32": "/imgs/countries/SI-32.png",
+    "PNG128": "/imgs/countries/SI-128.png",
+    "names": [
+      "Arabic: سلوفينيا",
+      "English: Slovenia",
+      "Spanish: Eslovenia",
+      "French: Slovénie",
+      "Italian: Slovenia",
+      "Chinese: 斯洛文尼亚",
+      "Russian: Словения"
+    ],
+    "regions": [
+      "Europe"
+    ]
+  },
+  {
+    "id": "204",
+    "name": "Solomon Islands",
+    "ISO2": "SB",
+    "ISO3": "SLB",
+    "SVG": "/imgs/countries/SB-svg.svg",
+    "PNG32": "/imgs/countries/SB-32.png",
+    "PNG128": "/imgs/countries/SB-128.png",
+    "names": [
+      "Arabic: جزر سليمان",
+      "English: Solomon Islands",
+      "Spanish: Islas Salomón",
+      "French: Îles Salomon",
+      "Italian: Isole Salomone",
+      "Chinese: 所罗门群岛",
+      "Russian: Соломоновы Острова"
+    ],
+    "regions": [
+      "Asia and the Pacific"
+    ]
+  },
+  {
+    "id": "205",
+    "name": "Somalia",
+    "ISO2": "SO",
+    "ISO3": "SOM",
+    "SVG": "/imgs/countries/SO-svg.svg",
+    "PNG32": "/imgs/countries/SO-32.png",
+    "PNG128": "/imgs/countries/SO-128.png",
+    "names": [
+      "Arabic: الصومال",
+      "English: Somalia",
+      "Spanish: Somalia",
+      "French: Somalie",
+      "Italian: Somalia",
+      "Chinese: 索马里",
+      "Russian: Сомали"
+    ],
+    "regions": [
+      "Africa"
+    ]
+  },
+  {
+    "id": "206",
+    "name": "South Africa",
+    "ISO2": "ZA",
+    "ISO3": "ZAF",
+    "SVG": "/imgs/countries/ZA-svg.svg",
+    "PNG32": "/imgs/countries/ZA-32.png",
+    "PNG128": "/imgs/countries/ZA-128.png",
+    "names": [
+      "Arabic: أفريقيا جنوب",
+      "English: South Africa",
+      "Spanish: Sudáfrica",
+      "French: Afrique du Sud",
+      "Italian: Sudafrica",
+      "Chinese: 南 非",
+      "Russian: Южная Африка"
+    ],
+    "regions": [
+      "Africa"
+    ]
+  },
+  {
+    "id": "207",
+    "name": "South Georgia and the South Sandwich Islands",
+    "ISO2": "GS",
+    "ISO3": "SGS",
+    "SVG": "/imgs/countries/GS-svg.svg",
+    "PNG32": "/imgs/countries/GS-32.png",
+    "PNG128": "/imgs/countries/GS-128.png",
+    "names": [],
+    "regions": []
+  },
+  {
+    "id": "208",
+    "name": "South Sudan",
+    "ISO2": "SS",
+    "ISO3": "SSD",
+    "SVG": "/imgs/countries/SS-svg.svg",
+    "PNG32": "/imgs/countries/SS-32.png",
+    "PNG128": "/imgs/countries/SS-128.png",
+    "names": [
+      "Arabic: السودان جنوب",
+      "English: South Sudan",
+      "Spanish: Sudán del Sur",
+      "French: Soudan du Sud",
+      "Italian: Sud Sudan",
+      "Chinese: 南苏丹",
+      "Russian: Южный Судан"
+    ],
+    "regions": [
+      "Africa"
+    ]
+  },
+  {
+    "id": "209",
+    "name": "Spain",
+    "ISO2": "ES",
+    "ISO3": "ESP",
+    "SVG": "/imgs/countries/ES-svg.svg",
+    "PNG32": "/imgs/countries/ES-32.png",
+    "PNG128": "/imgs/countries/ES-128.png",
+    "names": [
+      "Arabic: إسبانيا",
+      "English: Spain",
+      "Spanish: España",
+      "French: Espagne",
+      "Italian: Spagna",
+      "Chinese: 西班牙",
+      "Russian: Испания"
+    ],
+    "regions": [
+      "Europe"
+    ]
+  },
+  {
+    "id": "210",
+    "name": "Sri Lanka",
+    "ISO2": "LK",
+    "ISO3": "LKA",
+    "SVG": "/imgs/countries/LK-svg.svg",
+    "PNG32": "/imgs/countries/LK-32.png",
+    "PNG128": "/imgs/countries/LK-128.png",
+    "names": [
+      "Arabic: سري لانكا",
+      "English: Sri Lanka",
+      "Spanish: Sri Lanka",
+      "French: Sri Lanka",
+      "Italian: Sri Lanka",
+      "Chinese: 斯里兰卡",
+      "Russian: Шри-Ланка"
+    ],
+    "regions": [
+      "Asia and the Pacific"
+    ]
+  },
+  {
+    "id": "211",
+    "name": "Sudan",
+    "ISO2": "SD",
+    "ISO3": "SDN",
+    "SVG": "/imgs/countries/SD-svg.svg",
+    "PNG32": "/imgs/countries/SD-32.png",
+    "PNG128": "/imgs/countries/SD-128.png",
+    "names": [
+      "Arabic: السودان",
+      "English: Sudan",
+      "Spanish: Sudán",
+      "French: Soudan",
+      "Italian: Sudan",
+      "Chinese: 苏 丹",
+      "Russian: Судан"
+    ],
+    "regions": [
+      "Africa"
+    ]
+  },
+  {
+    "id": "212",
+    "name": "Suriname",
+    "ISO2": "SR",
+    "ISO3": "SUR",
+    "SVG": "/imgs/countries/SR-svg.svg",
+    "PNG32": "/imgs/countries/SR-32.png",
+    "PNG128": "/imgs/countries/SR-128.png",
+    "names": [
+      "Arabic: سورينام",
+      "English: Suriname",
+      "Spanish: Suriname",
+      "French: Suriname",
+      "Italian: Suriname",
+      "Chinese: 苏里南",
+      "Russian: Суринам"
+    ],
+    "regions": [
+      "Latin America and the Caribbean"
+    ]
+  },
+  {
+    "id": "213",
+    "name": "Svalbard and Jan Mayen",
+    "ISO2": "SJ",
+    "ISO3": "SJM",
+    "SVG": "/imgs/countries/SJ-svg.svg",
+    "PNG32": "/imgs/countries/SJ-32.png",
+    "PNG128": "/imgs/countries/SJ-128.png",
+    "names": [],
+    "regions": [
+      "Europe"
+    ]
+  },
+  {
+    "id": "214",
+    "name": "Swaziland",
+    "ISO2": "SZ",
+    "ISO3": "SWZ",
+    "SVG": "/imgs/countries/SZ-svg.svg",
+    "PNG32": "/imgs/countries/SZ-32.png",
+    "PNG128": "/imgs/countries/SZ-128.png",
+    "names": [
+      "Arabic: سوازيلند",
+      "English: Swaziland",
+      "Spanish: Swazilandia",
+      "French: Swaziland",
+      "Italian: Swaziland",
+      "Chinese: 斯威士兰",
+      "Russian: Свазиленд"
+    ],
+    "regions": [
+      "Africa"
+    ]
+  },
+  {
+    "id": "215",
+    "name": "Sweden",
+    "ISO2": "SE",
+    "ISO3": "SWE",
+    "SVG": "/imgs/countries/SE-svg.svg",
+    "PNG32": "/imgs/countries/SE-32.png",
+    "PNG128": "/imgs/countries/SE-128.png",
+    "names": [
+      "Arabic: السويد",
+      "English: Sweden",
+      "Spanish: Suecia",
+      "French: Suède",
+      "Italian: Svezia",
+      "Chinese: 瑞 典",
+      "Russian: Швеция"
+    ],
+    "regions": [
+      "Europe",
+      "Polar: Arctic"
+    ]
+  },
+  {
+    "id": "216",
+    "name": "Switzerland",
+    "ISO2": "CH",
+    "ISO3": "CHE",
+    "SVG": "/imgs/countries/CH-svg.svg",
+    "PNG32": "/imgs/countries/CH-32.png",
+    "PNG128": "/imgs/countries/CH-128.png",
+    "names": [
+      "Arabic: سويسرا",
+      "English: Switzerland",
+      "Spanish: Suiza",
+      "French: Suisse",
+      "Italian: Svizzera",
+      "Chinese: 瑞 士",
+      "Russian: Швейцария"
+    ],
+    "regions": [
+      "Europe"
+    ]
+  },
+  {
+    "id": "217",
+    "name": "Syrian Arab Republic",
+    "ISO2": "SY",
+    "ISO3": "SYR",
+    "SVG": "/imgs/countries/SY-svg.svg",
+    "PNG32": "/imgs/countries/SY-32.png",
+    "PNG128": "/imgs/countries/SY-128.png",
+    "names": [
+      "Arabic: الجمهورية العربية السورية",
+      "English: Syrian Arab Republic",
+      "Spanish: República Árabe Siria",
+      "French: République arabe syrienne",
+      "Italian: Siria",
+      "Chinese: 阿拉伯叙利亚共和国",
+      "Russian: Сирийская Арабская Республика"
+    ],
+    "regions": [
+      "West Asia"
+    ]
+  },
+  {
+    "id": "218",
+    "name": "Taiwan",
+    "ISO2": "TW",
+    "ISO3": "TWN",
+    "SVG": "/imgs/countries/TW-svg.svg",
+    "PNG32": "/imgs/countries/TW-32.png",
+    "PNG128": "/imgs/countries/TW-128.png",
+    "names": [],
+    "regions": []
+  },
+  {
+    "id": "219",
+    "name": "Tajikistan",
+    "ISO2": "TJ",
+    "ISO3": "TJK",
+    "SVG": "/imgs/countries/TJ-svg.svg",
+    "PNG32": "/imgs/countries/TJ-32.png",
+    "PNG128": "/imgs/countries/TJ-128.png",
+    "names": [
+      "Arabic: طاجيكستان",
+      "English: Tajikistan",
+      "Spanish: Tayikistán",
+      "French: Tadjikistan",
+      "Italian: Tagikistan",
+      "Chinese: 塔吉克斯坦",
+      "Russian: Таджикистан"
+    ],
+    "regions": [
+      "Europe"
+    ]
+  },
+  {
+    "id": "220",
+    "name": "Thailand",
+    "ISO2": "TH",
+    "ISO3": "THA",
+    "SVG": "/imgs/countries/TH-svg.svg",
+    "PNG32": "/imgs/countries/TH-32.png",
+    "PNG128": "/imgs/countries/TH-128.png",
+    "names": [
+      "Arabic: تايلند",
+      "English: Thailand",
+      "Spanish: Tailandia",
+      "French: Thaïlande",
+      "Italian: Thailandia",
+      "Chinese: 泰 国",
+      "Russian: Таиланд"
+    ],
+    "regions": [
+      "Asia and the Pacific"
+    ]
+  },
+  {
+    "id": "221",
+    "name": "The former Yugoslav Republic of Macedonia",
+    "ISO2": "MK",
+    "ISO3": "MKD",
+    "SVG": "/imgs/countries/MK-svg.svg",
+    "PNG32": "/imgs/countries/MK-32.png",
+    "PNG128": "/imgs/countries/MK-128.png",
+    "names": [
+      "Arabic: جمهورية مقدونيا اليوغوسلافية السابقة",
+      "English: The former Yugoslav Republic of Macedonia",
+      "Spanish: ex República Yugoslava de Macedonia",
+      "French: ex-République yougoslave de Macédoine",
+      "Italian: ex Repubblica jugoslava di Macedonia",
+      "Chinese: 前南斯拉夫的马其顿共和国",
+      "Russian: бывшая югославская Республика Македония"
+    ],
+    "regions": [
+      "Europe"
+    ]
+  },
+  {
+    "id": "222",
+    "name": "Timor-Leste",
+    "ISO2": "TL",
+    "ISO3": "TLS",
+    "SVG": "/imgs/countries/TL-svg.svg",
+    "PNG32": "/imgs/countries/TL-32.png",
+    "PNG128": "/imgs/countries/TL-128.png",
+    "names": [
+      "Arabic: ليشتى تيمور-",
+      "English: Timor-Leste",
+      "Spanish: Timor-Leste",
+      "French: Timor-Leste",
+      "Italian: Timor-Leste",
+      "Chinese: 东帝汶",
+      "Russian: Тимор-Лешти"
+    ],
+    "regions": [
+      "Asia and the Pacific"
+    ]
+  },
+  {
+    "id": "223",
+    "name": "Togo",
+    "ISO2": "TG",
+    "ISO3": "TGO",
+    "SVG": "/imgs/countries/TG-svg.svg",
+    "PNG32": "/imgs/countries/TG-32.png",
+    "PNG128": "/imgs/countries/TG-128.png",
+    "names": [
+      "Arabic: توغو",
+      "English: Togo",
+      "Spanish: Togo",
+      "French: Togo",
+      "Italian: Togo",
+      "Chinese: 多 哥",
+      "Russian: Того"
+    ],
+    "regions": [
+      "Africa"
+    ]
+  },
+  {
+    "id": "224",
+    "name": "Tokelau (Associate Member)",
+    "ISO2": "TK",
+    "ISO3": "TKL",
+    "SVG": "/imgs/countries/TK-svg.svg",
+    "PNG32": "/imgs/countries/TK-32.png",
+    "PNG128": "/imgs/countries/TK-128.png",
+    "names": [
+      "Arabic: منتسب عضو - توكيلاو",
+      "English: Tokelau (Associate Member)",
+      "Spanish: Tokelau (Miembro Asociado)",
+      "French: Tokélaou (Membre associé)",
+      "Italian: Tokelau (Membro associato)",
+      "Chinese: 托克劳（准成员）",
+      "Russian: Токелау (ассоциированный член)"
+    ],
+    "regions": [
+      "Asia and the Pacific"
+    ]
+  },
+  {
+    "id": "225",
+    "name": "Tonga",
+    "ISO2": "TO",
+    "ISO3": "TON",
+    "SVG": "/imgs/countries/TO-svg.svg",
+    "PNG32": "/imgs/countries/TO-32.png",
+    "PNG128": "/imgs/countries/TO-128.png",
+    "names": [
+      "Arabic: تونغا",
+      "English: Tonga",
+      "Spanish: Tonga",
+      "French: Tonga",
+      "Italian: Tonga",
+      "Chinese: 汤 加",
+      "Russian: Тонга"
+    ],
+    "regions": [
+      "Asia and the Pacific"
+    ]
+  },
+  {
+    "id": "226",
+    "name": "Trinidad and Tobago",
+    "ISO2": "TT",
+    "ISO3": "TTO",
+    "SVG": "/imgs/countries/TT-svg.svg",
+    "PNG32": "/imgs/countries/TT-32.png",
+    "PNG128": "/imgs/countries/TT-128.png",
+    "names": [
+      "Arabic: وتوباغو ترينيداد",
+      "English: Trinidad and Tobago",
+      "Spanish: Trinidad y Tabago",
+      "French: Trinité-et-Tobago",
+      "Italian: Trinidad e Tobago",
+      "Chinese: 特立尼达和多巴哥",
+      "Russian: Тринидад и Тобаго"
+    ],
+    "regions": [
+      "Latin America and the Caribbean"
+    ]
+  },
+  {
+    "id": "227",
+    "name": "Tunisia",
+    "ISO2": "TN",
+    "ISO3": "TUN",
+    "SVG": "/imgs/countries/TN-svg.svg",
+    "PNG32": "/imgs/countries/TN-32.png",
+    "PNG128": "/imgs/countries/TN-128.png",
+    "names": [
+      "Arabic: تونس",
+      "English: Tunisia",
+      "Spanish: Túnez",
+      "French: Tunisie",
+      "Italian: Tunisia",
+      "Chinese: 突尼斯",
+      "Russian: Тунис"
+    ],
+    "regions": [
+      "Africa"
+    ]
+  },
+  {
+    "id": "228",
+    "name": "Turkey",
+    "ISO2": "TR",
+    "ISO3": "TUR",
+    "SVG": "/imgs/countries/TR-svg.svg",
+    "PNG32": "/imgs/countries/TR-32.png",
+    "PNG128": "/imgs/countries/TR-128.png",
+    "names": [
+      "Arabic: تركيا",
+      "English: Turkey",
+      "Spanish: Turquía",
+      "French: Turquie",
+      "Italian: Turchia",
+      "Chinese: 土耳其",
+      "Russian: Турция"
+    ],
+    "regions": [
+      "Europe"
+    ]
+  },
+  {
+    "id": "229",
+    "name": "Turkmenistan",
+    "ISO2": "TM",
+    "ISO3": "TKM",
+    "SVG": "/imgs/countries/TM-svg.svg",
+    "PNG32": "/imgs/countries/TM-32.png",
+    "PNG128": "/imgs/countries/TM-128.png",
+    "names": [
+      "Arabic: تركمانستان",
+      "English: Turkmenistan",
+      "Spanish: Turkmenistán",
+      "French: Turkménistan",
+      "Italian: Turkmenistan",
+      "Chinese: 土库曼斯坦",
+      "Russian: Туркменистан"
+    ],
+    "regions": [
+      "Europe"
+    ]
+  },
+  {
+    "id": "230",
+    "name": "Turks and Caicos Islands",
+    "ISO2": "TC",
+    "ISO3": "TCA",
+    "SVG": "/imgs/countries/TC-svg.svg",
+    "PNG32": "/imgs/countries/TC-32.png",
+    "PNG128": "/imgs/countries/TC-128.png",
+    "names": [],
+    "regions": [
+      "Latin America and the Caribbean"
+    ]
+  },
+  {
+    "id": "231",
+    "name": "Tuvalu",
+    "ISO2": "TV",
+    "ISO3": "TUV",
+    "SVG": "/imgs/countries/TV-svg.svg",
+    "PNG32": "/imgs/countries/TV-32.png",
+    "PNG128": "/imgs/countries/TV-128.png",
+    "names": [
+      "Arabic: توفالو",
+      "English: Tuvalu",
+      "Spanish: Tuvalu",
+      "French: Tuvalu",
+      "Italian: Tuvalu",
+      "Chinese: 图瓦卢",
+      "Russian: Тувалу"
+    ],
+    "regions": [
+      "Asia and the Pacific"
+    ]
+  },
+  {
+    "id": "232",
+    "name": "Uganda",
+    "ISO2": "UG",
+    "ISO3": "UGA",
+    "SVG": "/imgs/countries/UG-svg.svg",
+    "PNG32": "/imgs/countries/UG-32.png",
+    "PNG128": "/imgs/countries/UG-128.png",
+    "names": [
+      "Arabic: أوغندا",
+      "English: Uganda",
+      "Spanish: Uganda",
+      "French: Ouganda",
+      "Italian: Uganda",
+      "Chinese: 乌干达",
+      "Russian: Уганда"
+    ],
+    "regions": [
+      "Africa"
+    ]
+  },
+  {
+    "id": "233",
+    "name": "Ukraine",
+    "ISO2": "UA",
+    "ISO3": "UKR",
+    "SVG": "/imgs/countries/UA-svg.svg",
+    "PNG32": "/imgs/countries/UA-32.png",
+    "PNG128": "/imgs/countries/UA-128.png",
+    "names": [
+      "Arabic: أوكرانيا",
+      "English: Ukraine",
+      "Spanish: Ucrania",
+      "French: Ukraine",
+      "Italian: Ucraina",
+      "Chinese: 乌克兰",
+      "Russian: Украина"
+    ],
+    "regions": [
+      "Europe"
+    ]
+  },
+  {
+    "id": "234",
+    "name": "United Arab Emirates",
+    "ISO2": "AE",
+    "ISO3": "ARE",
+    "SVG": "/imgs/countries/AE-svg.svg",
+    "PNG32": "/imgs/countries/AE-32.png",
+    "PNG128": "/imgs/countries/AE-128.png",
+    "names": [
+      "Arabic: المتحدة العربية الإمارات",
+      "English: United Arab Emirates",
+      "Spanish: Emiratos Árabes Unidos",
+      "French: Émirats arabes unis",
+      "Italian: Emirati arabi uniti",
+      "Chinese: 阿拉伯联合酋长国",
+      "Russian: Объединенные Арабские Эмираты"
+    ],
+    "regions": [
+      "West Asia"
+    ]
+  },
+  {
+    "id": "235",
+    "name": "United Kingdom",
+    "ISO2": "GB",
+    "ISO3": "GBR",
+    "SVG": "/imgs/countries/GB-svg.svg",
+    "PNG32": "/imgs/countries/GB-32.png",
+    "PNG128": "/imgs/countries/GB-128.png",
+    "names": [
+      "Arabic: المملكة المتحدة",
+      "English: United Kingdom",
+      "Spanish: Reino Unido",
+      "French: Royaume-Uni",
+      "Italian: Regno Unito",
+      "Chinese: 联合王国",
+      "Russian: Соединенное Королевство"
+    ],
+    "regions": [
+      "Europe"
+    ]
+  },
+  {
+    "id": "236",
+    "name": "United Republic of Tanzania",
+    "ISO2": "TZ",
+    "ISO3": "TZA",
+    "SVG": "/imgs/countries/TZ-svg.svg",
+    "PNG32": "/imgs/countries/TZ-32.png",
+    "PNG128": "/imgs/countries/TZ-128.png",
+    "names": [
+      "Arabic: جمهورية تنزانيا المتحدة",
+      "English: United Republic of Tanzania",
+      "Spanish: República Unida de Tanzanía",
+      "French: République-Unie de Tanzanie",
+      "Italian: Repubblica unita di Tanzania",
+      "Chinese: 坦桑尼亚联合共和国",
+      "Russian: Объединенная Республика Танзания"
+    ],
+    "regions": [
+      "Africa"
+    ]
+  },
+  {
+    "id": "237",
+    "name": "United States Minor Outlying Islands",
+    "ISO2": "UM",
+    "ISO3": "UMI",
+    "SVG": "/imgs/countries/UM-svg.svg",
+    "PNG32": "/imgs/countries/UM-32.png",
+    "PNG128": "/imgs/countries/UM-128.png",
+    "names": [],
+    "regions": []
+  },
+  {
+    "id": "238",
+    "name": "United States of America",
+    "ISO2": "US",
+    "ISO3": "USA",
+    "SVG": "/imgs/countries/US-svg.svg",
+    "PNG32": "/imgs/countries/US-32.png",
+    "PNG128": "/imgs/countries/US-128.png",
+    "names": [
+      "Arabic: الأمريكية المتحدة الولايات",
+      "English: United States of America",
+      "Spanish: Estados Unidos de América",
+      "French: États-Unis d'Amérique",
+      "Italian: Stati Uniti d`America",
+      "Chinese: 美 国",
+      "Russian: Соединенные Штаты Америки"
+    ],
+    "regions": [
+      "North America",
+      "Polar: Arctic"
+    ]
+  },
+  {
+    "id": "239",
+    "name": "United States Virgin Islands",
+    "ISO2": "VI",
+    "ISO3": "VIR",
+    "SVG": "/imgs/countries/VI-svg.svg",
+    "PNG32": "/imgs/countries/VI-32.png",
+    "PNG128": "/imgs/countries/VI-128.png",
+    "names": [],
+    "regions": [
+      "Latin America and the Caribbean"
+    ]
+  },
+  {
+    "id": "240",
+    "name": "Uruguay",
+    "ISO2": "UY",
+    "ISO3": "URY",
+    "SVG": "/imgs/countries/UY-svg.svg",
+    "PNG32": "/imgs/countries/UY-32.png",
+    "PNG128": "/imgs/countries/UY-128.png",
+    "names": [
+      "Arabic: أوروغواي",
+      "English: Uruguay",
+      "Spanish: Uruguay",
+      "French: Uruguay",
+      "Italian: Uruguay",
+      "Chinese: 乌拉圭",
+      "Russian: Уругвай"
+    ],
+    "regions": [
+      "Latin America and the Caribbean"
+    ]
+  },
+  {
+    "id": "241",
+    "name": "Uzbekistan",
+    "ISO2": "UZ",
+    "ISO3": "UZB",
+    "SVG": "/imgs/countries/UZ-svg.svg",
+    "PNG32": "/imgs/countries/UZ-32.png",
+    "PNG128": "/imgs/countries/UZ-128.png",
+    "names": [
+      "Arabic: أوزبكستان",
+      "English: Uzbekistan",
+      "Spanish: Uzbekistán",
+      "French: Ouzbékistan",
+      "Italian: Uzbekistan",
+      "Chinese: 乌兹别克斯坦",
+      "Russian: Узбекистан"
+    ],
+    "regions": [
+      "Europe"
+    ]
+  },
+  {
+    "id": "242",
+    "name": "Vanuatu",
+    "ISO2": "VU",
+    "ISO3": "VUT",
+    "SVG": "/imgs/countries/VU-svg.svg",
+    "PNG32": "/imgs/countries/VU-32.png",
+    "PNG128": "/imgs/countries/VU-128.png",
+    "names": [
+      "Arabic: فانواتو",
+      "English: Vanuatu",
+      "Spanish: Vanuatu",
+      "French: Vanuatu",
+      "Italian: Vanuatu",
+      "Chinese: 瓦努阿图",
+      "Russian: Вануату"
+    ],
+    "regions": [
+      "Asia and the Pacific"
+    ]
+  },
+  {
+    "id": "243",
+    "name": "Venezuela (Bolivarian Republic of)",
+    "ISO2": "VE",
+    "ISO3": "VEN",
+    "SVG": "/imgs/countries/VE-svg.svg",
+    "PNG32": "/imgs/countries/VE-32.png",
+    "PNG128": "/imgs/countries/VE-128.png",
+    "names": [
+      "Arabic: البوليفارية - جمهورية - فنزويلا",
+      "English: Venezuela (Bolivarian Republic of)",
+      "Spanish: Venezuela (República Bolivariana de)",
+      "French: Venezuela (République bolivarienne du)",
+      "Italian: Venezuela (Repubblica bolivariana di)",
+      "Chinese: 委内瑞拉 (玻利瓦尔共和国)",
+      "Russian: Венесуэла (Боливарианская Республика)"
+    ],
+    "regions": [
+      "Latin America and the Caribbean"
+    ]
+  },
+  {
+    "id": "244",
+    "name": "Viet Nam",
+    "ISO2": "VN",
+    "ISO3": "VNM",
+    "SVG": "/imgs/countries/VN-svg.svg",
+    "PNG32": "/imgs/countries/VN-32.png",
+    "PNG128": "/imgs/countries/VN-128.png",
+    "names": [
+      "Arabic: فييت نام",
+      "English: Viet Nam",
+      "Spanish: Viet Nam",
+      "French: Viet Nam",
+      "Italian: Vietnam",
+      "Chinese: 越 南",
+      "Russian: Вьетнам"
+    ],
+    "regions": [
+      "Asia and the Pacific"
+    ]
+  },
+  {
+    "id": "245",
+    "name": "Virgin Islands",
+    "ISO2": "VG",
+    "ISO3": "VGB",
+    "SVG": "/imgs/countries/VG-svg.svg",
+    "PNG32": "/imgs/countries/VG-32.png",
+    "PNG128": "/imgs/countries/VG-128.png",
+    "names": [],
+    "regions": [
+      "Latin America and the Caribbean"
+    ]
+  },
+  {
+    "id": "246",
+    "name": "Wallis and Futuna",
+    "ISO2": "WF",
+    "ISO3": "WLF",
+    "SVG": "/imgs/countries/WF-svg.svg",
+    "PNG32": "/imgs/countries/WF-32.png",
+    "PNG128": "/imgs/countries/WF-128.png",
+    "names": [],
+    "regions": [
+      "Asia and the Pacific"
+    ]
+  },
+  {
+    "id": "247",
+    "name": "Western Sahara",
+    "ISO2": "EH",
+    "ISO3": "ESH",
+    "SVG": "/imgs/countries/EH-svg.svg",
+    "PNG32": "/imgs/countries/EH-32.png",
+    "PNG128": "/imgs/countries/EH-128.png",
+    "names": [],
+    "regions": [
+      "Africa"
+    ]
+  },
+  {
+    "id": "248",
+    "name": "Yemen",
+    "ISO2": "YE",
+    "ISO3": "YEM",
+    "SVG": "/imgs/countries/YE-svg.svg",
+    "PNG32": "/imgs/countries/YE-32.png",
+    "PNG128": "/imgs/countries/YE-128.png",
+    "names": [
+      "Arabic: اليمن",
+      "English: Yemen",
+      "Spanish: Yemen",
+      "French: Yémen",
+      "Italian: Yemen",
+      "Chinese: 也 门",
+      "Russian: Йемен"
+    ],
+    "regions": [
+      "West Asia"
+    ]
+  },
+  {
+    "id": "249",
+    "name": "Zambia",
+    "ISO2": "ZM",
+    "ISO3": "ZMB",
+    "SVG": "/imgs/countries/ZM-svg.svg",
+    "PNG32": "/imgs/countries/ZM-32.png",
+    "PNG128": "/imgs/countries/ZM-128.png",
+    "names": [
+      "Arabic: زامبيا",
+      "English: Zambia",
+      "Spanish: Zambia",
+      "French: Zambie",
+      "Italian: Zambia",
+      "Chinese: 赞比亚",
+      "Russian: Замбия"
+    ],
+    "regions": [
+      "Africa"
+    ]
+  },
+  {
+    "id": "250",
+    "name": "Zimbabwe",
+    "ISO2": "ZW",
+    "ISO3": "ZWE",
+    "SVG": "/imgs/countries/ZW-svg.svg",
+    "PNG32": "/imgs/countries/ZW-32.png",
+    "PNG128": "/imgs/countries/ZW-128.png",
+    "names": [
+      "Arabic: زمبابوي",
+      "English: Zimbabwe",
+      "Spanish: Zimbabwe",
+      "French: Zimbabwe",
+      "Italian: Zimbabwe",
+      "Chinese: 津巴布韦",
+      "Russian: Зимбабве"
+    ],
+    "regions": [
+      "Africa"
+    ]
+  }
+]

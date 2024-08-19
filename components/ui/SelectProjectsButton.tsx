@@ -29,10 +29,10 @@ const PeriodInput: React.FC<dropType> = ({onClick, toggle, animation, currentPro
 
   return (
     <div className="dropdown dropdown-open" onClick={onClick}>
-      <div className={`my-3 mx-2 !px-4 btn-dash !rounded-md `}>
-        <Image src={layout} width={24} alt="layout" loading="lazy" className="h-auto pb-1"/>
+      <div className={`my-3 mx-2 !px-4 max-md:!h-9 max-md:!max-h-9 max-md:!btn-xs btn-dash !rounded-md `}>
+        <Image src={layout} width={24} alt="layout" loading="lazy" className="max-md:hidden h-auto pb-1"/>
         {currentProject?.name}
-        <Image src={arrowDown} width={22} alt="layout" loading="lazy" className="h-auto"/>
+        <Image src={arrowDown} width={22} alt="layout" loading="lazy" className="max-md:w-4 h-auto"/>
       </div>
 
       <ul className={`!duration-200 transition-all ease-in-out dropdown-content menu bg-n100 border border-n300 top-[54px] min-w-[92%] w-fit left-2 rounded-md z-[1] p-2 shadow ${(toggle ? "visible" : "hidden")} ${(animation ? "!opacity-100" : "!opacity-0")}`}>

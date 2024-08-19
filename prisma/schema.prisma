@@ -48,11 +48,11 @@ model page_views {
   view_time         DateTime?          @default(now()) @db.Timestamp(6)
   visitor_id        Int?
   project_id        String?            @db.Uuid
-  project           project?           @relation(fields: [project_id], references: [project_id], onDelete: NoAction, onUpdate: NoAction, map: "fk_project_id")
-  browsers          browsers?          @relation(fields: [browser_id], references: [id], onDelete: NoAction, onUpdate: NoAction, map: "fk_browser_id")
-  countries         countries?         @relation(fields: [country_id], references: [id], onDelete: NoAction, onUpdate: NoAction, map: "fk_country_id")
-  operating_systems operating_systems? @relation(fields: [os_id], references: [id], onDelete: NoAction, onUpdate: NoAction, map: "fk_os_id")
-  visitors          visitors?          @relation(fields: [visitor_id], references: [id], onDelete: NoAction, onUpdate: NoAction, map: "fk_visitor_id")
+  project           project?           @relation(fields: [project_id], references: [project_id])
+  browsers          browsers?          @relation(fields: [browser_id], references: [id])
+  countries         countries?         @relation(fields: [country_id], references: [id])
+  operating_systems operating_systems? @relation(fields: [os_id], references: [id])
+  visitors          visitors?          @relation(fields: [visitor_id], references: [id])
 }
 
 model visitors {

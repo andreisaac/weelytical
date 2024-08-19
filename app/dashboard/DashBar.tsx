@@ -58,11 +58,11 @@ const DashBar = ({projects} : dashbarProps) => {
   };
 
   return (
-    <section className=" max-md:flex-col px-4 flex flex-row bg-n700 border border-n300 rounded-t-lg">
-    <div className="max-md:mx-auto flex flex-1 flex-row">
+    <section className="px-4 flex flex-row bg-n700 border border-n300 rounded-t-lg">
+    <div className="flex flex-1 md:flex-row">
       <SelectProjectsButton projects={projects} currentProject={currentProject!} onClick={()=>onClick("project")} toggle={toggle?.project} animation={animation?.project}/>
     </div>
-    <div className="max-md:mx-auto flex flex-row-reverse">
+    <div className="flex flex-row-reverse">
       <OptionsButton onClick={()=>onClick("options")} toggle={toggle?.options} animation={animation?.options}></OptionsButton>
       <PeriodButton onClick={()=>onClick("period")} toggle={toggle?.period} animation={animation?.period}></PeriodButton>
     </div>

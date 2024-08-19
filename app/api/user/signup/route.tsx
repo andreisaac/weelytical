@@ -7,7 +7,7 @@ const prisma = new PrismaClient();
 export async function POST(req: Request) {
   const supabase = createClient();
   const d = await req.json();
-  const {email, password, displayName} = d;
+  const {email, password, displayName, type} = d;
 
   
   if(email && password && displayName) {

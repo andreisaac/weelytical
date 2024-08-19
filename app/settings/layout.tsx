@@ -6,9 +6,9 @@ export const metadata: Metadata = {
     title: "Settings",
     description: "Real-time analytics, and user-friendly dashboards that empower you to make data-driven decisions with confidence.",
   };
-
-const layout = ({
-    children,
+  
+const layout = async({
+    children
   }: {
     children: React.ReactNode
   }) => {
@@ -18,8 +18,7 @@ const layout = ({
             <div className="flex flex-row">
                 <div className="py-8 px-20 flex flex-col w-80 gap-2">
                     <Link href="/settings">General</Link>
-                    <Link href="/settings/teams">Teams</Link>
-                    <Link href="/settings/authentication">Authentication</Link>
+                    {/* <Link href="/settings/teams">Teams</Link> */}
                     <Link href="/settings/billing">Billing</Link>
                     <Link href="/settings/invoices">Invoices</Link>
                 </div>
@@ -31,5 +30,6 @@ const layout = ({
         
     )
   }
+
 
 export default layout;

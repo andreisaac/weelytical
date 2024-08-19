@@ -18,7 +18,10 @@ export interface project {
     browser_id: number,
     view_time: string,
     visitor_id: number,
-    project_id: string  
+    project_id: string,  
+    countries?: {id: number, name: string},
+    operating_systems?: {id: number, name: string},
+    browsers?: {id: number, name: string}
   }
 
 
@@ -38,4 +41,9 @@ export interface project {
     label: string,
     labels: string[],
     datasets: datasets[]
+  }
+
+  export interface Dialog extends HTMLDialogElement {
+    showModal(): void;
+    close(returnValue?: string): void;
   }

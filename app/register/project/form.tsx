@@ -35,13 +35,13 @@ const Form: React.FC<projectForm> = ({cType, cProjectName, cUser, cDomain}) => {
       const req = await fetch(process.env.NEXT_PUBLIC_LOCAL_API_URL+"api/createProject", {
         method: "POST", 
         headers: {'Content-Type': 'application/json'}, 
-        body: JSON.stringify({type, projectName, domain, owner: cUser?.id})
+        body: JSON.stringify({type, projectName, domain: domain.startsWith("www.") ? domain.substring(4) : domain, owner: cUser?.id})
       });
 
       const {projectDomain} = await req.json();
 
       if(projectDomain) {
-        router.push("/dashboard");
+        router.push("/dashboard/?projectId="+projectDomain);
       } else {
         setSubmitErr("Failed to create the project.");
         setTimeout(()=>{

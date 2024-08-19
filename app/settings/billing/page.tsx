@@ -1,10 +1,12 @@
 "use client"
-import {useState, useRef} from "react";
+import {useEffect, useState, useRef} from "react";
 import uid from "@utils/uid"
 import Image from "next/image";
 import cardSVG from "@images/card.svg";
 import cardOSVG from "@images/cardOrange.svg";
 import CreditInput from "@components/form/CreditInput";
+import {createClient} from "@utils/supabase/client"
+import {project} from "@utils/types"
 
 //augment the interface to control the modal
 interface dial extends HTMLDialogElement {
@@ -48,11 +50,33 @@ let t: Array<teams> = [{
 let sessi:members = {id:uid(), role: "Owner", display: "Manel", avatar:"purpleBlack", email: "andrsdedisaac@gmail.com"}
 
 const Billing = () => {
+  const [projects, setProjects] = useState<Array<project>>();
   const [session, setSession] = useState<members>(sessi);
   const [card, setCard] = useState({});
   const [error, setError] = useState("");
   //card form modal
   const modal = useRef<dial>(null);
+  const supabase = createClient();
+
+  useEffect(()=>{
+    const asyncFunc = async()=>{
+      const { data, error } = await supabase.auth.getSession();
+
+      const userId = data.session?.user.id;
+
+      const req = await fetch(process.env.NEXT_PUBLIC_LOCAL_API_URL+"api/getProjects", {
+        method: "POST", 
+        headers: {'Content-Type': 'application/json'}, 
+        body: JSON.stringify({owner: userId})
+      });
+
+      const {projects} =  await req.json();
+      setProjects(projects);
+      
+    };
+    asyncFunc();
+  },[]);
+
   // controls for the modal
   const openDialog = () => {
     if (modal.current) {
@@ -74,6 +98,39 @@ const Billing = () => {
 
   return (
     <main className="flex-1 py-8 flex flex-col gap-4 children">
+      <section className="mx-10 mt-8 bg-n100 border border-n300 rounded-lg">
+        <div className="py-4 px-10">
+          <h3>Projects own</h3>
+        </div>
+        <div className="px-20 flex flex-row my-2">
+          <p className="flex-1">Name:</p>
+          <p className="flex-1">Type:</p>
+          <p className="flex-1">Subscription</p>
+          <p className="w-14"></p>
+          
+        </div>
+        <div className="px-10 py-2 mx-8 mb-8 border border-n300 rounded-lg bg-n700 min-h-12">
+          {Array.isArray(projects) === true ? projects.map((item)=>{
+            return (
+            <div className="flex flex-row items-center text-white my-2">
+              <p className="flex-1">{item.name}</p>
+              <p className="flex-1">{item.type.charAt(0).toUpperCase() + item.type.slice(1) }</p>
+              <p className="flex-1">{item.valid ? item.type ? "Not necessary" : "Payed" : "Unpaid"}</p>
+              <div className="dropdown dropdown-bottom dropdown-end rounded-lg">
+                <div tabIndex={0} role="button" className="btn bg-opacity-0 border-0 !text-3xl !font-black !bg-n200 hover:!bg-n100">
+                  <span className="mt-[-15px] text-n800">...</span>
+                </div>
+                <ul tabIndex={0} className="text-n700 dropdown-content menu bg-n200 rounded-lg z-[1] w-52 p-2 shadow border border-n500">
+                  <li><a className="hover:bg-n100">Upgrade Project Plan</a></li>
+                  <li><a className="hover:bg-n100 text-red900">Delete {item.name}</a></li>
+                </ul>
+              </div>
+            </div>
+            )
+          }) : null }
+        </div>
+      </section>
+
       <section className="mx-10 mt-8 bg-n100 border border-n300 rounded-lg">
         <div className="py-4 px-10">
           <h3>Payment Method</h3>

@@ -17,8 +17,8 @@ const PeriodInput: React.FC<dropType> = ({onClick, toggle, animation}) => {
 
   return (
     <div className="dropdown dropdown-open" onClick={onClick}>
-      <div tabIndex={0} className="my-3 mx-2 btn-dash !text-3xl !font-black">
-        <span className="mt-[-15px]">...</span>
+      <div tabIndex={0} className="xs:text-2xl my-3 md:mx-2 max-md:!px-3 max-md:!h-9 max-md:!max-h-9 max-md:!btn-xs btn-dash md:text-3xl !font-black">
+        <span className="mt-[-12x] md:mt-[-15px]">...</span>
       </div>
 
       <ul tabIndex={0} className={`!duration-200 transition-all ease-in-out dropdown-content menu bg-n100 border border-n300 top-[54px] right-2 rounded-md z-[1] w-40 p-2 shadow ${(toggle ? "visible" : "hidden")} ${(animation ? "!opacity-100" : "!opacity-0")}`}>

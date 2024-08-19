@@ -20,6 +20,7 @@ const SignIn = async() => {
   const supabase = createClient();
 
   const { data: { user } } = await supabase.auth.getUser()
+  console.log(user);
   
   return (
     <main className="min-h-[88vh] relative mt-10 children">

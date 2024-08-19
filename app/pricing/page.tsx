@@ -16,8 +16,8 @@ const Princing = () => {
   
   return (
     <main className="max-lg:mt-8 min-h-[88vh] children">
-      <h1 className="text-center max-lg:text-5xl">Our Pricing Plans</h1>
-      <h2 className="text-center text-purple900 max-lg:text-3xl">Pick a plan to fit your workflow</h2>
+      <h1 className="text-center text-4xl lg:text-5xl">Our Pricing Plans</h1>
+      <h2 className="text-center text-purple900 text-2xl lg:text-3xl">Pick a plan to fit your workflow</h2>
       <div className="max-lg:flex-wrap max-md:gap-8  max-lg:mt-8 lg:mt-28 max-w-full xl:w-[1250px] lg:h-[500px] flex max-md:flex-col flex-row xl:gap-11 flex-shrink-0 mx-auto">
 
         <section className="max-lg:w-[46%] max-lg:px-4 max-lg:mx-auto max-md:w-[94%] py-6 px-10 flex flex-col xl:w-[400px] bg-purple500 border border-n100 rounded-lg shadow-squareXl shadow-purple300 text-n100">

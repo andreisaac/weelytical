@@ -25,8 +25,14 @@ export async function POST(req: Request) {
         where: {
           project_id: projectId,
           view_time: {gte: lastPeriod}
+        },
+        include: {
+          browsers: true, // All posts where authorId == 20
+          countries: true, // All posts where authorId == 20
+          operating_systems: true, // All posts where authorId == 20
         }
       });
+      
 
       let previousData = await prisma.page_views.findMany({
         where: {
@@ -39,7 +45,7 @@ export async function POST(req: Request) {
       });
 
 
-
+      
       if(data && previousData) {
         return Response.json({data, previousData})
       } else {
