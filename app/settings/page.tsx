@@ -1,6 +1,5 @@
 "use client"
 import {useState, useEffect, useRef} from "react";
-import uid from "@utils/uid"
 import {useRouter} from "next/navigation";
 import Image from "next/image";
 import googleLogo from "@images/googleLogo.svg";
@@ -8,34 +7,14 @@ import githubLogo from "@images/githubLogo.svg";
 import NameInput from "@components/form/NameInput"
 import EmailInput from "@components/form/EmailInput"
 import { createClient } from "@utils/supabase/client";
-import { Dialog } from "@utils/types";
+import { Dialog, User } from "@utils/types";
 
-interface email {
-  id: string,
-  primary: boolean,
-  verified: boolean,
-  email: string,
-  verifyCode?: string,
-  expiration?: Date 
-}
-interface user {
-  id: string,
-  display: string,
-  email: email[]
-}
 
-let u: user = {
-  id: "aspdokapsodkpaosksomeid",
-  display: "Andred",
-  email: [{id:uid(), primary: true, verified: true, email: "andredisaac@gmail.com"},
-    {id:uid(), primary: false, verified: false, email: "someshitmail@cona.pt"}
-  ],
-}
 
 const GeneralSettings = () => {
   const deleteModalRef = useRef<Dialog>(null);
   const router = useRouter();
-  const [user, setUser] = useState<any>();
+  const [user, setUser] = useState<User>();
   const [display, setDisplay] = useState();
   const [email, setEmail] = useState("");
   const [del, setDel] = useState("");
@@ -48,6 +27,7 @@ const GeneralSettings = () => {
     const asyncFunc = async()=>{
 
       const { data, error } = await supabase.auth.getSession()
+      console.log(data.session);
       
       if(data.session) {
         setUser(data.session.user);
@@ -65,7 +45,7 @@ const GeneralSettings = () => {
   };
 
   const submitDisplay = async()=>{
-    if(display && !err.display && (display !== user?.user_metadata.display_name)){
+    if(display && !err.display && (display !== user?.user_metadata?.display_name)){
       console.log("ya");
       
       const { data, error } = await supabase.auth.updateUser({
@@ -97,7 +77,7 @@ const GeneralSettings = () => {
       const req = await fetch(process.env.NEXT_PUBLIC_LOCAL_API_URL+"api/user/delete", {
         method: "DELETE", 
         headers: {'Content-Type': 'application/json'}, 
-        body: JSON.stringify({userId: user.id, trusted: true})
+        body: JSON.stringify({userId: user?.id, trusted: true})
       });
 
       console.log("Yep");
@@ -135,11 +115,12 @@ const GeneralSettings = () => {
           <p>Enter the email addresses you want to use to log in with Vercel. Your primary email will be used for account-related notifications.</p>
           <div className="my-4 px-14 py-2 bg-n600 text-n100 flex flex-col gap-2 rounded-xl border border-n300">
               {user ? 
-                <div key={user && user.identities[0].id} className="flex flex-row gap-2 items-center">
-                  <div key={user && user.identities[0].id} className="flex-1 flex gap-4 py-2">
-                    {user && user.identities[0].identity_data.email}
-                    {user && user.identities[0].primary ? <div className="h-6 badge badge-success bg-green-400 text-green-700 font-medium gap-2">Primary</div> : ""}
-                    {user.email_confirmed_at && user && user.identities[0].identity_data.email ? 
+                <div key={user && user.identities &&  user.identities[0].id} className="flex flex-row gap-2 items-center">
+                  <div key={user && user.identities &&  user.identities[0].id} className="flex-1 flex gap-4 py-2">
+                    {user && user.identities &&   user.identities[0].identity_data?.email}
+                    {//user && user.identities &&   user.identities[0].primary ? <div className="h-6 badge badge-success bg-green-400 text-green-700 font-medium gap-2">Primary</div> : ""
+                    }
+                    {user.email_confirmed_at && user && user.identities &&   user.identities[0].identity_data?.email ? 
                       <div className="h-6 badge badge-info bg-blue-400 text-blue-700 font-medium gap-2">Verified</div> : 
                       <div className="h-6 badge badge-info bg-orange-400 text-orange-900 font-medium gap-2">Unverified</div>
                     }
@@ -152,13 +133,13 @@ const GeneralSettings = () => {
           {addEmail ? 
             <>
               <div className="flex flex-row gap-10">
-                {user.app_metadata.providers.filter(item=>item === "google").length < 1 ?
+                {user && user.app_metadata.providers!.filter(item=>item === "google").length < 1 ?
                   <a onClick={()=>providerAuth("google")} className="mx-10 p-1 pt-2 flex-1 text-center h3 text-n700 rounded-lg bg-white border border-n200 cursor-pointer hover:scale-105 transition ease-out hover:ease-in active:scale-100"><Image src={googleLogo} width={30} alt="google logo" className="inline mr-4 h-auto"></Image> Link Google</a>
                 :null}
-                {user.app_metadata.providers.filter(item=>item === "github").length < 1 ?
+                {user && user?.app_metadata.providers!.filter(item=>item === "github").length < 1 ?
                   <a onClick={()=>providerAuth("github")} className="mx-10 p-1 pt-2 flex-1 text-center h3 text-n100 rounded-lg bg-n800 border border-n200 cursor-pointer hover:scale-105 transition ease-out hover:ease-in active:scale-100"><Image src={githubLogo} width={40} alt="github logo" className="inline mr-4val"></Image> Link GitHub</a>
                 :null}
-                {user.app_metadata.providers.filter(item=>item === "email").length < 1 ?
+                {user && user?.app_metadata.providers!.filter(item=>item === "email").length < 1 ?
                   <EmailInput name="email" label="Email:" value={email} error={err.email} inputUpdate={setEmail} errorUpdate={errUpdate}/>
                 :null}
                 </div>

@@ -2,6 +2,8 @@
 
 import React, { useEffect, useState, useRef, useCallback } from 'react';
 
+
+
 function getBaseDomain(url:string) {
   if(url){
     try {
@@ -15,9 +17,9 @@ function getBaseDomain(url:string) {
 }
 
 const Weelytical = () => {
-  const [currentUrl, setCurrentUrl] = useState(window.location.pathname);
+  const [currentUrl, setCurrentUrl] = useState<string>();
   const isFirstRender = useRef(true);
-
+  
   const trackPageView = useCallback(async () => {
     try {
       let visitorId = localStorage.getItem('visitor_id');
