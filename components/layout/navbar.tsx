@@ -1,36 +1,27 @@
 "use client"
 import Image from "next/image";
 import Link from "next/link";
-import {useState, useEffect, useRef} from "react";
+import {useContext, useEffect, useRef} from "react";
 import logo from "@images/logo.svg"
 import arrow from "@images/arrowRound.svg"
+import { useUserContext } from '../../app/context/userContext'
 import {createClient } from "@utils/supabase/client";
+
 
 const supabase = createClient();
 
 
 
-
-const Navbar = () => {
+const Navbar = (props: any) => {
   const drawerRef = useRef<HTMLLabelElement>(null);
-  const [user, setUser] = useState<string|null>();
-
-  useEffect(()=>{
-    const asyncFunc = async() => {
-      const { data } = await supabase.auth.getUser();
-      
-      if(data.user) {
-        setUser(data.user.id)
-      }
-    }
-
-    asyncFunc()
-  },[user]);
+  const {user, dispatch} = useUserContext();
+  console.log(user);
+  
 
   const signOut = async() =>{
     const { error } = await supabase.auth.signOut()
-    error ? console.log(error) : null;
-    setUser(null);
+    error ? console.log(error) : dispatch( {type: "signOut"} );
+    console.log(user)
     clickSm();
   };
 

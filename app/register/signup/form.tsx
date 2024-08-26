@@ -10,6 +10,7 @@ import SetPasswordInput from "@components/form/SetPasswordInput";
 import googleLogo from "@images/googleLogo.svg";
 import githubLogo from "@images/githubLogo.svg";
 import {createClient} from "@utils/supabase/client";
+import { useUserContext } from '../../../app/context/userContext';
 
 type signUpType = {
   cUser?: any;
@@ -21,7 +22,8 @@ const Form: React.FC<signUpType> = ({}) => {
   const [password, setPassword] = useState("");
   const [submitErr, setSubmitErr] = useState("");
   const [displayName, setDisplayName] = useState("");
-
+  const {user, dispatch} = useUserContext();
+  
   const [err, setErr] = useState({displayName: "", email: "", password: {
     length: false,
     uppercase: false,

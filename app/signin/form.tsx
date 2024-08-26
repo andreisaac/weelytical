@@ -7,6 +7,8 @@ import PasswordInput from "@components/form/PasswordInput";
 import {createClient} from "@utils/supabase/client";
 import googleLogo from "@images/googleLogo.svg";
 import githubLogo from "@images/githubLogo.svg";
+import { useUserContext } from '../../app/context/userContext';
+
 
 const Form = () => {
   const router = useRouter();
@@ -19,7 +21,9 @@ const Form = () => {
     lowercase: false,
     specialChar: false
   }});
-
+  
+  const supabase = createClient();
+  const {user, dispatch} = useUserContext();
 
 const errUpdate = (n:string, v:string|boolean) => {
     setErr(Object.assign(err, {[n]: v}))
@@ -36,12 +40,12 @@ const errUpdate = (n:string, v:string|boolean) => {
       if(!email) {setErr({...err, login: "Email required"})}
       else if(!password) {setErr({...err, login: "Password required"})}
       else {
-        const {data, error} = await createClient().auth.signInWithPassword({
+        const {data, error} = await supabase.auth.signInWithPassword({
           email, password
         });
         
         if(data.user) {
-          location.reload();
+          dispatch({type: "setUser", payload: data.user});
           router.push("/dashboard");
         } else {
           setErr({...err, login: error?.message!})
@@ -55,12 +59,11 @@ const errUpdate = (n:string, v:string|boolean) => {
     return !Object.values(err.password).every(Boolean);
   };
 
-  const supabase = createClient();
   const providerAuth = async(provider:any) => {
     const signUp = await supabase.auth.signInWithOAuth({
       provider: provider,
       options: {
-        redirectTo: process.env.NEXT_PUBLIC_LOCAL_API_URL+"dashboard"
+        redirectTo: process.env.NEXT_PUBLIC_LOCAL_API_URL
       }
     });
   };

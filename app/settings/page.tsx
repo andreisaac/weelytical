@@ -46,8 +46,7 @@ const GeneralSettings = () => {
 
   const submitDisplay = async()=>{
     if(display && !err.display && (display !== user?.user_metadata?.display_name)){
-      console.log("ya");
-      
+
       const { data, error } = await supabase.auth.updateUser({
         data: {display_name: display}
       });
