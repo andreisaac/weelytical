@@ -13,7 +13,7 @@ type dashbarProps = {
 
 
 
-const DashBar = ({projects} : dashbarProps) => {
+const Dashbar = ({projects} : dashbarProps) => {
   const [toggle, setToggle] = useState({options: false, period: false, project: false});
   const [animation, setAnimation] = useState({options: false, period: false, project: false});
   const [currentProject, setCurrentProject] = useState<project>();
@@ -70,4 +70,4 @@ const DashBar = ({projects} : dashbarProps) => {
   );
 }
 
-export default DashBar;
+export default Dashbar;
