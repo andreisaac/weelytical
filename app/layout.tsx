@@ -21,7 +21,7 @@ export default function RootLayout({
       <UserContext>
       <body className="min-h-[100vh] bg-white">
         <Navbar/>
-        <div className="2xl:max-w-[1512px] mx-auto min-h-[100vh]">
+        <div className="2xl:max-w-[1512px] xl:mx-auto min-h-[100vh]">
           <Weelytical/>
           {children}
         </div>

@@ -80,22 +80,22 @@ const CreditInput: React.FC<creditType> = ({errorUpdate, inputUpdate}) => {
   };
 
   return (
-    <div className="flex flex-row gap-4">
-      <div className="form-control flex-1">
+    <div className="flex flex-row gap-[4px] lg:gap-4">
+      <div className="form-control max-lg:max-w-[175px] flex-1">
         <label className="label">Card Number</label>
 
         <input type="text" name="cardNumber" value={cardNumber} onChange={handleCardNumberChange} onBlur={validate} className={errors?.cardNumber ? "!text-red900 input" : "input"} placeholder="1234 1234 1234 1234" maxLength={19} // 16 digits + 3 spaces 
         autoComplete="cc-number"/>   
       </div>
 
-      <div className="form-control max-w-[100px]">
+      <div className="form-control max-w-[84px] lg:max-w-[100px]">
         <label className="label">Expires</label>
 
         <input type="text" name="expiryDate" value={expiryDate} onChange={handleExpiryDateChange} onBlur={validate} placeholder="MM/YY" className={errors?.expiryDate ? "!text-red900 input max-w-[100px]" : "input max-w-[100px]"} maxLength={5} // MM/YY
         autoComplete="cc-exp"/>
       </div>
 
-      <div className="form-control max-w-[100px]">
+      <div className="form-control max-w-[84px] lg:max-w-[100px]">
         <label className="label">CVC</label>
 
         <input type="text" name="cvc" placeholder="CVC" value={cvc} onChange={handleCvcChange} onBlur={validate} className={errors?.cvc ? "!text-red900 input max-w-[100px]" : "input max-w-[100px]"} maxLength={3} // 3 digits

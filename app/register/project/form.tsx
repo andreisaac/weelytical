@@ -65,7 +65,7 @@ const Form: React.FC<projectForm> = ({cType, cProjectName, cUser, cDomain}) => {
 
 
   <main key={"step1"} className="max-md:px-4 md:w-[600px] mx-auto">
-    <h2 className="text-n700 text-center mt-14">Create your Weelytical Account</h2>
+    <h2 className="text-n700 text-center mt-14">Create your Weelytical Project</h2>
     <div className="flex flex-col mt-8 w-full">
       <RadioButtonInput name="hobby" value={"hobby"} label="Hobby" text="I'm working on personal projects" inputUpdate={setType} checked={type === "hobby"}/>
       <RadioButtonInput name="pro" value={"pro"} label="Pro" text="Commercial projects" inputUpdate={setType} checked={type === "pro"}/>

@@ -69,7 +69,7 @@ const Authentication = () => {
     <main className="flex-1 py-8 flex flex-col gap-4 children">
       <section className="mx-10 mt-2">
         <h2>Teams</h2>
-        <p>Manage the Teams that you're a part of, join suggested ones, or create a new one.</p>
+        <p>{"Manage the Teams that you\'re a part of, join suggested ones, or create a new one."}</p>
       </section>
 
       {teams.map((item)=>
@@ -103,7 +103,7 @@ const Authentication = () => {
         <h3 className="divider">Team Members</h3>
 
         {item.members.map((it)=>
-          <div className="grid grid-cols-12 gap-4 items-center">
+          <div key={it.id} className="grid grid-cols-12 gap-4 items-center">
             <div>
               <label className={it.id && session.id && (session.role === "Admin" || session.role === "Owner") ? "visible" : "hidden"}>
                 <input type="checkbox" className="checkbox" value={it.id} onChange={()=>select(it.id, item.id)} checked={selection.find(i => i === it.id) ? true : false}/>

@@ -8,13 +8,14 @@ import NameInput from "@components/form/NameInput"
 import EmailInput from "@components/form/EmailInput"
 import { createClient } from "@utils/supabase/client";
 import { Dialog, User } from "@utils/types";
+import { useUserContext } from '../../app/context/userContext'
 
 
 
 const GeneralSettings = () => {
+  const {user, dispatch}:{user:User, dispatch:Function} = useUserContext();
   const deleteModalRef = useRef<Dialog>(null);
   const router = useRouter();
-  const [user, setUser] = useState<User>();
   const [display, setDisplay] = useState();
   const [email, setEmail] = useState("");
   const [del, setDel] = useState("");
@@ -25,19 +26,13 @@ const GeneralSettings = () => {
 
   useEffect(()=>{
     const asyncFunc = async()=>{
-
-      const { data, error } = await supabase.auth.getSession()
-      console.log(data.session);
-      
-      if(data.session) {
-        setUser(data.session.user);
-        setDisplay(data.session.user.user_metadata.display_name || data.session.user.user_metadata.name)
-      } else {
-        router.push("signIn")
+      if(user) {
+        setDisplay(user.user_metadata.display_name || user.user_metadata.name);
       }
+        
     };
     asyncFunc();
-  },[])
+  },[user])
  
 
   const errUpdate = (n: string, v: string) => {
@@ -46,12 +41,13 @@ const GeneralSettings = () => {
 
   const submitDisplay = async()=>{
     if(display && !err.display && (display !== user?.user_metadata?.display_name)){
-
+      console.log("ya");
+      
       const { data, error } = await supabase.auth.updateUser({
         data: {display_name: display}
       });
       if(data.user){
-        setUser(data.user);
+        dispatch({type: "setUser",payload:data.user});
         setDisplay(data.user.user_metadata.display_name);
       } else {
         alert(error);
@@ -79,18 +75,18 @@ const GeneralSettings = () => {
         body: JSON.stringify({userId: user?.id, trusted: true})
       });
 
-      console.log("Yep");
+      dispatch({type: "signOut"});
       
     }
   }
 
   return (
-    <main className="flex-1 py-8 flex flex-col gap-4 children">
+    <main className="px-2 lg:px-10 py-8 flex flex-col gap-4 children max-lg:text-sm">
       
-      <section className="mx-10 mt-8 bg-n100 border border-n300 rounded-lg min-h-[202px]">
+      <section className="lg:mt-8 bg-n100 border border-n300 rounded-lg min-h-[202px]">
 
-            <div className="py-4 px-10">
-              <h3>Display Name</h3>
+            <div className="py-4 px-4 lg:px-10">
+              <h3 className="max-lg:text-xl">Display Name</h3>
               {display ? 
                 <NameInput placeholder="Display name" name="display" value={display||""} label="Please enter your full name, or a display name you are comfortable with." inputUpdate={setDisplay} error={err.display} errorUpdate={errUpdate}/>
 
@@ -98,7 +94,7 @@ const GeneralSettings = () => {
                 <span className="loading loading-spinner loading-lg bg-n700 mt-10"></span> 
               }
             </div>
-            <div className="px-10 py-2 flex flex-row border-t border-n300">
+            <div className="px-4 lg:px-10 py-2 flex flex-row border-t border-n300">
               <span className="flex-1 self-center">Please use 40 characters at maximum.</span>
               {}
               <button disabled={err?.display !== ""} onClick={submitDisplay} className="btn-dash !btn-sm !bg-white hover:!bg-n200">Save</button>
@@ -108,11 +104,11 @@ const GeneralSettings = () => {
 
 
 
-      <section className="mx-10 mt-8 bg-n100 border border-n300 rounded-lg">
-        <div className="py-4 px-10">
-          <h3>Identity Manager</h3>
+      <section className="mt-2 lg:mt-8 bg-n100 border border-n300 rounded-lg">
+        <div className="py-4 px-4 lg:px-10">
+          <h3 className="max-lg:text-xl mb-2">Identity Manager</h3>
           <p>Enter the email addresses you want to use to log in with Vercel. Your primary email will be used for account-related notifications.</p>
-          <div className="my-4 px-14 py-2 bg-n600 text-n100 flex flex-col gap-2 rounded-xl border border-n300">
+          <div className="my-4 px-4 lg:px-14 py-2 bg-n600 text-n100 flex flex-col gap-2 rounded-xl border border-n300">
               {user ? 
                 <div key={user && user.identities &&  user.identities[0].id} className="flex flex-row gap-2 items-center">
                   <div key={user && user.identities &&  user.identities[0].id} className="flex-1 flex gap-4 py-2">
@@ -171,12 +167,12 @@ const GeneralSettings = () => {
 
 
 
-      <section className="mx-10 mt-8 bg-n100 border border-red900 rounded-lg">
-        <div className="py-4 px-10">
-          <h3>Delete Account</h3>
+      <section className="mt-2 lg:mt-8 bg-n100 border border-red900 rounded-lg">
+        <div className="py-4 px-4 lg:px-10">
+          <h3 className="max-lg:text-xl mb-2">Delete Account</h3>
           <p>Permanently remove your Personal Account and all of its contents from Weelytical. This action is not reversible, so please continue with caution.</p>
         </div>
-        <div className="px-10 py-2 flex flex-row border-t border-red900 bg-red300 bg-opacity-50">
+        <div className="px-4 lg:px-10 py-2 flex flex-row border-t border-red900 bg-red300 bg-opacity-50">
           <span className="flex-1 self-center"> </span>
           <button disabled={err?.display !== ""} className="btn btn-error btn-sm font-medium" onClick={()=>deleteModalRef.current?.showModal()}>Delete Account</button>
         </div>

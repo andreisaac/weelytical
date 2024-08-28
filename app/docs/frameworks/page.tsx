@@ -6,17 +6,23 @@ import checkCircle from "@images/checkCircle.svg";
 import js from "@images/js.svg";
 import vue from "@images/vue.svg";
 import angular from "@images/angular.svg";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Frameworks Docs",
+  description: "Frameworks available to implement weelytical.",
+};
 
 const Frameworks = () => {
   return (
-    <div className='flex flex-col text-lg'>
-      <h3 className='mt-4 text-4xl'>Pick your framework</h3>
+    <div className='flex flex-col lg:text-lg'>
+      <h3 className='mt-4 text-2xl xl:text-4xl'>Pick your framework</h3>
 
-      <h4 className='mt-8 text-2xl'>Currently we only offer a React version of Weelytical, soon will be released a plain javascript version.</h4>
+      <h4 className='mt-2 xl:mt-8 text-lg xl:text-2xl'>Currently we only offer a React version of Weelytical, soon will be released a plain javascript version.</h4>
 
-      <h3 className='mt-8 text-3xl'>Available frameworks / languages:</h3>
+      <h3 className='mt-8 text-xl xl:text-3xl'>Available frameworks / languages:</h3>
 
-      <div className='grid grid-rows-4 grid-flow-col gap-2 mt-4 text-2xl'>
+      <div className='grid grid-rows-4 grid-flow-col gap-2 mt-4 text-xl lg:text-2xl'>
         <div>
           <Link href="/docs/react" className='pl-10'>
             <Image src={checkCircle} alt="react logo" width={35} className='h-auto mr-4 inline'/> 

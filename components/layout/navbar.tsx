@@ -38,7 +38,7 @@ const Navbar = (props: any) => {
         <nav className="flex flex-row-reverse flex-1 gap-9 items-center px-12 max-lg:hidden">
           {user ? 
             <>
-              <Link href="/settings" className="rounded-full px-[14px] py-2 bg-purpleBlack hover:scale-110 active:scale-100 text-n100 self-stretch my-auto hover:text-n200 transition ease-out hover:ease-in">AI</Link>
+              <Link href="/settings" className="rounded-full px-4 py-2 bg-purpleBlack hover:scale-110 active:scale-100 text-n100 self-stretch my-auto hover:text-n200 transition ease-out hover:ease-in">{user.user_metadata.name.substring(0,1)||user.user_metadata.display_name.substring(0,1)}</Link>
               <Link href="/" onClick={signOut} className="self-stretch my-auto hover:text-orange900 hover:scale-110 active:scale-100 transition ease-out hover:ease-in">Sign Out</Link>
               <Link href="/docs" className="self-stretch my-auto hover:text-orange900 hover:scale-110 active:scale-100 transition ease-out hover:ease-in">Docs</Link>
               <Link href="/dashboard" className="self-stretch my-auto hover:text-orange900 hover:scale-110 active:scale-100 transition ease-out hover:ease-in">Dashboard</Link>
@@ -50,6 +50,7 @@ const Navbar = (props: any) => {
                 <Image src={arrow} width={30} height={30} loading="lazy" alt="arrow right" className="inline-block pb-1 ml-4"></Image>
               </Link>
               <Link href="/signin" className="self-stretch my-auto hover:text-orange900 hover:scale-110 active:scale-100 transition ease-out hover:ease-in">Sign In</Link>
+              <Link href="/docs" className="self-stretch my-auto hover:text-orange900 hover:scale-110 active:scale-100 transition ease-out hover:ease-in">Docs</Link>
               <Link href="/pricing" className="self-stretch my-auto hover:text-orange900 hover:scale-110 active:scale-100 transition ease-out hover:ease-in">Pricing</Link>
             </>
             }
@@ -57,7 +58,7 @@ const Navbar = (props: any) => {
         </nav>
       </header>
 
-        <div className="drawer lg:hidden z-50">
+        <div className="drawer lg:hidden">
           <input id="my-drawer-3" type="checkbox" className="drawer-toggle" />
           <div className="drawer-content">
             {/* Navbar */}
@@ -90,14 +91,14 @@ const Navbar = (props: any) => {
               </div>
             </div>
           </div>
-          <div className="drawer-side">
+          <div className="drawer-side z-50">
             <label ref={drawerRef} htmlFor="my-drawer-3" aria-label="close sidebar" className="drawer-overlay"></label>
             <ul className="menu bg-base-200 min-h-full w-80 p-4 gap-4 text-xl">
             {user ? 
             <>
-              <li><Link onClick={clickSm} href="/docs" className="self-stretch my-auto hover:text-orange900 hover:scale-110 active:scale-100 transition ease-out hover:ease-in">Docs</Link></li>
               <li><Link onClick={clickSm} href="/dashboard" className="self-stretch my-auto hover:text-orange900 hover:scale-110 active:scale-100 transition ease-out hover:ease-in">Dashboard</Link></li>
-              <li><Link onClick={clickSm} href="/settings" className="rounded-full px-[14px] py-2 bg-purpleBlack hover:scale-110 active:scale-100 text-n100 self-stretch my-auto hover:text-n200 transition ease-out hover:ease-in">Settings</Link></li>
+              <li><Link onClick={clickSm} href="/settings" className="self-stretch my-auto hover:text-orange900 hover:scale-110 active:scale-100 transition ease-out hover:ease-in">Settings</Link></li>
+              <li><Link onClick={clickSm} href="/docs" className="self-stretch my-auto hover:text-orange900 hover:scale-110 active:scale-100 transition ease-out hover:ease-in">Docs</Link></li>
               <li><Link onClick={signOut} href="/" className="self-stretch my-auto hover:text-orange900 hover:scale-110 active:scale-100 transition ease-out hover:ease-in">Sign Out</Link></li>
             </>
             :
@@ -107,6 +108,7 @@ const Navbar = (props: any) => {
                 <Image src={arrow} width={30} height={30} loading="lazy" alt="arrow right" className="inline-block pb-1 ml-4"></Image>
               </Link></li>
               <li><Link onClick={clickSm} href="/signin" className="self-stretch my-auto hover:text-orange900 hover:scale-110 active:scale-100 transition ease-out hover:ease-in">Sign In</Link></li>
+              <li><Link onClick={clickSm} href="/docs" className="self-stretch my-auto hover:text-orange900 hover:scale-110 active:scale-100 transition ease-out hover:ease-in">Docs</Link></li>
               <li><Link onClick={clickSm} href="/pricing" className="self-stretch my-auto hover:text-orange900 hover:scale-110 active:scale-100 transition ease-out hover:ease-in">Pricing</Link></li>
             </>
             }

@@ -92,7 +92,7 @@ const MainCharts = () => {
 
     asyncFunction();
     
-  }, [period]);
+  }, [period, router]);
 
   
 

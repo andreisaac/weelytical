@@ -121,12 +121,13 @@
 h2 {
   @apply text-n800;
 }
+
 body {
   @apply text-n900;
   background: white;
   font-family: 'FiraSans';
   font-weight: 300;
-  width: 100%!important
+  width: 100%!important;
 }
 h1, h2, h3, .h1, .h1, .h3 {font-family: 'Jost';}
 h1, .h1 {

@@ -15,8 +15,6 @@ const initialState = null;
 const reducer = (user, action) => {
     if (action.type === 'setUser') {
       return action.payload;
-    } else if (action.type === 'updateUser') {
-      return action.payload;
     } else if (action.type === 'signOut') {
       return null;
     } else {

@@ -21,7 +21,7 @@ const SignIn = async() => {
 
       <h2 className="text-center font-normal">A confirmation email was sent to your email, click on the link provided on the email to confirm your account.</h2>
 
-      <h3 className="text-center mt-96">Didn't get your confirmation email?</h3>
+      <h3 className="text-center mt-96">{"Didn\'t get your confirmation email?"}</h3>
       <h3 className="text-center">Enter your email to resend.</h3>
 
       <div className="flex flex-col w-full">

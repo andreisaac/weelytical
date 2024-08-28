@@ -60,7 +60,6 @@ const MainCharts = () => {
       });
     
       const {projects} = await projectsReq.json();
-      console.log(projects);
       
       if(projects.length > 0) {
         setCurrentProject(projects[0]);
@@ -95,7 +94,7 @@ const MainCharts = () => {
 
     asyncFunction();
     
-  }, [period]);
+  }, [period, projectId, router]);
 
   
 

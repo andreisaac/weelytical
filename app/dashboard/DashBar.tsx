@@ -33,7 +33,7 @@ const DashBar = ({projects} : dashbarProps) => {
     } else {
       setCurrentProject(projects[0]);
     }
-  },[projectId]);
+  },[projectId, projects, router]);
   
   const onClick = (type: string) => {
     const obj = {
