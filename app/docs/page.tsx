@@ -32,7 +32,7 @@ const GettingStarted = () => {
           <p className='font-medium text-2xl'>Sign Up</p>
           <p className='text-base'>If you never used Weelytical before, sign up for a new Weelytical account.</p>
         </Link>
-        <Link href="sigin" className='flex flex-col gap-2 flex-1 hover:bg-opacity-75 bg-opacity-80 rounded-xl py-6 px-4 xl:px-10 bg-purple900 text-n100 border border-purple-900'>
+        <Link href="signin" className='flex flex-col gap-2 flex-1 hover:bg-opacity-75 bg-opacity-80 rounded-xl py-6 px-4 xl:px-10 bg-purple900 text-n100 border border-purple-900'>
           <Image src={signIn} width={30} alt="sign in" className='h-auto'/>
           <p className='font-medium text-2xl'>Sign In</p>
           <p className='text-base'>If you already have a weelytical account, log in to get started.</p>

@@ -13,7 +13,6 @@ const SocialRedirect = () => {
     const {user, dispatch} = useUserContext();
     useEffect(()=>{
         const asyncFunc = async ()=> {
-            const { data: { user } } = await supabase.auth.getUser()
             if(user) {
                 dispatch({type: "setUser", payload: user});
                 router.push("/dashboard");
