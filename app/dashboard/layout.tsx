@@ -1,5 +1,5 @@
 import React from "react";
-import Dashbar from "./Dashbar";
+import Dashbar from "./dashbar";
 import type { Metadata } from "next";
 import {createClient} from "@utils/supabase/server";
 

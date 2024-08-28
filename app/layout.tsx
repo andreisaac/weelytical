@@ -4,7 +4,7 @@ import Navbar from "@components/layout/navbar";
 import Footer from "@components/layout/footer";
 import UserContext from "./context/userContext";
 //import Weelytical from "weelytical-react";
-import Weelytical from "@utils/weelytical";
+import Weelytical from "weelytical-react";
 
 export const metadata: Metadata = {
   title: "Weelytical",
