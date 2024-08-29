@@ -4,7 +4,7 @@ import Link from "next/link";
 import {useContext, useEffect, useRef} from "react";
 import logo from "@images/logo.svg"
 import arrow from "@images/arrowRound.svg"
-import { useUserContext } from '../../app/context/userContext'
+import { useUserContext } from '@context/userContext'
 import {createClient } from "@utils/supabase/client";
 
 
@@ -15,7 +15,6 @@ const supabase = createClient();
 const Navbar = (props: any) => {
   const drawerRef = useRef<HTMLLabelElement>(null);
   const {user, dispatch} = useUserContext();
-  console.log(user);
   
 
   const signOut = async() =>{

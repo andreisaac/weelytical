@@ -13,6 +13,7 @@ import RightDash from "@components/svg/rightDash";
 import BarChart from "@components/chart/barChart";
 
 
+
 export const metadata: Metadata = {
   title: "Weelytical",
   description: "Real-time analytics, and user-friendly dashboards that empower you to make data-driven decisions with confidence.",
@@ -20,7 +21,7 @@ export const metadata: Metadata = {
 
 
 const Home = () => {
-
+  
   const data = {
     labels: ['26Jun', '27Jun', '28Jun', "29Jun", "30Jun", "01Jul", "02Jul"],
     // datasets is an array of objects where each object represents a set of data to display corresponding to the labels above. for brevity, we'll keep it at one object

@@ -9,6 +9,8 @@ import open from "@images/open.svg"
 import LineChart from "@components/chart/lineChart"
 import Chart from "@components/ui/Chart"
 import { parseToChartViews, pageViewTotals, percentDif, onlineUsers, pageCount, referrerCount, countryCount, systemCount, browserCount } from "@utils/dataParse";
+import { useUserContext } from '@context/userContext';
+import { useProjectsContext } from '@context/projectsContext';
 
 interface charts {
   views: chart,
@@ -34,32 +36,17 @@ const MainCharts = () => {
   const [chart, setChart] = useState<chart>();
   const [data, setData] = useState<Array<pageView>>();
   const [stats, setStats] = useState<stats>();
-  const [user, setUser] = useState({});
   const router = useRouter();
-
+  const {user} = useUserContext();
+  const {projects} = useProjectsContext();
 
   
 
   useEffect(()=> {
     
     const asyncFunction = async()=> {
-      const supabase = createClient();
-
-      const { data: { user } } = await supabase.auth.getUser();
-
-      if(user) {
-        setUser(user)
-      }
-     
-      const projectsReq = await fetch(process.env.NEXT_PUBLIC_LOCAL_API_URL+'api/getProjects',{
-        method: "POST",
-        headers: {'Content-Type': 'application/json'}, 
-        body: JSON.stringify({userId: user?.id})
-      });
-    
-      const {projects} = await projectsReq.json();
-      
-      if(projects.length > 0) {
+  
+      if(projects && projects.length > 0) {
         setCurrentProject(projects[0]);
         const dataReq = await fetch(process.env.NEXT_PUBLIC_LOCAL_API_URL+'api/getData',{
           method: "POST",
@@ -84,15 +71,12 @@ const MainCharts = () => {
 
         setChart(parseToChartViews(data, parseInt(period!)||7, "Page Views"));
         
-
-      } else {
-        router.push("/register/project");
       }
     };
 
     asyncFunction();
     
-  }, [period, router]);
+  }, [period, router, projects]);
 
   
 

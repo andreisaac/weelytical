@@ -10,7 +10,7 @@ import SetPasswordInput from "@components/form/SetPasswordInput";
 import googleLogo from "@images/googleLogo.svg";
 import githubLogo from "@images/githubLogo.svg";
 import {createClient} from "@utils/supabase/client";
-import { useUserContext } from '../../../app/context/userContext';
+import { useUserContext } from '../../../context/userContext';
 
 type signUpType = {
   cUser?: any;

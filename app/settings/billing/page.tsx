@@ -7,7 +7,7 @@ import cardOSVG from "@images/cardOrange.svg";
 import CreditInput from "@components/form/CreditInput";
 import {createClient} from "@utils/supabase/client";
 import {project} from "@utils/types";
-import { useUserContext } from '../../../app/context/userContext';
+import { useUserContext } from '../../../context/userContext';
 
 //augment the interface to control the modal
 interface dial extends HTMLDialogElement {

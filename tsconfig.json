@@ -23,7 +23,8 @@
       "@emails/*": ["./emails/*"],
       "@images/*": ["./images/*"],
       "@reducers/*": ["./reducers/*"],
-      "@models/*": ["./models/*"]
+      "@models/*": ["./models/*"],
+      "@context/*": ["./context/*"]
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "components/lineChart.jsx", "reducers/userActions.js"],

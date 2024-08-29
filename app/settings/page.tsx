@@ -8,8 +8,7 @@ import NameInput from "@components/form/NameInput"
 import EmailInput from "@components/form/EmailInput"
 import { createClient } from "@utils/supabase/client";
 import { Dialog, User } from "@utils/types";
-import { useUserContext } from '../../app/context/userContext'
-
+import { useUserContext } from '../../context/userContext';
 
 
 const GeneralSettings = () => {

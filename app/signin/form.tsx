@@ -7,7 +7,7 @@ import PasswordInput from "@components/form/PasswordInput";
 import {createClient} from "@utils/supabase/client";
 import googleLogo from "@images/googleLogo.svg";
 import githubLogo from "@images/githubLogo.svg";
-import { useUserContext } from '../../app/context/userContext';
+import { useUserContext } from '../../context/userContext';
 
 
 const Form = () => {
