@@ -6,6 +6,7 @@ import UserContext from "@context/userContext";
 import ProjectsContext from "@context/projectsContext";
 //import Weelytical from "weelytical-react";
 import Weelytical from "weelytical-react";
+import { Analytics } from "@vercel/analytics/react"
 import { SpeedInsights } from "@vercel/speed-insights/next"
 
 export const metadata: Metadata = {
@@ -27,6 +28,7 @@ export default function RootLayout({
         <div className="2xl:max-w-[1512px] xl:mx-auto min-h-[100vh]">
           <SpeedInsights/>
           <Weelytical/>
+          <Analytics/>
           {children}
         </div>
         <Footer/>
