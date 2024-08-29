@@ -5,6 +5,7 @@ import Footer from "@components/layout/footer";
 import UserContext from "./context/userContext";
 //import Weelytical from "weelytical-react";
 import Weelytical from "weelytical-react";
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 export const metadata: Metadata = {
   title: "Weelytical",
@@ -22,6 +23,7 @@ export default function RootLayout({
       <body className="min-h-[100vh] bg-white">
         <Navbar/>
         <div className="2xl:max-w-[1512px] xl:mx-auto min-h-[100vh]">
+          <SpeedInsights/>
           <Weelytical/>
           {children}
         </div>
