@@ -1,5 +1,5 @@
 "use client"
-import {useState, useEffect} from "react";
+import {useState, useEffect } from "react";
 import {useSearchParams, useRouter} from "next/navigation";
 import {createClient} from "@utils/supabase/client";
 import {project, pageView, chart} from "@utils/types";

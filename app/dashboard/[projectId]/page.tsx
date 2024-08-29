@@ -200,6 +200,7 @@ const MainCharts = () => {
     </main>
 
   );
-}
+};
+
 
 export default MainCharts;
