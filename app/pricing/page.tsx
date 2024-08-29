@@ -68,7 +68,7 @@ const Princing = () => {
             <li><Image src={checkWhite} width={24} alt="check" className="h-auto inline mr-4"/>Advanced Support</li>
           </ul>
           <div className="p-2">
-            <Link href="sales" className="mx-auto btn border-2 border-n300 h3 bg-white">Contact Sales!</Link>
+            <Link href="" className="mx-auto btn border-2 border-n300 h3 bg-white">Contact Sales!</Link>
           </div>
         </section>
 

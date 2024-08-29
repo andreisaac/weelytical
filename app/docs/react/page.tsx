@@ -20,7 +20,7 @@ const ReactDoc = () => {
       <p className='mt-8 text-lg xl:text-xl'>Import the component and place it in your app root file or layout.</p>
 
       <div className="mockup-code mt-8 break-all">
-        <pre>{"import Weelytical from \"@utils/weelytical\";"}</pre>
+        <pre>{"import Weelytical from \"weelytical-react\";"}</pre>
         <pre>
         <pre className="break-all">{"const RootLayout = ({children }) => { "}</pre>
           <pre><code className='pl-4'>{"return ("}</code></pre>

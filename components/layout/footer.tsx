@@ -14,17 +14,18 @@ const Navbar = () => {
         <div className="flex-1">
           <p className="mb-2 font-medium">Learn:</p>
           <p><Link href="/docs" className="ml-4 mb-2">Documentation</Link></p>
-          <p><Link href="/docs/samples" className="ml-4 mb-2">Samples</Link></p>
+          <p><Link href="/docs/samples" className="ml-4 mb-2">Getting started</Link></p>
         </div>
         <div className="flex-1">
           <p className="mb-2 font-medium">Get connected:</p>
-          <p><Link href="/docs" className="ml-4 mb-2">Youtube</Link></p>
-          <p><Link href="/docs/samples" className="ml-4 mb-2">Instagram</Link></p>
+          {/*<p><Link href="/docs" className="ml-4 mb-2">Youtube</Link></p>
+          <p><Link href="/docs/samples" className="ml-4 mb-2">Instagram</Link></p> */}
         </div>
         <div className="max-md:mx-auto lg:flex-1">
           <p className="mb-2 font-medium">Suporte:</p>
-          <p><Link href="/docs" className="ml-4 mb-2">Contact support</Link></p>
-          <p><Link href="/docs/samples" className="ml-4 mb-2">Release Notes</Link></p>
+          {//<p><Link href="/docs" className="ml-4 mb-2">Contact support</Link></p>
+          }
+          <p><Link href="/release-notes" className="ml-4 mb-2">Release Notes</Link></p>
         </div>
       </footer>
     )
