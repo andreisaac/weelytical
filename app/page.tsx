@@ -48,7 +48,7 @@ const Home = () => {
           <h1 className="text-n800 xl:leading-[76px] text-3xl lg:text-4xl">Powerful Analytics <br/> Easy Integration</h1>
           <p className="mt-4 xl:mt-8 text-sm text-n600 break-all">Unlock the full potential of your data. <br/>{"Experience seamless integration, real-time analytics, and user-friendly dashboards that empower you to make data-driven decisions with confidence. "} 
             {"Whether you're looking to optimize your business processes, understand customer behavior, or forecast trends, our solution provides the precision and depth you need."} </p>
-          <Link href="/register" className="mt-4 btn-try">
+          <Link href="/register/signup" className="mt-4 btn-try">
            Try Free!
            <Image src={arrow} width={35} height={35} loading="lazy" alt="arrow right" className="inline-block pb-1 ml-4"></Image>
           </Link>
