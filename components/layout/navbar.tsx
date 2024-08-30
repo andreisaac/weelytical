@@ -1,7 +1,7 @@
 "use client"
 import Image from "next/image";
 import Link from "next/link";
-import {useContext, useEffect, useRef} from "react";
+import {useRef} from "react";
 import logo from "@images/logo.svg"
 import arrow from "@images/arrowRound.svg"
 import { useUserContext } from '@context/userContext'
