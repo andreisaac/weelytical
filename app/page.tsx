@@ -55,7 +55,7 @@ const Home = () => {
           </Link>
         </div>
 
-        <Image src={mockup} width={1038} height={660} loading="lazy" alt="weelytical" className="!select-none absolute right-0 z-0"></Image>
+        <Image src={mockup} width={1038} height={660} priority alt="weelytical" className="!select-none absolute right-0 z-0"></Image>
         
         <div className="absolute top-[110px] lg:top-[210px] right-2 lg:right-[20px] xl:right-[60px]">
           <BarChart chartData={data} classN="p-6 w-96 lg:w-96 xl:w-[500px] bg-orange500 rounded-3xl shadow-md border border-n300"/>
