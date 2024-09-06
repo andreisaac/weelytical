@@ -24,7 +24,7 @@ const Layout = ({
                 <div className="max-lg:hidden py-8 px-20 flex flex-col w-80 gap-2 text-xl">
                     <Link href="/settings">General</Link>
                     {/* <Link href="/settings/teams">Teams</Link> */}
-                    <Link href="/settings/billing">Billing</Link>
+                    <Link href="/settings/billing">Projects</Link>
                     <Link href="/settings/invoices">Invoices</Link>
                 </div>
                 <div className="drawer xl:hidden">
@@ -65,7 +65,7 @@ const Layout = ({
                     <label htmlFor="docs" aria-label="close sidebar" className="drawer-overlay"></label>
                     <ul className="pt-20 menu bg-base-200 min-h-full w-80 p-4 gap-4 text-xl">           
                       <li><Link onClick={clickSm} href="/settings">General</Link></li>
-                      <li><Link onClick={clickSm} href="/settings/billing">Billing</Link></li>
+                      <li><Link onClick={clickSm} href="/settings/billing">Projects</Link></li>
                       <li><Link onClick={clickSm} href="/settings/invoices">Invoices</Link></li>
                     </ul>
                   </div>

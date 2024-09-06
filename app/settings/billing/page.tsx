@@ -1,5 +1,5 @@
 "use client"
-import {useEffect, useState, useRef} from "react";
+import { useState, useRef} from "react";
 import uid from "@utils/uid";
 import Image from "next/image";
 import cardSVG from "@images/card.svg";
@@ -8,6 +8,8 @@ import CreditInput from "@components/form/CreditInput";
 import {createClient} from "@utils/supabase/client";
 import {project} from "@utils/types";
 import { useUserContext } from '../../../context/userContext';
+import { useProjectsContext } from '../../../context/projectsContext';
+import { usePlanContext } from '../../../context/planContext';
 
 //augment the interface to control the modal
 interface dial extends HTMLDialogElement {
@@ -17,62 +19,35 @@ interface dial extends HTMLDialogElement {
 }
   
 
-interface members {
-  id: string,
-  display: string,
-  email: string,
-  role: string,
-  avatar: string
-}
-interface teams {
-  id: string,
-  name: string,
-  members: members[]
-}
-
-let t: Array<teams> = [{
-  id: uid(),
-  name: "Flor do Jamor",
-  members: [
-    {id:uid(), role: "Owner", display: "Manel", avatar:"1", email: "andrsdedisaac@gmail.com"},
-    {id:uid(), role: "Lead", display: "André", avatar:"2", email: "andredisaac@gmail.com"},
-    {id:uid(), role: "Member", display: "Tozé", avatar:"3", email: "someshitmail@cona.pt"}
-  ],
-}, {
-  id: uid(),
-  name: "Weelytical",
-  members: [
-    {id:uid(), role: "Owner", display: "Manel", avatar:"1", email: "andrsdedisaac@gmail.com"},
-    {id:uid(), role: "Lead", display: "André", avatar:"2", email: "andredisaac@gmail.com"},
-    {id:uid(), role: "Member", display: "Tozé", avatar:"3", email: "someshitmail@cona.pt"}
-  ],
-}];
-
-let sessi:members = {id:uid(), role: "Owner", display: "Manel", avatar:"purpleBlack", email: "andrsdedisaac@gmail.com"}
-
 const Billing = () => {
-  const [projects, setProjects] = useState<Array<project>>();
-  const [session, setSession] = useState<members>(sessi);
-  const [card, setCard] = useState({});
   const [error, setError] = useState("");
-  //card form modal
   const modal = useRef<dial>(null);
-  const supabase = createClient();
-  const {user, dispatch} = useUserContext();
-  useEffect(()=>{
-    const asyncFunc = async()=>{
-      const req = await fetch(process.env.NEXT_PUBLIC_LOCAL_API_URL+"api/getProjects", {
-        method: "POST", 
+  const {user} = useUserContext();
+  const {projects} = useProjectsContext();
+  const {plan, dispatch} = usePlanContext();
+  
+  const link = process.env.NODE_ENV === 'development' ? "https://buy.stripe.com/test_14kdSA9gJ9d31na7ss" : "https://buy.stripe.com/5kAbLl4sG4yp81yfYZ";
+
+  const cancelSub = async() =>{
+    if(user && plan) {
+      const req = await fetch(process.env.NEXT_PUBLIC_LOCAL_API_URL+'api/cancelPlan',{
+        method: "POST",
         headers: {'Content-Type': 'application/json'}, 
-        body: JSON.stringify({owner: user.id})
+        body: JSON.stringify({plan})
       });
 
-      const {projects} =  await req.json();
-      setProjects(projects);
-      
-    };
-    asyncFunc();
-  },[user]);
+      const {updatedPlan} = await req.json();
+
+      if(updatedPlan && updatedPlan[0]) {
+        dispatch({type: "setPlan", payload: updatedPlan[0]})
+      }
+    }
+  }
+
+  const cancelDate = (date: string) => {
+    const d = new Date(date);
+    return (d.getDate() < 10 ? ("0"+d.getDate()) : d.getDate()) + "/" + ((d.getMonth()+1) < 10 ? ("0"+(d.getMonth()+1)) : (d.getMonth()+1));
+  }
 
   // controls for the modal
   const openDialog = () => {
@@ -92,19 +67,19 @@ const Billing = () => {
     {/* handle logic and api calls*/ }
     closeDialog()
   }
-
+  
   return (
     <main className="mx-2 lg:mx-10 flex-1 py-4 lg:py-8 flex flex-col gap-4 children text-sm lg:text-base">
 
-      <section className="mt-2 lg:mt-8 bg-n100 border border-n300 rounded-lg">
+      <section className="mt-2 pt-2 lg:mt-8 bg-n100 border border-n300 rounded-lg">
         <div className="py-4 px-4 lg:px-10">
-          <h3>Projects own</h3>
+          <h3>My Projects</h3>
         </div>
 
         <div className="max-lg:pl-5 lg:px-20 flex flex-row my-2">
           <p className="flex-1">Name:</p>
-          <p className="flex-1">Type:</p>
-          <p className="flex-1">Subscription</p>
+          <p className="flex-1">Role:</p>
+          <p className="flex-1"></p>
           <p className="w-14"></p>
           
         </div>
@@ -114,28 +89,64 @@ const Billing = () => {
             return (
             <div key={item.project_id} className="flex flex-row items-center text-white my-2">
               <p className="flex-1">{item.name}</p>
-              <p className="flex-1">{item.type.charAt(0).toUpperCase() + item.type.slice(1) }</p>
-              <p className="flex-1">{item.valid ? item.type ? "Not necessary" : "Payed" : "Unpaid"}</p>
+              <p className="flex-1">{item.owner === user?.id ? "Owner" : "Member"}</p>
+              <p className="flex-1"></p>
               <div className="dropdown dropdown-bottom dropdown-end rounded-lg">
                 <div tabIndex={0} role="button" className="btn max-lg:btn-xs bg-opacity-0 border-0 !text-3xl !font-black !bg-n200 hover:!bg-n100">
                   <span className="mt-[-15px] text-n800">...</span>
                 </div>
                 <ul tabIndex={0} className="text-n700 dropdown-content menu bg-n200 rounded-lg z-[1] w-52 p-2 shadow border border-n500">
-                  <li><a className="hover:bg-n100">Upgrade Project Plan</a></li>
-                  <li><a className="hover:bg-n100 text-red900">Delete {item.name}</a></li>
+                  <li><a className="hover:bg-n100 text-red900">{item.owner === user?.id ? "Delete " : "Leave"} {item.name}</a></li>
                 </ul>
               </div>
             </div>
             )
-          }) : null }
+          }) : <div className="text-center my-2"><span className="loading loading-spinner loading-lg bg-n100"></span></div>  }
         </div>
       </section>
 
-      <section className="mt-2 lg:mt-8 bg-n100 border border-n300 rounded-lg">
+      <section className="mt-2 pt-2 lg:mt-8 bg-n100 border border-n300 rounded-lg">
         <div className="py-4 px-4 lg:px-10">
-          <h3>Payment Method</h3>
+          <h3>Current Plan:</h3>
         </div>
-        <p className="pb-4 px-4 lg:px-10">Payments for domains, add-ons, and other usage are made using the default card.</p>
+
+        
+          <div className="max-lg:pl-5 lg:px-20 flex flex-row my-2">
+            <p className="flex-1">Plan:</p>
+            <p className="flex-1">Status:</p>
+            <p className="flex-1"></p>
+            <p className="w-14"></p>
+          </div>
+
+          <div className="px-2 lg:px-10 py-2 mx-1 lg:mx-8 mb-4 lg:mb-8 border border-n300 rounded-lg bg-white min-h-12">
+            
+            {plan ? 
+              <div className="flex flex-row items-center text-n700 my-2 font-medium">
+                <p className="flex-1 text-purple500">{plan?.type}</p>
+                <p className={plan?.status && !plan?.cancel_date ? "flex-1 text-green-600" : plan?.cancel_date ? "flex-1 text-orange-400" : "flex-1 text-red-900"}>{plan?.status && !plan?.cancel_date ? "Active" : plan?.cancel_date ? "Canceled at "+cancelDate(plan?.cancel_date) : "Inactive"}</p>
+                <p className="flex-1"></p>
+                {!plan?.cancel_date ?
+                (
+                  <div className="dropdown dropdown-bottom dropdown-end rounded-lg">
+                      <div tabIndex={0} role="button" className="btn max-lg:btn-xs bg-opacity-0 border-n300 !text-3xl !font-black !bg-n100 hover:!bg-n100">
+                        <span className="mt-[-15px] text-n800">...</span>
+                      </div>
+                      <ul tabIndex={0} className="text-n700 dropdown-content menu bg-n100 rounded-lg z-[1] w-52 p-2 shadow border border-n300">
+                        
+                        {plan?.type === "Hobby" ? <li><a className="hover:bg-n100" target="_blank" href={ link + '?prefilled_email=' + user?.email }>Upgrade to Pro Plan</a></li> :  <li><a className="hover:bg-n100 text-red900" onClick={cancelSub}>Cancel Subscription</a></li> }
+                      </ul>
+                  </div>)
+                : 
+                null
+                }
+              </div>
+            : 
+              <div className="text-center my-2"><span className="loading loading-spinner loading-lg bg-n700"></span></div>
+            }
+            
+          </div>
+
+       
 
         {
         //credit cards display
@@ -151,8 +162,7 @@ const Billing = () => {
               </div>
             </div>
           </div>
-        */
-        }
+        
         
 
         {
@@ -168,11 +178,13 @@ const Billing = () => {
           <p className="flex-1 self-center">At most, three credit cards, debit cards or prepaid cards can be added.</p>
           <a className="max-lg:float-right max-lg:my-2 btn-dash !bg-white hover:!bg-n200" onClick={openDialog}>Add Card</a>
         </div>
+        */
+    }
       </section>
     	
       {
       //add credit card modal
-      }
+      /*
       <dialog ref={modal} className="modal">
         <div className="modal-box bg-n100 rounded-xl border border-n700 p-0 max-lg:-mt-74 max-lg:w-[98%]">
           <div className="py-2 lg:py-4 px-8 bg-n800 border-b border-n500 roundedt-t-2xl">
@@ -192,6 +204,8 @@ const Billing = () => {
           </div>
         </div>
       </dialog>
+      */
+      }
     </main>
   );
 }

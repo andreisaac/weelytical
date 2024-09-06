@@ -4,6 +4,7 @@ import Navbar from "@components/layout/navbar";
 import Footer from "@components/layout/footer";
 import UserContext from "@context/userContext";
 import ProjectsContext from "@context/projectsContext";
+import PlanContext from "@context/planContext";
 //import Weelytical from "weelytical-react";
 import Weelytical from "weelytical-react";
 import { Analytics } from "@vercel/analytics/react"
@@ -23,16 +24,18 @@ export default function RootLayout({
     <html lang="en" data-theme="light">
       <UserContext>
       <ProjectsContext>
-      <body className="min-h-[100vh] bg-white">
-        <Navbar/>
-        <div className="2xl:max-w-[1512px] xl:mx-auto min-h-[100vh]">
-          <SpeedInsights/>
-          <Weelytical/>
-          <Analytics/>
-          {children}
-        </div>
-        <Footer/>
-      </body>
+      <PlanContext>
+        <body className="min-h-[100vh] bg-white">
+          <Navbar/>
+          <div className="2xl:max-w-[1512px] xl:mx-auto min-h-[100vh]">
+            <SpeedInsights/>
+            <Weelytical/>
+            <Analytics/>
+            {children}
+          </div>
+          <Footer/>
+        </body>
+      </PlanContext>
       </ProjectsContext>
       </UserContext>
     </html>

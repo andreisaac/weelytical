@@ -46,8 +46,8 @@ const Home = () => {
         <RightDash cName="max-lg:hidden w-[100px] xl:w-[150px] absolute right-[50px] xl:right-[350px] top-[600px] xl:top-[500px] p-2 z-10"/>
 
         <div className="px-6 lg:px-14 py-8 lg:w-[600px] xl:w-[740px] bg-n100 border border-n200 lg:rounded-3xl z-10 absolute lg:-left-4 xl:left-0 top-[215px] lg:top-[270px] xl:top-[300px]">
-          <h1 className="text-n800 xl:leading-[76px] text-3xl lg:text-4xl">Powerful Analytics <br/> Easy Integration</h1>
-          <p className="mt-4 xl:mt-8 text-sm text-n600 break-all">Unlock the full potential of your data. <br/>{"Experience seamless integration, real-time analytics, and user-friendly dashboards that empower you to make data-driven decisions with confidence. "} 
+          <h1 className="text-n800 xl:leading-[60px] text-3xl lg:text-4xl">Powerful Analytics <br/> Ease of Integration</h1>
+          <p className="mt-4 xl:my-4 text-sm lg:text-xl text-n600 break-all">Unlock the full potential of your data. <br/>{"Experience seamless integration, real-time analytics, and user-friendly dashboards that empower you to make data-driven decisions with confidence. "} 
             {"Whether you're looking to optimize your business processes, understand customer behavior, or forecast trends, our solution provides the precision and depth you need."} </p>
           <Link href="/register/signup" className="mt-4 btn-try">
            Try Free!

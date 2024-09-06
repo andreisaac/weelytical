@@ -9,14 +9,14 @@ datasource db {
 }
 
 model project {
-  id         Int     @id @default(autoincrement())
-  project_id String  @unique @default(dbgenerated("gen_random_uuid()")) @db.Uuid
-  name       String? @default("") @db.VarChar
-  domain     String? @unique @default("") @db.VarChar
+  id         Int          @id @default(autoincrement())
+  project_id String       @unique @default(dbgenerated("gen_random_uuid()")) @db.Uuid
+  name       String?      @default("") @db.VarChar
+  domain     String?      @unique @default("") @db.VarChar
   members    Json?
-  owner      String? @default(dbgenerated("auth.uid()")) @db.Uuid
-  type       String? @default("") @db.VarChar
-  valid      Boolean @default(false)
+  owner      String?      @default(dbgenerated("auth.uid()")) @db.Uuid
+  type       String?      @default("") @db.VarChar
+  valid      Boolean      @default(false)
   page_views page_views[]
 }
 
@@ -48,10 +48,10 @@ model page_views {
   view_time         DateTime?          @default(now()) @db.Timestamp(6)
   visitor_id        Int?
   project_id        String?            @db.Uuid
-  project           project?           @relation(fields: [project_id], references: [project_id])
   browsers          browsers?          @relation(fields: [browser_id], references: [id])
   countries         countries?         @relation(fields: [country_id], references: [id])
   operating_systems operating_systems? @relation(fields: [os_id], references: [id])
+  project           project?           @relation(fields: [project_id], references: [project_id])
   visitors          visitors?          @relation(fields: [visitor_id], references: [id])
 }
 
@@ -60,4 +60,16 @@ model visitors {
   visitor_id String       @unique @db.Uuid
   created_at DateTime?    @default(now()) @db.Timestamp(6)
   page_views page_views[]
+}
+
+/// This model contains row level security and requires additional setup for migrations. Visit https://pris.ly/d/row-level-security for more info.
+model plan {
+  id          Int       @id @default(autoincrement())
+  created_at  DateTime  @default(now()) @db.Timestamptz(6)
+  user_id     String?   @default(dbgenerated("auth.uid()")) @db.Uuid
+  user_email  String?
+  type        String?
+  status      Boolean?
+  sub_id      String?
+  cancel_date DateTime? @db.Timestamptz(6)
 }

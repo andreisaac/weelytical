@@ -1,16 +1,18 @@
 'use server'
-const { PrismaClient, Prisma } = require('@prisma/client');
+const { PrismaClient } = require('@prisma/client');
+const { createClient } = require('@utils/supabase/server');
 
 const prisma = new PrismaClient();
 
 export async function POST(req: Request) {
-
+  //initialize supabase
+  const supabase = createClient();
+  //get the aurthenticated user
+  const {data: {user} } = await supabase.auth.getUser();
+  //destructuring body 
   const {userId, projectId, owner} = await req.json();
-  console.log(projectId);
-  console.log(userId);
-  
-  if(userId && !projectId) {
-    console.log("primeira");
+
+  if(userId && (userId === user.id) && !projectId) {
    
     try{
       
@@ -32,7 +34,7 @@ export async function POST(req: Request) {
     }
 
 
-  } else if(projectId && userId){
+  } else if(projectId && userId && (userId === user.id)){
     console.log("segunda");
     
     try{
@@ -55,7 +57,6 @@ export async function POST(req: Request) {
       return Response.json({error: true, msg: "Project creation error."})
     }
   } else if(owner){
-    console.log("segunda");
     
     try{
       

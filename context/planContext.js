@@ -9,16 +9,16 @@ import { useUserContext } from './userContext';
 const supabase = createClient();
 
 // Create a context to hold the state
-const ProjectsContext = createContext();
+const PlansContext = createContext();
 
 // Define the initial state
 const initialState = null;
 
 // Define the reducer function to handle state transitions
-const reducer = (projects, action) => {
-    if (action.type === 'setProjects') {
+const reducer = (plan, action) => {
+    if (action.type === 'setPlan') {
       return action.payload;
-    } else if (action.type === 'clearProjects') {
+    } else if (action.type === 'clearPlan') {
       return null;
     } else {
       throw Error('Unknown action: ' + action.type);
@@ -28,47 +28,47 @@ const reducer = (projects, action) => {
 
 // Create a component that will provide the context
 // IncrementProvider takes in an argument called children
-const ProjectsProvider = ( {children} ) => {
-  const [projects, dispatch] = useReducer(reducer, initialState);
+const PlansProvider = ( {children} ) => {
+  const [plan, dispatch] = useReducer(reducer, initialState);
   const {user} = useUserContext();
 
   useEffect(()=>{
     const asyncFunc = async() => {
-
+      
       if(user) {
-        
-        const projectsReq = await fetch(process.env.NEXT_PUBLIC_LOCAL_API_URL+'api/getProjects',{
+        const plansReq = await fetch(process.env.NEXT_PUBLIC_LOCAL_API_URL+'api/getPlans',{
           method: "POST",
           headers: {'Content-Type': 'application/json'}, 
-          body: JSON.stringify({userId: user?.id, projectId: false})
+          body: JSON.stringify({userId: user?.id})
         });
     
-        const {projects} = await projectsReq.json();
-    
-        if(projects) {
-          dispatch({type: "setProjects", payload: projects})
+        const {plan} = await plansReq.json();
+
+        
+        if(plan) {
+          dispatch({type: "setPlan", payload: plan[0]})
         }
       }
-
     };
-    
+
     asyncFunc();
+
   },[user])
 
 // In this return value, we passed-in children as the CONSUMER of the PROVIDER
 // This will able children components to access the data inside the context
   return (
-    <ProjectsContext.Provider value={{projects, dispatch }}>
+    <PlansContext.Provider value={{plan, dispatch }}>
       
         {children}
       
-    </ProjectsContext.Provider>
+    </PlansContext.Provider>
   );
 }
 
-export default ProjectsProvider;
+export default PlansProvider;
 
 // Create a function that invokes the context 
-export const useProjectsContext = () => {
-  return useContext(ProjectsContext)
+export const usePlanContext = () => {
+  return useContext(PlansContext)
 }
