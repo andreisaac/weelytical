@@ -39,14 +39,15 @@ const Home = () => {
   
   return (
     <main className="w-full mt-4 lg:mt-8 px-2 lg:px-8 xl:px-20 children">
-      <section className="relative h-[650px] lg:h-[700px] xl:h-[790px]">
+      <section className="relative h-[650px] lg:h-[750px] xl:h-[790px]">
         
         <LeftDash cName="max-lg:hidden w-[200px] absolute left-[-150px] top-[75px] p-2"/>
         <RightDash cName="max-lg:hidden w-[200px] absolute left-[60px] top-[0px] p-2 rotate-[90deg]"/>
         <RightDash cName="max-lg:hidden w-[100px] xl:w-[150px] absolute right-[50px] xl:right-[350px] top-[600px] xl:top-[500px] p-2 z-10"/>
 
-        <div className="px-6 lg:px-14 py-8 lg:w-[600px] xl:w-[740px] bg-n100 border border-n200 lg:rounded-3xl z-10 absolute lg:-left-4 xl:left-0 top-[215px] lg:top-[270px] xl:top-[300px]">
-          <h1 className="text-n800 xl:leading-[60px] text-3xl lg:text-4xl">Powerful Analytics <br/> Ease of Integration</h1>
+        <div className="max-lg:mx-2 px-6 lg:px-14 py-8 sm:mx-4 lg:w-[600px] xl:w-[740px] bg-n100 border border-n200 lg:rounded-3xl z-10 absolute lg:left-4 xl:left-0 top-[215px] sm:top-[260px] lg:top-[270px] xl:top-[300px]">
+          <h1 className="text-n800 xl:leading-[60px] text-3xl lg:text-4xl">Powerful Analytics</h1>
+          <h2 className="text-n600 text-2xl lg:text-3xl">Ease of Integration</h2>
           <p className="mt-4 xl:my-4 text-sm lg:text-xl text-n600 break-all">Unlock the full potential of your data. <br/>{"Experience seamless integration, real-time analytics, and user-friendly dashboards that empower you to make data-driven decisions with confidence. "} 
             {"Whether you're looking to optimize your business processes, understand customer behavior, or forecast trends, our solution provides the precision and depth you need."} </p>
           <Link href="/register/signup" className="mt-4 btn-try">
@@ -57,8 +58,8 @@ const Home = () => {
 
         <Image src={mockup} width={1038} height={660} priority alt="weelytical" className="!select-none absolute right-0 z-0"></Image>
         
-        <div className="absolute top-[110px] lg:top-[210px] right-2 lg:right-[20px] xl:right-[60px]">
-          <BarChart chartData={data} classN="p-6 w-96 lg:w-96 xl:w-[500px] bg-orange500 rounded-3xl shadow-md border border-n300"/>
+        <div className="absolute top-[110px] sm:top-[140px] lg:top-[210px] right-2 lg:right-[40px] xl:right-[60px]">
+          <BarChart chartData={data} classN="p-6 w-[300px] sm:w-80 lg:w-96 xl:w-[500px] bg-orange500 rounded-3xl shadow-md border border-n300"/>
         </div>
 
         <div className="invisible lg:visible max-w-[200px] text-center absolute right-[80px] xl:right-[160px] top-[480px] xl:top-[525px] z-10">

@@ -1,7 +1,6 @@
 "use client"
 import {useState, useEffect } from "react";
-import {useSearchParams, useRouter} from "next/navigation";
-import {createClient} from "@utils/supabase/client";
+import {useSearchParams, useRouter, redirect} from "next/navigation";
 import {project, pageView, chart} from "@utils/types";
 import Image from "next/image";
 import Link from "next/link";
@@ -43,7 +42,7 @@ const MainCharts = () => {
   
 
   useEffect(()=> {
-    
+
     const asyncFunction = async()=> {
   
       if(projects && projects.length > 0) {
@@ -71,11 +70,22 @@ const MainCharts = () => {
 
         setChart(parseToChartViews(data, parseInt(period!)||7, "Page Views"));
         
+        
+      } else {
+        
+        setTimeout(()=>{
+          if(projects && projects.length === 0) {
+            router.push("/register/project");
+          }
+          }, 3000)
+        
       }
     };
 
     asyncFunction();
     
+    
+
   }, [period, router, projects]);
 
   
@@ -86,9 +96,8 @@ const MainCharts = () => {
     }
   }
 
-//<span className="loading loading-spinner loading-lg bg-n700"></span> 
   return (
-    <main className="bg-n100 border border-n300 rounded-b-xl">
+    <main className="flex flex-col bg-n100 border border-n300 rounded-b-xl">
       <section className="flex flex-col md:flex-row border-b border-n300">
         {
           currentProject ? 
@@ -154,14 +163,15 @@ const MainCharts = () => {
         
       </section>
       
-      <section className="flex flex-col bg-white bg-opacity-50 border-b border-n300">
+      <section className="flex flex-col bg-white bg-opacity-50 border-b border-n300 rounded-b-xl">
         {
           chart?
           <LineChart chartData={chart} classN={"w-full h-[250px] md:h-[400px] md:px-4 my-8" }></LineChart>
           :
-          <span className="loading loading-spinner w-28 bg-n700 mx-auto my-20"></span>
+          <div className="min-h-[71vh] text-center">
+            <span className="loading loading-spinner w-28 bg-n700 mx-auto my-20"></span>    
+          </div>
         }
-        
       </section>
 
       {data ? 
